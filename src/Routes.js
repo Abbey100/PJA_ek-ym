@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Layout from '@/components/Layout/Layout';
+import LayoutFull from '@/components/LayoutFull/LayoutFull';
 
 // Pages
 import Import from '@/pages/Import/Import';
@@ -20,9 +21,16 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: '/login',
-      name: 'Login',
-      component: Login
+      path: '/',
+      name: 'LayoutFull',
+      component: LayoutFull,
+      children: [
+        {
+          path: 'Login',
+          name: 'Logn',
+          component: Login,
+        },
+      ],
     },
     {
     path: '/',
