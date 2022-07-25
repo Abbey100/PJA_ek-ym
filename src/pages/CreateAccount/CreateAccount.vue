@@ -108,8 +108,8 @@
                     <!-- Checkbox 템플릿 -->
                     <div class="checkbox-group d-flex align-center justify-start column-flex">
                       <div class="checkbox-control">
-                        <input id="terms" type="checkbox">
-                        <label form="terms"></label>
+                        <input id="policy" checked type="checkbox">
+                        <label form="policy"></label>
                       </div>
                       <span>I have read and agree to the  <a href="#" class="font-weight-medium"> Privacy Policy</a></span>
                     </div>  <!-- Checkbox 템플릿 끝 -->
@@ -117,8 +117,8 @@
                     <!-- Checkbox 템플릿 -->
                     <div class="checkbox-group d-flex align-center justify-start column-flex">
                       <div class="checkbox-control">
-                        <input id="terms" type="checkbox">
-                        <label form="terms"></label>
+                        <input id="offers" type="checkbox">
+                        <label form="offers"></label>
                       </div>
                       <span>Keep me updated on news and offers</span>
                     </div>  <!-- Checkbox 템플릿 끝 -->
@@ -181,17 +181,17 @@
         ],
       }
     },
-    methods: {
-      login(){
-        window.localStorage.setItem('authenticated', true);
-        this.$router.push('/import');
-      }
-    },
-    created() {
-      if (window.localStorage.getItem('authenticated') === 'true') {
-        this.$router.push('/import');
-      }
-    }
+    // methods: {
+    //   login(){
+    //     window.localStorage.setItem('authenticated', true);
+    //     this.$router.push('/import');
+    //   }
+    // },
+    // created() {
+    //   if (window.localStorage.getItem('authenticated') === 'true') {
+    //     this.$router.push('/import');
+    //   }
+    // }
   }
 
 </script>
