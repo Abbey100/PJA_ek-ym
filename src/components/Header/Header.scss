@@ -1,5 +1,6 @@
 @import "../../styles/app";
 .main-header {
+
   .v-list {
     .v-list-item:hover {
       background-color: #F3F5FF;
@@ -23,5 +24,46 @@
     bottom: 2px;
     right: 2px;
   }
+
+  //theme override
+  background-color: #fff!important;
+  // box-shadow: none!important;
+  border-bottom-width: 1px ;
+  border-bottom-style: solid;
+  border-color: $border-default!important;
+
+  .v-toolbar__content {
+    padding: 20px 24px;
+  }
+
+  .create {
+    max-width: 400px;
+    span {
+      font-size: $font-size-base;
+      color: $grey-default;
+    }
+    .v-btn {
+      border-color: $point-deep !important;
+
+      &::before {
+        display: none;
+      }
+
+      .v-btn__content {
+        color:$point-deep !important;
+      }
+    }
+  }
+  
+  .logo {
+    max-width: 182px;
+    .v-image__image {
+      width: 182px;
+    }
+    img { 
+      background-size:contain
+    }
+  }
 }
+
 

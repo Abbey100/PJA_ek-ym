@@ -3,63 +3,146 @@ body {
   background-color: #F6F7FF !important
 }
 .container {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   padding: 0;
 
-  .main-part {
-    width: 100%;
-    height: 100vh;
-    background-color: $primary;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      p {
-        text-align: center;
-        font-family: "Roboto", sans-serif;
-        font-size: 84px;
-        color: white;
-        font-weight: 500;
-      }
-      .v-image {
-        margin-bottom: 32px;
-      }
-    }
-
-  }
   .login-part {
     width: 100%;
-    height: 100vh;
-    background-color: #F6F7FF;
+    height: calc(100vh - 145px);
+    background-color: #fff;
     overflow-y: auto;
+
     .login-wrapper {
-      width: 320px;
+      width: 343px;
       height: auto;
+      padding-top: 102px;
+
       .login-slogan {
-        color: #4a4a4a;
+        margin-bottom: 8px;
+        font-size: 40px;
+        line-height: 48px;
+        color: $primary;
       }
-      .v-btn.google {
-        box-shadow: $card-shadow!important;
+
+      .login-descript {
+        height: 20px;
+        color: $grey-default;
+        font-size: $font-size-16;
+        line-height: 20px;
+        margin-bottom: 72px;
       }
-      .v-tabs {
-        .v-tab {
-          font-size: 18px;
-        }
-        .v-item-group {
-          background-color: #F6F7FF;
+
+      .forget-password .v-btn{
+        height: 16px;
+        line-height: 16px;
+        &::before {
+          display: none !important;
         }
       }
 
-    }
-    .v-footer {
-      position: absolute;
-      bottom: 0;
-      background-color: #F6F7FF;
+      .btn-login {
+       
+        &+.col {
+          color: $grey-default;
+          line-height: 16px;
+        }
+      }
+
+      .google {
+        color: $primary;
+        &::before {
+          display: none;
+        }
+      }
     }
   }
+}
+
+.login-input {
+  .v-input {
+    font-size: $font-size-14;
+
+    .v-label {
+        top:-21px !important;
+        left: -16px !important;
+        height: 15px !important;
+        line-height: 15px !important;
+        font-size: $font-size-base !important;
+        color: $primary;
+    }
+
+    legend {
+        display: none;
+    }
+
+  }
+
+  .v-input__slot { 
+    transition: none;
+    margin-bottom: 0 !important;
+  }
+
+  .v-input__append-inner {
+    z-index: 1;
+  }
+  .v-text-field.v-text-field--enclosed {
+    padding-top: 21px;
+  }
+
+  .v-text-field--outlined {
+
+    fieldset {
+        top: 0!important;
+        border-width: 1px!important;
+        border-style: solid!important;
+        border-color: $border-default!important;
+        background-color: #FAFBFC!important;
+    }
+
+    &.error--text {
+      label
+      fieldset {
+        border-color: $error!important;
+      }
+    }
+  
+    .v-input__slot {
+        padding: 0 16px !important;
+        min-height: 48px !important;
+        border-radius: 8px!important;
+    }
+
+    &:not(.v-input--is-focused):not(.v-input--has-state) {
+        & > .v-input__control fieldset {
+            border-color: $border-default;
+        }
+    }
+    &.v-input--has-state fieldset{
+        border-color: $border-default !important;
+    }
+
+    &.v-input--is-focused fieldset{
+        border-width: 1px !important;
+        border-color: $point-light !important;
+    }
+  }
+  .v-application--is-ltr .v-text-field .v-label {
+    transform-origin: 0;
+  }
+
+  .v-text-field--outlined .v-label--active { 
+    transform: none !important;
+    color: $primary !important;
+  }
+
+  .v-text-field__details {
+    padding: 8px 0 0 0!important;
+    font-size: 10px!important;
+  }
+
+  .error--text {
+      fieldset {
+        border-color: $error!important;
+    }
+  }
+
 }

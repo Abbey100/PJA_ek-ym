@@ -13,6 +13,8 @@ import Icons from '@/pages/Icons/Icons'
 import Charts from '@/pages/Charts/Charts'
 import Error from "@/pages/Error/Error";
 import Login from "@/pages/Login/Login";
+import CreateAccount from "@/pages/CreateAccount/CreateAccount";
+import ResetPassword from "@/pages/ResetPassword/ResetPassword";
 import ProjectList from "@/pages/ProjectList/ProjectList";
 
 Vue.use(Router);
@@ -29,6 +31,16 @@ export default new Router({
           path: 'Login',
           name: 'Logn',
           component: Login,
+        },
+        {
+          path: 'CreateAccount',
+          name: 'Create Account',
+          component: CreateAccount,
+        },
+        {
+          path: 'ResetPassword',
+          name: 'Reset Password',
+          component: ResetPassword,
         },
       ],
     },

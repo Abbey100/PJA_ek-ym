@@ -1,32 +1,32 @@
 <template>
-  <v-footer class="px-0 mt-10" color="transparent">
-    <v-row no-gutters>
-      <div>
+    <v-footer 
+      height="80"
+      width="100%"
+      class="d-flex justify-center align-start pt-4"
+      >
+        <!-- Terms of Service -->
         <v-btn
-              v-for="link in links"
-              :key="link.link"
-              color="primary"
-              text
-              :href="link.link"
-              class="text-capitalize ml-1 font-weight-regular"
-          >
-            {{ link.text }}
-          </v-btn>
-      </div>
-      <div>
-        <v-btn
-                v-for="icon in icons"
-                :key="icon.icon"
-                :href="icon.link"
-                class="mr-1"
-                :color=config.light.textColor
-                icon
+          :ripple="false"
+          class="text-capitalize px-0 text-decoration-underline font-weight-regular px-2"
+          text
+          underline
         >
-          <v-icon size="24px">{{ icon.icon }}</v-icon>
+          Terms of Service
         </v-btn>
-      </div>
-    </v-row>
-  </v-footer>
+
+        <!-- Support -->
+        <v-btn
+          :ripple="false"
+          class="text-capitalize px-0 text-decoration-underline font-weight-regular px-2"
+          text
+          underline
+        >
+          Support
+        </v-btn>
+
+        <!-- copyright -->
+        <div class="copyright px-2">©2014-2020 Flatlogic, LLC. All rights reserved.</div>
+    </v-footer>
 </template>
 
 <script>

@@ -2,18 +2,32 @@
   <v-container fluid>
 
     <div class="login-part d-flex align-center justify-start flex-column ">
-      <div class="login-wrapper">
+      <div class="login-wrapper ">
           <v-form>
             <v-container>
               <v-row class="flex-column login-title">
                 <v-col>
                   <p class="login-slogan text-left font-weight-light">
-                  Great to<br>Have you here!</p>
-                  <p class="login-descript font-weight-regular">You can login to access your workspace.</p>
+                  Welcome to<br>A-RRANGER!</p>
+                  <p class="login-descript font-weight-regular">Create Your Account!</p>
                 </v-col>
  
                 <v-form>
-                  <v-col>
+                  <v-col class="login-input">
+                    <!-- 이름 입력 -->
+                    <v-text-field 
+                      ref="name"
+                      :rules="[() => !!name || 'This field is required']"
+                      v-model="name"
+                      label="Full Name"
+                      placeholder="이름"
+                      text-color="primary"
+                      hide-details
+                      required
+                      outlined
+                    >
+                    </v-text-field>
+
                     <!-- 이메일 입력 -->
                     <v-text-field 
                       v-model="email"
@@ -22,6 +36,7 @@
                       label="Email"
                       placeholder="Placeholder"
                       text-color="primary"
+                      class="mt-4"
                       hide-details
                       required
                       outlined
@@ -57,20 +72,35 @@
                       </template>
                     </v-text-field>
 
+                    <!-- 비밀번호 확인 -->
+                    <!-- 오류 시 error 추가 / hide-details 삭제 -->
+                    <v-text-field
+                      type="password"
+                      label="Confirm Password"
+                      class="mt-4"
+                      error
+                      required
+                      outlined
+                    >
+                      <template v-slot:append>
+                        <img
+                          width="16"
+                          height="16"
+                          src="@/assets/img/icon/icon-16__eye-hide.png"
+                          alt=""
+                        >
+                      </template>
+                    </v-text-field>
                   </v-col>
 
-                  <!-- 비밀번호 찾기 -->
-                  <v-col class="forget-password d-flex justify-end pb-6">
-                      <v-btn 
-                        class="text-capitalize text-decoration-underline font-weight-regular px-0 mt-2"
-                        :ripple="false"
-                        text 
-                        small
-                      >
-                        Forget Password</v-btn>
+                  <!-- 옵션 선택 -->
+                  <v-col class="sign-in-option">
+                    <input type="checkbox">
+                    <label for="">I have read and agree to the Terms of Service</label>
                   </v-col>
+
                   
-                  <!-- 로그인 버튼 -->
+                  <!-- 가입 버튼 -->
                   <v-col class="btn-login mt-6">
                     <v-btn
                         class="text-capitalize"
@@ -86,23 +116,6 @@
                       Sign in</v-btn>
                   </v-col>
 
-                  <v-col cols="12" class="d-flex justify-center my-10 font-size-14 ">
-                    <span> or </span>
-                  </v-col>
-
-                  <!-- 구글 버튼 -->
-                  <v-col>
-                    <v-btn 
-                      :ripple="false"
-                      height="48"  
-                      block 
-                      outlined  
-                      elevation="0" 
-                      class="google text-capitalize font-weight-regular"
-                      >
-                      <v-img src="@/assets/google.svg" max-width="24" class="mr-4"></v-img>
-                      Sign in with Google</v-btn>
-                  </v-col>
                 </v-form>
               </v-row>
             </v-container>
@@ -112,16 +125,16 @@
 
     <footer />
 
-    
   </v-container>
 </template>
 
 <script>
 
   export default {
-    name: 'Login',
+    name: 'CreateAccount',
     data() {
       return {
+        name: '',
         email: 'admin@flatlogic.com',
         emailRules: [
           v => !!v || 'E-mail is required',
@@ -134,9 +147,8 @@
         passRules: [
           v => !!v || 'Password is required',
           v => v.length >= 6 || 'Min 6 characters'
-        ]
-
-        // 패스워드 아이콘 상태 변경
+        ],
+        checkbox: true,
      
       }
     },
@@ -155,4 +167,4 @@
 
 </script>
 
-<style src="./Login.scss" lang="scss"/>
+<style src="../Login/Login.scss" lang="scss"/>
