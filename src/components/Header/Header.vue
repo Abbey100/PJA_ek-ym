@@ -7,18 +7,20 @@
     >
     <v-row class="d-flex align-between justify-space-between">
       <v-col class="logo">
-          <v-img src="@/assets/img/logo.png" height="24" contain></v-img>
+        <router-link to="/Login">
+          <v-img src="@/assets/img/logo.png" height="32" contain></v-img>
+        </router-link>
       </v-col>
 
       <v-col class="create d-flex align-center justify-end">
         <span class="pr-4 font-weight-regul">New to A-RRANGER?</span>
-        <v-btn
-          :ripple="false"
-          primary
-          outlined
-          >
+  
+        <router-link
+          to="/CreateAccount"
+          class="create-account px-4"
+        >
           Create an Account
-        </v-btn>
+        </router-link>
       </v-col>
     </v-row>
 

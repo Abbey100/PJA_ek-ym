@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
 
-    <div class="login-part d-flex align-center justify-start flex-column ">
+    <div class="login-part d-flex align-center flex-column justify-space-between">
       <div class="login-wrapper ">
           <v-form>
             <v-container>
@@ -22,8 +22,8 @@
                       label="Full Name"
                       placeholder="이름"
                       text-color="primary"
-                      hide-details
                       required
+                      hide-details
                       outlined
                     >
                     </v-text-field>
@@ -37,8 +37,8 @@
                       placeholder="Placeholder"
                       text-color="primary"
                       class="mt-4"
-                      hide-details
                       required
+                      hide-details
                       outlined
                     >
                       <template v-slot:append>
@@ -58,8 +58,8 @@
                       type="password"
                       label="Password"
                       class="mt-4"
-                      hide-details
                       required
+                      hide-details
                       outlined
                     >
                       <template v-slot:append>
@@ -73,30 +73,55 @@
                     </v-text-field>
 
                     <!-- 비밀번호 확인 -->
-                    <!-- 오류 시 error 추가 / hide-details 삭제 -->
                     <v-text-field
-                      type="password"
+                      type="text"
                       label="Confirm Password"
-                      class="mt-4"
-                      error
+                      value="testpassword11"
+                      class="login-error mt-4"
                       required
+                      hide-details
                       outlined
                     >
                       <template v-slot:append>
                         <img
                           width="16"
                           height="16"
-                          src="@/assets/img/icon/icon-16__eye-hide.png"
+                          src="@/assets/img/icon/icon-16__eye.png"
                           alt=""
                         >
                       </template>
                     </v-text-field>
+                    <div class="text-field__error-msg">· Password are NOT Matching</div>
                   </v-col>
 
                   <!-- 옵션 선택 -->
-                  <v-col class="sign-in-option">
-                    <input type="checkbox">
-                    <label for="">I have read and agree to the Terms of Service</label>
+                  <!-- Checkbox 템플릿 -->
+                  <v-col class="sign-in-option mt-6">
+                    <div class="checkbox-group d-flex align-center justify-start column-flex">
+                        <div class="checkbox-control">
+                          <input type="checkbox" id="terms">
+                          <label for="terms"></label>
+                        </div>
+                      <span>I have read and agree to the <a href="#" class="font-weight-medium">Terms of Service</a></span>
+                    </div>
+
+                    <!-- Checkbox 템플릿 -->
+                    <div class="checkbox-group d-flex align-center justify-start column-flex">
+                      <div class="checkbox-control">
+                        <input id="terms" type="checkbox">
+                        <label form="terms"></label>
+                      </div>
+                      <span>I have read and agree to the  <a href="#" class="font-weight-medium"> Privacy Policy</a></span>
+                    </div>  <!-- Checkbox 템플릿 끝 -->
+
+                    <!-- Checkbox 템플릿 -->
+                    <div class="checkbox-group d-flex align-center justify-start column-flex">
+                      <div class="checkbox-control">
+                        <input id="terms" type="checkbox">
+                        <label form="terms"></label>
+                      </div>
+                      <span>Keep me updated on news and offers</span>
+                    </div>  <!-- Checkbox 템플릿 끝 -->
                   </v-col>
 
                   
@@ -113,7 +138,7 @@
                         color="primary"
                         @click="login"
                     >
-                      Sign in</v-btn>
+                      Sign up</v-btn>
                   </v-col>
 
                 </v-form>
@@ -121,17 +146,23 @@
             </v-container>
           </v-form>
       </div>
+
+      <Footer />
     </div>
 
-    <footer />
 
   </v-container>
 </template>
 
 <script>
+  import Footer from '@/components/Footer/Footer';
+  // import Checkbox from '@/components/Checkbox/Checkbox';
 
   export default {
     name: 'CreateAccount',
+    // components: {Footer, Checkbox},
+    components: {Footer,},
+
     data() {
       return {
         name: '',
@@ -148,21 +179,19 @@
           v => !!v || 'Password is required',
           v => v.length >= 6 || 'Min 6 characters'
         ],
-        checkbox: true,
-     
       }
     },
-    // methods: {
-    //   login(){
-    //     window.localStorage.setItem('authenticated', true);
-    //     this.$router.push('/import');
-    //   }
-    // },
-    // created() {
-    //   if (window.localStorage.getItem('authenticated') === 'true') {
-    //     this.$router.push('/import');
-    //   }
-    // }
+    methods: {
+      login(){
+        window.localStorage.setItem('authenticated', true);
+        this.$router.push('/import');
+      }
+    },
+    created() {
+      if (window.localStorage.getItem('authenticated') === 'true') {
+        this.$router.push('/import');
+      }
+    }
   }
 
 </script>

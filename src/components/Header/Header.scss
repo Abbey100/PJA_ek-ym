@@ -18,12 +18,7 @@
       cursor: pointer;
     }
   }
-  .v-btn:hover:before {
-    top: 2px;
-    left: 2px;
-    bottom: 2px;
-    right: 2px;
-  }
+
 
   //theme override
   background-color: #fff!important;
@@ -33,7 +28,7 @@
   border-color: $border-default!important;
 
   .v-toolbar__content {
-    padding: 20px 24px;
+    padding: 16px 24px;
   }
 
   .create {
@@ -56,14 +51,27 @@
   }
   
   .logo {
-    max-width: 182px;
+    max-width: 205px;
     .v-image__image {
-      width: 182px;
+      width: 205px;
     }
     img { 
       background-size:contain
     }
   }
+
+  .create-account  {
+    height: 32px;
+    line-height: 31px;
+    font-size: 13px;
+    color: $point-deep !important;
+    border: 1px solid $point-deep;
+    border-radius: 8px;
+    text-decoration: none;;
+  }
+
+
 }
+
 
 

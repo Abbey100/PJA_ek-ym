@@ -1,12 +1,16 @@
 @import "../../styles/app";
 
-.v-footer {
-  height: 80px;
+.footer {
+  width:100%;
   color: $primary;
+
+  a {
+    font-size: $font-size-base;
+    line-height: 16px;
+  }
   
   .copyright {
-    height: 36px !important;
-    line-height: 36px !important;
+    line-height: 16px !important;
     font-size: $font-size-14;
   }
 }

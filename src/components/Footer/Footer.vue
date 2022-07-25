@@ -1,54 +1,29 @@
 <template>
-    <v-footer 
-      height="80"
-      width="100%"
-      class="d-flex justify-center align-start pt-4"
-      >
+    <div class="d-flex justify-center align-center mt-10 mb-8 footer">
         <!-- Terms of Service -->
-        <v-btn
-          :ripple="false"
-          class="text-capitalize px-0 text-decoration-underline font-weight-regular px-2"
-          text
-          underline
-        >
-          Terms of Service
-        </v-btn>
+        <router-link 
+          to="/#"
+          class="text-capitalize font-weight-regular px-2"
+          >
+          Terms of Service</router-link>
 
         <!-- Support -->
-        <v-btn
-          :ripple="false"
-          class="text-capitalize px-0 text-decoration-underline font-weight-regular px-2"
-          text
-          underline
-        >
-          Support
-        </v-btn>
+        <router-link 
+          to="/#"
+          class="text-capitalize font-weight-regular px-2"
+          >
+          Support</router-link>
 
         <!-- copyright -->
         <div class="copyright px-2">©2014-2020 Flatlogic, LLC. All rights reserved.</div>
-    </v-footer>
+    </div>
 </template>
 
 <script>
-import config from '../../config';
 
 export default {
   name: 'Footer',
 
-  data: () => ({
-    config,
-    icons: [
-      {icon: 'mdi-facebook', link: 'https://twitter.com/flatlogic/'},
-      {icon: 'mdi-twitter', link: 'https://www.facebook.com/flatlogic'},
-      {icon: 'mdi-github', link: 'https://github.com/flatlogic/'},
-
-    ],
-    links: [
-      {text: 'Flatlogic', link: 'https://flatlogic.com/'},
-      {text: 'About Us', link: 'https://flatlogic.com/about'},
-      {text: 'Blog', link: 'https://flatlogic.com/blog'},
-    ]
-  }),
 }
 </script>
 
