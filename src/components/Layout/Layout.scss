@@ -1,8 +1,11 @@
 @import '../../styles/app.scss';
 
-.v-main__wrap {
-  padding: 70px $content-padding $content-padding;
-}
 .content {
-  background-color: $body-bg;
+  background-color: $white-background !important;
+  .v-main__wrap {
+    padding: $header-height 0 0 $header-height;
+    > .container  {
+      overflow-y: auto;
+    }
+  }
 }

@@ -1,0 +1,83 @@
+@import '../../styles/app';
+
+.gnb-bar {
+    position: absolute;
+    top: $header-height;
+    left: 0;
+    padding: 40px 12px;
+    width: $header-height;
+    height: calc(100vh - $header-height);
+    background-color: $primary;
+    z-index: 1;
+
+    .gnb-list {
+        padding: 0;
+
+        .gnb-item {
+            position: relative;
+            span {
+                font-size: 0;
+                height: 0;
+                padding-top: 40px;
+                display: inline-block;
+            }
+            a {
+                display: block;
+                width: 100%;
+                padding-top: 40px;
+                height: 40PX;
+                background-image: url('../../assets/img/GNB.png');
+                background-size: 40px auto;
+                background-repeat: no-repeat;
+                overflow: hidden;
+            }
+
+            &.selected {
+                border-radius: 12px;
+                background-color: $point-deep;
+            }
+
+        }
+
+        .gnb__project-create{
+           a { 
+                background-position: 0 -40px ;
+            }
+            &.selected {
+                a {
+                    background-position: 0 -80px;
+                }
+            }
+        }
+
+        .gnb__project-open{
+            a { 
+                 background-position: 0 -120px;
+            }
+            &.selected {
+                a {
+                    background-position: 0 -80px;
+                }
+            }
+         }
+
+         .gnb__project-import{
+            a { 
+                background-position: 0 -200px;
+            }
+            &.selected {
+                a {
+                    background-position: 0 -160px;
+                }
+            }
+         }
+        .gnb__project-import a{
+            background-position: 0 -200px;
+            &.selected {
+                background-position: 0 -160px;
+            }
+        }
+
+
+    }
+}

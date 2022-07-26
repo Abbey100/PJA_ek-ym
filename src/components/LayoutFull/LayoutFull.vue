@@ -1,7 +1,7 @@
 <template>
     <v-app class="pa-6">
         <Header />
-        <v-main class="content">
+        <v-main class="content-full">
             <router-view />
         </v-main>
     </v-app>

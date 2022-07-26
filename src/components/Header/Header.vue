@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
     class="main-header"
-    height="65"
+    height="64"
     elevation="0"
     fixed
     >

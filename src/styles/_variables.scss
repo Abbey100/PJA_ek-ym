@@ -28,11 +28,21 @@ $grey-default:      #666666;
 $grey-light:        #C9C9C9;
 $border-grey-01:    #EFEEF1;
 $border-default:    #DEDFE0;
+$border-light :     #F5F3F8;
+
+$white-background:  #F8FAFB;
+$white-background-hover:  #FAFDFF;
 
 $point-light:       #7C99FF;
 $point-deep:        #5551FF;
 
 $card-title-color:  $text-color;
+
+$unselect:          #9AA0B3;
+
+
+
+
 
 // 기본 폰트 변경
 $body-font-family: 'Spoqa Han Sans Neo', 'sans-serif';
@@ -60,6 +70,8 @@ $font-size-16 : 16px;
 $font-size-14 : 14px;
 $font-size-base : 12px;
 
+$title__24 : 24px;
+
 
 
 // Card //
@@ -68,3 +80,6 @@ $card-shadow: 0 3px 11px 0 #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9
 // Buttons //
 $button-shadow: 0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A;
 
+
+// header //
+$header-height: 64px;

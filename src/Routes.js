@@ -1,10 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
+// component
 import Layout from '@/components/Layout/Layout';
 import LayoutFull from '@/components/LayoutFull/LayoutFull';
 
 // Pages
+import CreateProject from '@/pages/CreateProject/CreateProject';
 import Import from '@/pages/Import/Import';
 import Typography from '@/pages/Typography/Typography'
 import Tables from '@/pages/Tables/Basic'
@@ -50,6 +52,11 @@ export default new Router({
     name: 'Layout',
     component: Layout,
     children: [
+      {
+        path: 'CreateProject',
+        name: '프로젝트 생성',
+        component: CreateProject,
+      },
       {
         path: 'import',
         name: '데이터 불러오기',
