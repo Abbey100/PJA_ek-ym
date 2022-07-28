@@ -1,0 +1,22 @@
+@import '../../styles/app';
+
+
+.ico {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+    background-image: url('../../assets/img/ico-16.svg');
+    background-position-x: 0;
+
+
+    &.ico__close {
+        background-position-y: -208px ;
+    }
+  
+    &.ico__select-caret {
+        background-position-y: -16px ;
+    }
+  
+  }
+  

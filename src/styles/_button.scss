@@ -1,4 +1,26 @@
 .v-btn {
     border-radius: 8px!important;
     letter-spacing: 0;
+
+    &.point-deep {
+        background-color: $point-deep!important;
+        color: #fff!important;
+
+        
+        &.v-btn--outlined {
+            border-color: $point-deep!important;
+            color:$point-deep!important;
+            background-color: #fff!important;
+        }
+    }
+
+    &.btn-md {
+        .v-btn__content {
+            height: 32px;
+            font-weight: normal;
+            font-size: 13px;
+        }
+     
+    }
+
 }

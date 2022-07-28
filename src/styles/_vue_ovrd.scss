@@ -18,3 +18,161 @@
     margin: 0;
   }
 }
+
+
+// == form ================================================================================================ //
+
+.v-text-field {
+  margin-top: 0!important;
+  padding-top: 21px;
+}
+.v-input {
+  font-size: $font-size-14;
+
+  // override : 라벨  
+  .v-label {
+      top:-21px !important;
+      left: -16px !important;
+      height: 15px !important;
+      line-height: 15px !important;
+      font-size: $font-size-base !important;
+      color: $primary;
+  }
+
+  // overide : 셀렉트
+  &.v-select {
+
+    .v-label {
+      left:0 !important;
+    }
+
+    .v-input__slot {
+      &::before, 
+      &::after{
+        display: none;
+      }
+
+      .v-select__slot {
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid $border-default;
+        background-color: #FAFBFC;
+     
+      }
+    }
+    .v-input__append-inner {
+      align-self: center;
+      margin-right: 16px;
+    }
+  }
+
+  // override : animation 영역 삭제  
+  legend {
+      display: none;
+  }
+
+}
+
+
+// override : animation 영역 삭제  
+.v-input__slot { 
+  transition: none;
+  margin-bottom: 0 !important;
+}
+
+
+  // override : 아이콘 depth
+.v-input__append-inner {
+  z-index: 1;
+}
+
+// override : 상단 라벨 시 라벨 영역
+.v-text-field.v-text-field--enclosed {
+  padding-top: 21px;
+}
+
+// ovverride : 오류 메세지 영역
+.text-field__error-msg{
+  display: none;
+
+  padding: 8px 0 0 0!important;
+  font-size: 10px!important;
+  color: $error;
+}
+  // override : 상단 라벨 시 라벨 영역
+.v-text-field--outlined {
+    
+  transition : none;
+    // Error 시
+  &.login-error {
+    fieldset {
+      border-color: $error!important;
+    }
+    & + .text-field__error-msg{
+      display: block;
+    }
+  }
+
+  // override : input 기본 스타일
+  fieldset {
+      top: 0!important;
+      border-width: 1px!important;
+      border-style: solid!important;
+      border-color: $border-default!important;
+      background-color: #FAFBFC!important;
+  }
+
+  .v-input__slot {
+      padding: 0 16px !important;
+      min-height: 48px !important;
+      border-radius: 8px!important;
+  }
+
+  // override : focus 등의 action
+  &:not(.v-input--is-focused):not(.v-input--has-state) {
+      & > .v-input__control fieldset {
+          border-color: $border-default;
+      }
+  }
+  &.v-input--has-state fieldset{
+      border-color: $border-default !important;
+  }
+
+  &.v-input--is-focused fieldset{
+      border-width: 1px !important;
+      border-color: $point-light !important;
+  }
+}
+
+// override : animation 리셋
+.v-application--is-ltr .v-text-field .v-label {
+  transform-origin: 0;
+}
+
+.v-label--active { 
+  transform: none !important;
+  color: $primary !important;
+}
+
+input[type="password"] {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif ;  
+  font-size: 14px;  
+  &::-webkit-input-placeholder {    
+    transform: scale(0.62);   
+    transform-origin: 0 46%;  
+  }  
+  &::-moz-placeholder {    
+    font-size: 14px;    opacity: 1;  
+  }  
+  &:-ms-input-placeholder {    
+    font-size: 14px;    
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  }
+}
+
+.v-application .error--text label{
+  color: $primary !important;
+  caret-color: $primary  !important;
+  transition:none!important;
+  animation:none !important;
+}

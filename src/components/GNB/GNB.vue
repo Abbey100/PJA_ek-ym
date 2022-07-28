@@ -1,5 +1,5 @@
 <template>
-    <div class="gnb-bar" >
+    <div class="gnb-bar d-flex align-center flex-column justify-space-between" >
         <ul class="gnb-list">
 
             <!-- 메뉴 선택자 : selected-->
@@ -19,6 +19,9 @@
                 </router-link>
             </li>
         </ul>
+        <v-avatar size="40">
+            <v-img src="@/assets/img/avatar.svg" height="40" contain></v-img>
+        </v-avatar>
     </div>
 </template>
 
