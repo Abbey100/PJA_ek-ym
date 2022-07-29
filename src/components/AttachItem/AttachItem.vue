@@ -5,17 +5,19 @@
                 <span class="badge badge-grey font-weight-medium mr-4">{{fileType}}</span>
                 <span class="file-name">{{fileName}}</span>
             </v-col>
-            <v-col class="close d-flex align-end column-flex justify-center ">
+
+            <!-- 닫기 class : close  -->
+            <v-col class="close d-flex align-cetner column-flex justify-center ">
                 <v-btn
                     elevation="0"
                     :ripple="false"
-                    height="16"
+                    height="36"
+                    width="36"
                     icon
                     >
-                        <i class="ico ico__close"></i>
-                    </v-btn>
-            
-            </v-col>
+                    <i class="ico ico__close"></i>
+                </v-btn>
+            </v-col>  
         </v-row>
         
     </div>

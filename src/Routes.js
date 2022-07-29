@@ -5,10 +5,13 @@ import Router from 'vue-router';
 import Layout from '@/components/Layout/Layout';
 import LayoutFull from '@/components/LayoutFull/LayoutFull';
 
-//Sample
+// 작업 목록
 import Work from "@/pages/Work/Work";
-import PageProgress from "@/pages/Progress/PageProgress";
 
+//Progress
+import PageProgress from "@/pages/Progress/Page";
+import FileProgress from '@/pages/Progress/File';
+import CircularProgress from '@/pages/Progress/Loader';
 
 // Pages
 // CreateProject
@@ -73,6 +76,16 @@ export default new Router({
     name: 'Layout',
     component: Layout,
     children: [
+      {
+        path: 'FileProgress',
+        name: '파일 가져오기 진행상황 표시',
+        component: FileProgress,
+      },
+      {
+        path: 'CircularProgress',
+        name: '데이터 로딩',
+        component: CircularProgress,
+      },
       {
         path: 'CreateProject',
         name: '프로젝트 생성',

@@ -3,6 +3,7 @@
     <!-- Page Progress -->
     <!--
         기본 컴포넌트 사용
+        구분 클래스 : page
         위치 상단 63px 고정
         배경 라인색 :  #F5F3F8
         샘플 진행 상태 값 : 80
@@ -11,7 +12,7 @@
       class="page"
       fixed="63"
       value="80"
-      background-color="#F5F3F8"
+      background-color="#EBEEF1"
       >
     </v-progress-linear>
 

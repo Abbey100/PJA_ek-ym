@@ -8,9 +8,14 @@
     border: 1px solid $border-default;
     border-radius: 8px;
 
-    span {
+    > .row {
+        height: 40px;
     }
-    
+
+    .percent {
+        max-width: 49px;
+    }
+
     .badge {
         min-width: 40px;
         padding: 0 8px;
@@ -33,7 +38,7 @@
 
     .close {
         max-width: 50px;
-        padding-right: 18px;
+        // padding-right: 18px;
 
         button::before {
             display: none;
