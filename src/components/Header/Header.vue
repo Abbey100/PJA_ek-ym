@@ -5,10 +5,10 @@
     elevation="0"
     fixed
     >
-    <v-row class="d-flex align-between justify-space-between">
+    <v-row class="d-flex column-flex align-between justify-space-between">
       <v-col class="logo">
         <router-link to="/Login">
-          <v-img src="@/assets/img/logo.png" height="32" contain></v-img>
+          <v-img src="@/assets/img/logo.png" height="24" contain></v-img>
         </router-link>
       </v-col>
 

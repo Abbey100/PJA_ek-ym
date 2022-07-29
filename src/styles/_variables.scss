@@ -83,3 +83,13 @@ $button-shadow: 0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 
 
 // header //
 $header-height: 64px;
+
+
+
+$progress-linear-stripe-gradient:
+    linear-gradient(
+        90deg, 
+        rgba(89,194,188,1) 0%, 
+        rgba(0,125,214,1) 50%, 
+        rgba(106,103,255,1) 100%
+    ) !default;

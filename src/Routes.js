@@ -5,8 +5,14 @@ import Router from 'vue-router';
 import Layout from '@/components/Layout/Layout';
 import LayoutFull from '@/components/LayoutFull/LayoutFull';
 
+//Sample
+import Work from "@/pages/Work/Work";
+import PageProgress from "@/pages/Progress/PageProgress";
+
+
 // Pages
 import CreateProject from '@/pages/CreateProject/CreateProject';
+import DataEdit from '@/pages/Project/DataEdit';
 import Import from '@/pages/Import/Import';
 import Typography from '@/pages/Typography/Typography'
 import Tables from '@/pages/Tables/Basic'
@@ -30,6 +36,11 @@ export default new Router({
       component: LayoutFull,
       children: [
         {
+          path: 'work',
+          name: 'work',
+          component: Work,
+        },
+        {
           path: 'Login',
           name: 'Logn',
           component: Login,
@@ -44,6 +55,11 @@ export default new Router({
           name: 'Reset Password',
           component: ResetPassword,
         },
+        {
+          path: 'PageProgress',
+          name: 'Page Progress',
+          component: PageProgress,
+        },
       ],
     },
     {
@@ -56,6 +72,11 @@ export default new Router({
         path: 'CreateProject',
         name: '프로젝트 생성',
         component: CreateProject,
+      },
+      {
+        path: 'DataEdit',
+        name: '데이터 편집',
+        component: DataEdit,
       },
       {
         path: 'import',

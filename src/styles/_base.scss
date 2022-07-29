@@ -200,3 +200,14 @@ html {
   }
 }
 
+/* == Progress ======================================================================================= */
+.v-progress-linear--fixed.page {
+  z-index: 6;
+}
+
+.v-progress-linear__determinate {
+  background: $progress-linear-stripe-gradient;
+}
+.v-progress-linear__indeterminate {
+  background: $progress-linear-stripe-gradient;
+}
