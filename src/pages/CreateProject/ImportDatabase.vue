@@ -68,23 +68,6 @@
                     </div>
                 </div>
 
-                <!-- 파일 가져오기 팝업 -->
-                <div class="card-base active import-file">
-                    <div class="wrap d-flex flex-column justify-space-between">
-                        <div class="card-title">
-                            <span class="font-weight-regular">File Upload from</span>
-                            <span class="font-weight-bold">This Computer</span>
-                        </div>
-                        <AttachItem 
-                            :fileType="fileType"
-                            :fileName="fileName"
-                        />
-                        <div class="descript">
-                            Locate one or more files on your computer to upload
-                        </div>
-                    </div>
-                </div>
-
                 <!-- 데이터 베이스 가져오기 팝업 -->
                 <div class="card-base active import-database d-block">
                     <div class="wrap d-flex flex-column">
@@ -264,17 +247,10 @@
 </template>
 
 <script>
-  import AttachItem from '@/components/AttachItem/AttachItem';
 
 
     export default {
         name: 'ImportFile',
-        components: {AttachItem,},
-        data : () => ({
-            fileType: "CSV",
-            fileName: "전국문화축제표준데이터.csv",
-              
-        }),
     }
 
 </script>
