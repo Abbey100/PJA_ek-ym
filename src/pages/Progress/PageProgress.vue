@@ -1,5 +1,12 @@
 <template>
   <v-container fluid>
+    <!-- Page Progress -->
+    <!--
+        기본 컴포넌트 사용
+        위치 상단 63px 고정
+        배경 라인색 :  #F5F3F8
+        샘플 진행 상태 값 : 80
+    -->
     <v-progress-linear 
       class="page"
       fixed="63"
@@ -7,6 +14,11 @@
       background-color="#F5F3F8"
       >
     </v-progress-linear>
+
+    <!-- White page dim -->
+    <!-- 
+        기본 컴포넌트 색상 및 opacity 변경
+    -->
     <v-overlay 
       :value="overlay"
       color="#fff"
@@ -14,6 +26,9 @@
       >
     </v-overlay>
 
+
+
+  <!-- == 로그인 페이지 내용 : /Logoin 과 동일 ======================================================== -->
     <div class="login-part d-flex align-center flex-column justify-space-between">
       <div class="login-wrapper ">
         <v-form>

@@ -11,7 +11,12 @@ import PageProgress from "@/pages/Progress/PageProgress";
 
 
 // Pages
+// CreateProject
 import CreateProject from '@/pages/CreateProject/CreateProject';
+import ImportFile from '@/pages/CreateProject/ImportFile';
+import ImportDatabase from '@/pages/CreateProject/ImportDatabase';
+
+
 import DataEdit from '@/pages/Project/DataEdit';
 import Import from '@/pages/Import/Import';
 import Typography from '@/pages/Typography/Typography'
@@ -72,6 +77,16 @@ export default new Router({
         path: 'CreateProject',
         name: '프로젝트 생성',
         component: CreateProject,
+      },
+      {
+        path: 'ImportFile',
+        name: '파일 가져오기',
+        component: ImportFile,
+      },
+      {
+        path: 'ImportDatabase',
+        name: '데이터베이스 가져오기',
+        component: ImportDatabase,
       },
       {
         path: 'DataEdit',
