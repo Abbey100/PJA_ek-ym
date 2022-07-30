@@ -1,9 +1,16 @@
 @import "../../styles/app";
-.v-footer {
-  .row {
-    justify-content: center;
-    @include media-breakpoint-up(sm) {
-      justify-content: space-between;
-    }
+
+.footer {
+  width:100%;
+  color: $primary;
+
+  a {
+    font-size: $font-size-base;
+    line-height: 16px;
+  }
+  
+  .copyright {
+    line-height: 16px !important;
+    font-size: $font-size-14;
   }
 }

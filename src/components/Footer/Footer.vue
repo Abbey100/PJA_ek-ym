@@ -1,54 +1,29 @@
 <template>
-  <v-footer class="px-0 mt-10" color="transparent">
-    <v-row no-gutters>
-      <div>
-        <v-btn
-              v-for="link in links"
-              :key="link.link"
-              color="primary"
-              text
-              :href="link.link"
-              class="text-capitalize ml-1 font-weight-regular"
+    <div class="d-flex justify-center align-center mt-10 mb-8 footer">
+        <!-- Terms of Service -->
+        <router-link 
+          to="/#"
+          class="text-capitalize font-weight-regular px-2"
           >
-            {{ link.text }}
-          </v-btn>
-      </div>
-      <div>
-        <v-btn
-                v-for="icon in icons"
-                :key="icon.icon"
-                :href="icon.link"
-                class="mr-1"
-                :color=config.light.textColor
-                icon
-        >
-          <v-icon size="24px">{{ icon.icon }}</v-icon>
-        </v-btn>
-      </div>
-    </v-row>
-  </v-footer>
+          Terms of Service</router-link>
+
+        <!-- Support -->
+        <router-link 
+          to="/#"
+          class="text-capitalize font-weight-regular px-2"
+          >
+          Support</router-link>
+
+        <!-- copyright -->
+        <div class="copyright px-2">©2014-2020 Flatlogic, LLC. All rights reserved.</div>
+    </div>
 </template>
 
 <script>
-import config from '../../config';
 
 export default {
   name: 'Footer',
 
-  data: () => ({
-    config,
-    icons: [
-      {icon: 'mdi-facebook', link: 'https://twitter.com/flatlogic/'},
-      {icon: 'mdi-twitter', link: 'https://www.facebook.com/flatlogic'},
-      {icon: 'mdi-github', link: 'https://github.com/flatlogic/'},
-
-    ],
-    links: [
-      {text: 'Flatlogic', link: 'https://flatlogic.com/'},
-      {text: 'About Us', link: 'https://flatlogic.com/about'},
-      {text: 'Blog', link: 'https://flatlogic.com/blog'},
-    ]
-  }),
 }
 </script>
 

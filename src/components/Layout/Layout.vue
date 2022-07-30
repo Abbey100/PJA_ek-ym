@@ -1,7 +1,7 @@
 <template>
     <v-app class="pa-6">
         <Header />
-        <Sidebar />
+        <GNB />
         <v-main class="content">
             <router-view />
 <!--            <Footer />-->
@@ -11,14 +11,15 @@
 
 <script>
     import Header from '@/components/Header/Header';
-    import Sidebar from '@/components/Sidebar/Sidebar';
+    import GNB from '@/components/GNB/GNB';
+
+    // import Sidebar from '@/components/Sidebar/Sidebar';
     // import Footer from "@/components/Footer/Footer";
-    import './Layout.scss';
 
     export default {
         name: 'Layout',
         // components: {Footer, Header, Sidebar },
-        components: {Header, Sidebar },
+        components: {Header, GNB },
     };
 </script>
 

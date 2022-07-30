@@ -1,4 +1,6 @@
-
+html {
+  overflow-y: hidden;
+}
 .v-application {
   .page-title {
     font-size: 2.4rem;
@@ -82,6 +84,22 @@
   .no-gutters {
     margin: 0;
   }
+
+  // 폰트 사이즈 setting
+  .font-size-base {
+    font-size: $font-size-base;
+  }
+  .font-size-14 {
+    font-size: $font-size-14;
+  }
+
+  .font-sizes-16 {
+    font-size: $font-size-16;
+  }
+
+  .ft-grey-default {
+    color: $grey-default;
+  }
 }
 .mapContainer + footer.v-footer {
   display: none;
@@ -120,3 +138,105 @@
 }
 
 
+.v-application {
+  .icon-16 {
+      width: 16px;
+      height: 16px;
+      background-image: url(/src/ssets/img/icon-16.png);
+      background-repeat: no-repeat;
+
+    &.icon-mail { 
+      background-position: 0 0;
+    }
+  }
+
+}
+
+
+// list style reset {
+  ul {
+    > li {
+      list-style: none;
+  }
+}
+
+
+/* == Card ======================================================================================= */
+.card-base {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $border-light;
+  color: $primary;
+  background-color: #fff;
+
+  .wrap {
+    padding: 38px 46px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover, &:active {
+    border-color: $point-light;
+    background-color: $white-background-hover;
+    cursor: pointer;
+  }
+
+  &.active {
+    border-color: $point-deep;
+    border-width: 2px;
+    background-color: #fff;
+    cursor: default;
+  }
+
+  &:disabled, &.disabled {
+    opacity: .5;
+    border-color: $unselect;
+    border-width: 1px;
+    background-color: $grey-light;
+    cursor: default;
+  }
+}
+
+/* == Progress ======================================================================================= */
+
+.v-progress-linear{
+
+  &.page {
+    
+    &.v-progress-linear--fixed {
+      z-index: 6;
+    }
+
+    .v-progress-linear__determinate {
+      background: $progress-linear-stripe-gradient;
+    }
+    
+    .v-progress-linear__indeterminate {
+      background: $progress-linear-stripe-gradient;
+    }
+  }
+
+  &.file {
+    &.v-progress-linear--rounded {
+      border-radius: 8px;
+    }
+  }
+}
+
+.circular-progress {
+  $size : 128px;
+
+  width: $size;
+  height: $size; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 0 - ($size/2);
+  margin-left: 0 - ($size/2);
+  background-color: #fff;
+  border-radius: 16px;
+  z-index: 6;
+}
