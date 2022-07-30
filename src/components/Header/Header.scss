@@ -1,5 +1,6 @@
 @import "../../styles/app";
 .main-header {
+
   .v-list {
     .v-list-item:hover {
       background-color: #F3F5FF;
@@ -17,11 +18,58 @@
       cursor: pointer;
     }
   }
-  .v-btn:hover:before {
-    top: 2px;
-    left: 2px;
-    bottom: 2px;
-    right: 2px;
+
+
+  //theme override
+  background-color: #fff!important;
+  // box-shadow: none!important;
+  border-bottom-width: 1px ;
+  border-bottom-style: solid;
+  border-color: $border-default!important;
+
+  .v-toolbar__content {
+    padding: 16px 24px;
+  }
+
+  .create {
+    max-width: 400px;
+    span {
+      font-size: $font-size-base;
+      color: $grey-default;
+    }
+    .v-btn {
+      border-color: $point-deep !important;
+
+      &::before {
+        display: none;
+      }
+
+      .v-btn__content {
+        color:$point-deep !important;
+      }
+    }
+  }
+  
+  .logo {
+    max-width: 154px;
+    .v-image__image {
+      width: 154px;
+    }
+    img { 
+      background-position : 0 0
+    }
+  }
+
+  .create-account  {
+    height: 32px;
+    line-height: 31px;
+    font-size: 13px;
+    color: $point-deep !important;
+    border: 1px solid $point-deep;
+    border-radius: 8px;
+    text-decoration: none;;
   }
 }
+
+
 

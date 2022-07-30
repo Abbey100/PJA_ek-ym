@@ -1,0 +1,162 @@
+@import '../../styles/app';
+@import '../../components/icon/icon.scss';
+
+.create-project {
+
+    height: calc(100vh - 64px);
+
+
+    .wrap {
+        width: 1000px;
+        padding: 120px 0;
+        margin: 0 auto;
+
+            
+        @media screen and  (max-height: 768px) {
+            padding-top : 32px
+        }
+    }
+
+    .page-title { 
+        h1 {
+            display: block;
+            width: 100%;
+            height: 75px;
+            height: auto;
+            padding: 8px 0 17px;
+            font-size: 32px;
+            color: $primary;
+            border-bottom: 2px solid $primary;
+        }
+        .descript {
+            p {
+                 font-size: $font-size-16;
+                 color: $grey-default;
+                 margin-bottom: 6px;
+                 line-height: 24px;
+            }
+
+            span {
+                display: block;
+                font-size: $font-size-14;
+                line-height: 19px;
+                color : #969696;
+            }
+        }
+     
+    }
+
+    .get-data {
+        height: 364px;
+        position: relative;
+
+        .card-wrap {
+            height: 100%;
+            width: 100%;
+        }
+
+        &.import {
+            > .card-wrap{
+                height: 325px!important;
+                margin-top: 16px;
+            }
+            &.get-file {
+                > .active {
+                    &.import-file {
+                        left: 0;
+                        display: block!important;
+                    }
+                }
+            }
+            &.get-database {
+                > .active {
+                    &.import-database {
+                        right: 0;
+                        display: block!important;
+                    }
+                }
+            }
+
+            > .active {
+                position: absolute !important;
+                top: 0;
+
+                &.import-file, 
+                &.import-database {
+                    display: none;
+                }
+            }
+
+        }
+
+        .card-base {
+            width: calc(50% - 8px);
+            z-index: 1;
+        
+            .card-title {
+                span {
+                    display: block;
+                    font-size: $title__24;
+                    line-height: 32px;
+                    margin-bottom: 2px;
+                }
+            }
+        
+            .descript {
+                font-size: $font-size-16;
+                color: $grey-default;
+            }
+
+            &.active {
+                width: 944px;
+            }
+        
+        }
+    }
+
+    .btn-connect {
+        margin-top: 80px !important;
+        button  {
+            width: 343px;
+        }
+    }
+
+  
+}
+
+.active {
+
+    .name{
+        .v-input {
+            width: 343px;
+        }
+    }
+    .password {
+        .v-input {
+            width: 310px;
+        }
+    }
+   
+    .btn-group {
+        margin-top: 48px !important;
+
+        button {
+            width: 80px;
+        }
+
+        .v-btn--outlined {
+            &::before {
+                display: none;
+              }
+        }
+
+    }
+
+
+}
+
+.parse-data{
+    .parse {
+        max-width: 400px;
+    }
+}
