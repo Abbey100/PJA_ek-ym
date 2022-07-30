@@ -18,9 +18,8 @@ import CircularProgress from '@/pages/Progress/Loader';
 import CreateProject from '@/pages/CreateProject/CreateProject';
 import ImportFile from '@/pages/CreateProject/ImportFile';
 import ImportDatabase from '@/pages/CreateProject/ImportDatabase';
+import ParseCSV from '@/pages/CreateProject/ParseCSV';
 
-
-import DataEdit from '@/pages/Project/DataEdit';
 import Import from '@/pages/Import/Import';
 import Typography from '@/pages/Typography/Typography'
 import Tables from '@/pages/Tables/Basic'
@@ -102,9 +101,9 @@ export default new Router({
         component: ImportDatabase,
       },
       {
-        path: 'DataEdit',
-        name: '데이터 편집',
-        component: DataEdit,
+        path: 'ParseCSV',
+        name: '프로젝트 생성 파싱',
+        component: ParseCSV,
       },
       {
         path: 'import',
