@@ -130,7 +130,7 @@
                     <input id="" type="checkbox" checked>
                     <label form=""></label>
                   </div>
-                  <div class="text-group column-flex align-start">
+                  <div class="text-group">
                     <div class="d-flex justify-start">
                         <span class="px-2">Ignore first</span>
                         <span class="inline-input w-40">
@@ -153,7 +153,7 @@
                   </div>
 
                   <!-- input이 inline으로 들어가는 text group -->
-                  <div class="text-group column-flex align-start">
+                  <div class="text-group">
                     <div class="d-flex justify-start">
                         <span class="px-2">Parse next</span>
                         <span class="inline-input w-40">
@@ -193,7 +193,7 @@
                   </div>
 
                   <!-- input이 inline으로 들어가는 text group -->
-                  <div class="text-group column-flex align-start">
+                  <div class="text-group">
                     <div class="d-flex justify-start">
                         <span class="px-2">Discard initial</span>
                         <span class="inline-input w-56">
@@ -212,7 +212,7 @@
                   </div>
 
                   <!-- input이 inline으로 들어가는 text group -->
-                  <div class="text-group column-flex align-start">
+                  <div class="text-group">
                     <div class="d-flex justify-start">
                         <span class="px-2">Discard initial</span>
                         <span class="inline-input w-56">

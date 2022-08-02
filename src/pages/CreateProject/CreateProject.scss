@@ -168,7 +168,6 @@
             font-size: $font-size-14;
             line-height: 24px;
             letter-spacing: -0.02em;
-
         }
     }
     .parse {
@@ -216,6 +215,9 @@
             border-bottom: 1px solid $border-default;
 
             .section-title {
+                > span {
+                    height: 24px;
+                }
                 font-size: $font-size-base;
                 // margin-bottom: 4px;
             }
@@ -283,16 +285,6 @@
                     flex-shrink: 0;
                 }
             }
-            .inline-input {
-                position: relative;
-                top: -1px;
-                &.w-56{
-                    width: 56px;
-                }
-                &.w-40 {
-                    width: 40px;
-                }
-            }
 
             &.multi-row {
                 .text-group {
@@ -310,6 +302,23 @@
                         margin-bottom: 0;
                     }
                 }
+            }
+        }
+
+        .text-group {
+            .inline-input {
+                position: relative;
+                top: -1px;
+                &.w-56{
+                    width: 56px;
+                }
+                &.w-40 {
+                    width: 40px;
+                }
+          
+            }
+            span {
+                letter-spacing: -0.02em;
             }
         }
     }
