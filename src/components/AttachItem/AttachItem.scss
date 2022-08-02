@@ -30,7 +30,9 @@
             background: #d9d9d9;
         }
     }
-
+    .file-icon {
+        margin-right: 6px;
+    }
     .file-name {
         font-size: $font-size-16;
         color: $primary;
@@ -49,4 +51,23 @@
             margin-right: 2px;
         }
     }
+}
+
+.basic-file-list {
+    padding-right: 0 !important;
+    .attach-item {
+        height: 32px;
+        padding: 0 0 0 8px;
+        width: 610px;
+        background-color: #EBEEF1;
+        .row {
+            height: 32px !important;
+            .file-name {
+                font-size: 12px;
+               }
+        }
+       
+    }
+    
+    
 }
