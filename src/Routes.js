@@ -32,6 +32,9 @@ import CreateAccount from "@/pages/CreateAccount/CreateAccount";
 import ResetPassword from "@/pages/ResetPassword/ResetPassword";
 import ProjectList from "@/pages/ProjectList/ProjectList";
 
+//UserSetting
+import Usersetting from '@/pages/User/Usersetting';
+
 Vue.use(Router);
 
 // [FCM004] 라우팅 기능 구현
@@ -139,6 +142,11 @@ export default new Router({
         path: 'projectlist',
         name: 'ProjectList',
         component: ProjectList
+      },
+      {
+        path: 'Usersetting',
+        name: 'UserSetting',
+        component: Usersetting
       },
     ],
   },

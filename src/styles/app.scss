@@ -4,3 +4,21 @@
 @import 'button';
 @import 'vue_ovrd';
 
+// 전역 스타일
+.container {
+   &.full-ui {
+    padding: 120px 0 0;
+     .content {
+        max-width: 1000px;
+     }
+   }
+   .full-width {
+    width: 100% !important;
+   }
+}
+
+@media (min-width: 1264px) {
+    .container {
+        max-width: 1000px;
+    }
+}
