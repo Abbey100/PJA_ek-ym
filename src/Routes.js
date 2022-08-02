@@ -135,41 +135,7 @@ export default new Router({
         name: '프로젝트 생성 파싱',
         component: ParseCSV,
       },
-      {
-        path: 'import',
-        name: '데이터 불러오기',
-        component: Import,
-      },
-      {
-        path: 'typography',
-        name: 'Typography',
-        component: Typography,
-      },
-      {
-        path: 'tables',
-        name: 'Tables',
-        component: Tables
-      },
-      {
-        path: 'notifications',
-        name: 'Notifications',
-        component: Notifications
-      },
-      {
-        path: 'icons',
-        name: 'Icons',
-        component: Icons
-      },
-      {
-        path: 'charts',
-        name: 'Charts',
-        component: Charts
-      },
-      {
-        path: 'projectlist',
-        name: 'ProjectList',
-        component: ProjectList
-      },
+     
     ],
   },
     {
