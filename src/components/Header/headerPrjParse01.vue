@@ -41,7 +41,7 @@
       <v-col class="h-right d-flex align-center justify-end">
         
         <!-- 계정 생성 버튼 -->
-        <div class="create">
+        <div class="create d-none">
           <span class="pr-4 font-weight-regul">New to A-RRANGER?</span>
     
           <router-link
@@ -54,7 +54,7 @@
 
         <!-- Tag -->
 
-        <div class="tag-wrap d-none">
+        <div class="tag-wrap">
           <div class="dl-r pr-6 mr-6 d-flex justify-start column-flex align-center">
             <!-- 태그 추가 -->
             <v-btn
@@ -76,7 +76,7 @@
 
         <!-- Project reate button -->
         <v-btn
-          class="text-capitalize font-weight-regular btn-create-prj d-none"
+          class="text-capitalize font-weight-regular btn-create-prj"
           height="32"
           elevation="0"
           :ripple="false"
@@ -89,12 +89,10 @@
   </v-app-bar>
 </template>
 
-
-
 <script>
 
   export default {
-    name: 'Header',
+    name: 'headerPrjParse02',
 
     methods: {
       logOut: function () {

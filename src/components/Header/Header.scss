@@ -31,8 +31,22 @@
     padding: 16px 24px;
   }
 
+    
+  .logo {
+    max-width: 154px;
+    height: 24px;
+
+    .v-image__image {
+      padding-bottom: 0 !important;
+    }
+    img { 
+      background-position : 0 0
+    }
+  }
+
+
+  // Create Project Parse Data: 프로젝트 생성
   .create {
-    max-width: 400px;
     span {
       font-size: $font-size-base;
       color: $grey-default;
@@ -49,27 +63,100 @@
       }
     }
   }
-  
-  .logo {
-    max-width: 154px;
-    .v-image__image {
-      width: 154px;
-    }
-    img { 
-      background-position : 0 0
-    }
-  }
 
+  // Create Project Parse Data: 계정 생성 버튼
   .create-account  {
     height: 32px;
     line-height: 31px;
+    display: inline-block;
     font-size: 13px;
     color: $point-deep !important;
     border: 1px solid $point-deep;
     border-radius: 8px;
     text-decoration: none;;
   }
+
+  // Create Project Parse Data: 태그
+  .tag-wrap {
+
+    > div {
+      position: relative;
+      height: 32px;
+    }
+    .add-tag {
+      padding: 0 12px;
+      border-radius: 12px !important;
+      border-style: dashed;
+      border-color: $grey-default;
+      color: $grey-default;
+      font-weight: normal!important;
+      &::before {
+        display: none;
+      }
+    }
+
+    .input-tag {
+      width: 101px;
+      border: 1px solid $point-deep;
+      border-radius: 12px;
+      background-color: $white-background;
+
+
+      .v-input {
+        height: 22px;
+        > .v-input__control > .v-input__slot {
+          &::before,
+          &::after {
+            display: none;
+          }
+        }
+        
+        input {
+          font-size: $font-size-base;
+          padding: 1px 6px 2px 12px;
+        }
+      }
+    } 
+
+    .btn-ico {
+      margin-top: 2px;
+      &.v-btn {
+        .v-btn__content {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    .complete-tag {
+      height: 24px;
+      color: $primary;
+      font-size: 12px;
+      border-radius: 12px;
+      background-color: $white-pale;
+      span {
+        padding: 3px 6px 0 12px;
+        display: inline-block;
+        height: 24px;
+      }
+    }   
+  }
+
+  .btn-create-prj {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  // Create Project Parse Data
+  .project-name {
+    font-size: 13px;
+    height: 32px;
+    position: relative;
+  }
+
 }
-
-
 

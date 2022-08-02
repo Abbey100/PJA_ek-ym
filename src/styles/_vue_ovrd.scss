@@ -5,6 +5,9 @@
     &.v-input textarea {
         color: $primary;
     }
+    &.v-application{
+      background-color: $body-bg;
+    }
 }
 
 .col, .row {
@@ -175,4 +178,44 @@ input[type="password"] {
   caret-color: $primary  !important;
   transition:none!important;
   animation:none !important;
+}
+
+
+// override : underline animation reset
+.v-text-field--single-line {
+  padding-top: 0;
+  font-size: $font-size-base;
+
+  > .v-input__control {
+    > .v-input__slot{
+      input {
+       padding: 2px 0 ;
+      }
+      &::after {
+        display: none;
+      }
+      &::before {
+        border-color: $grey-default !important
+      }
+    }
+  }
+
+  &.v-text-field.v-input--is-disabled {
+    opacity: .4;
+    > .v-input__control {
+      > .v-input__slot {
+        background-color: #fff;
+        input {
+          &::before {
+            border-style: solid!important;
+            border-color: $grey-default !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.theme--light.v-text-field.v-input--is-disabled .v-input__slot::before {
+  border-image:none !important;
 }

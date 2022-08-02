@@ -1,10 +1,9 @@
 @import '../../styles/app';
-@import '../../components/icon/icon.scss';
+@import '../../components/Checkbox/Checkbox';
 
 .create-project {
 
     height: calc(100vh - 64px);
-
 
     .wrap {
         width: 1000px;
@@ -152,11 +151,197 @@
 
     }
 
-
 }
 
 .parse-data{
+    color: $primary;
+
+    > .row {
+        height: 100%;
+    }
+
+    .checkbox-group {
+        color: $primary!important;
+        span {
+            height: 24px;
+            padding-left: 0;
+            font-size: $font-size-14;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+
+        }
+    }
     .parse {
         max-width: 400px;
+        border-left:1px solid $border-dark;
+        background-color: $background-dark;
+
+        .parse-title {
+            height: 41px;
+            padding: 15px 24px 0 15px;
+            font-size: $font-size-base !important;
+            border-bottom: 1px solid $grey-light;
+                
+            .update-pre {
+                font-size: 11px!important;
+                line-height: 16px;
+
+                span {
+                   letter-spacing: -0.02em;
+                }
+
+                &.v-btn {
+                    padding: 0 !important;
+
+                    &::before {
+                        display: none!important;
+                    }
+                    .v-btn__content {
+                        color: $point-bulely;
+                    }
+                    i {
+                        margin-left: 2px;
+                    }
+                }
+            }
+
+        }
+
+        .row:last-child {
+            margin-bottom: 7px;
+        }
+        
+        .parse-section {
+            padding: 16px 24px 15px 15px;
+            border-bottom: 1px solid $border-default;
+
+            .section-title {
+                font-size: $font-size-base;
+                // margin-bottom: 4px;
+            }
+
+            .v-input {
+                input {
+                    font-size: $font-size-base!important;
+                }
+            }
+        }
+
+        .single {
+            .checkbox-group {
+                height: 34px;
+                margin-bottom: 6px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .inline-input {
+                position: relative;
+                top: -1px;
+            }
+            &.v-input {
+                input {
+                    padding: 0;
+                }
+            }
+        }
+
+        .col-sprt {
+            .v-input {
+                max-width: 160px;
+                display: inline-block;
+            }
+
+            &.single {
+                .checkbox-group {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        /* == check, radio 옵션 선택만 있는 경우 ================================*/
+        .chk-option {
+            .checkbox-group,
+            .text-group {
+                width: 100%;
+
+            }
+
+            .checkbox-group {
+                padding: 4px 0;
+            }
+
+            .checkbox-control,
+            .radio-control {
+                position: relative;
+                top: 4px;
+            }
+
+            .text-group {
+                span {
+                    // height: 24px;
+                    flex-shrink: 0;
+                }
+            }
+            .inline-input {
+                position: relative;
+                top: -1px;
+                &.w-56{
+                    width: 56px;
+                }
+                &.w-40 {
+                    width: 40px;
+                }
+            }
+
+            &.multi-row {
+                .text-group {
+                    // > div:first-child {
+                    //     margin-bottom: 4px;
+                    // }
+                    > div {
+                        height: 28px;
+                    }
+                }
+                .checkbox-group {
+                    margin-bottom: 14px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
     }
 }
+
+
+
+.base-table {
+    &.v-data-table > .v-data-table__wrapper > table > thead > tr:last-child > th {
+      border-bottom-color: $grey-default !important;
+      color: $font-default;
+      font-size: $font-size-data;
+      height: 41px;
+    }
+    &.v-data-table > .v-data-table__wrapper > table > tbody > tr {
+        &:nth-child(odd) {
+            & > td {
+                background-color: #F6F6F6;
+            }
+        }
+
+        &:last-child {
+            & > td {
+                border-bottom: 1px solid $border-default;
+            }
+        }
+
+        & > td {
+            height: 36px;
+            color: #5E636D;
+            font-size: $font-size-data;
+            font-weight: normal;
+        }
+    }
+  }

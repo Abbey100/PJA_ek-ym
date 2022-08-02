@@ -2,8 +2,10 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 // component
-import Layout from '@/components/Layout/Layout';
-import LayoutFull from '@/components/LayoutFull/LayoutFull';
+import Layout from '@/components/Layout/Layout';                     // Layout : 기본 레이아웃
+import layoutPrjParse01 from '@/components/Layout/layoutPrjParse01'; // 프로젝트 생성 Parse data Header 01 레이아웃
+import layoutPrjParse02 from '@/components/Layout/layoutPrjParse02'; // 프로젝트 생성 Parse data Header 02 레이아웃
+import LayoutFull from '@/components/LayoutFull/LayoutFull';         // 로그인 용 I Shape 레이아웃
 
 // 작업 목록
 import Work from "@/pages/Work/Work";
@@ -19,6 +21,7 @@ import CreateProject from '@/pages/CreateProject/CreateProject';
 import ImportFile from '@/pages/CreateProject/ImportFile';
 import ImportDatabase from '@/pages/CreateProject/ImportDatabase';
 import ParseCSV from '@/pages/CreateProject/ParseCSV';
+import ParseLineBased from '@/pages/CreateProject/ParseLineBased';
 
 import Import from '@/pages/Import/Import';
 import Typography from '@/pages/Typography/Typography'
@@ -37,38 +40,65 @@ Vue.use(Router);
 // [FCM004] 라우팅 기능 구현
 export default new Router({
   routes: [
-    {
+    { 
       path: '/',
       name: 'LayoutFull',
       component: LayoutFull,
       children: [
-        {
+        { // == 작업 목록 ============================================
           path: 'work',
           name: 'work',
           component: Work,
         },
-        {
+        { // == 로그인 기본 ==========================================
           path: 'Login',
           name: 'Logn',
           component: Login,
         },
-        {
+        { // == 계정 생성 ===========================================
           path: 'CreateAccount',
           name: 'Create Account',
           component: CreateAccount,
         },
-        {
+        { // == 비밀번호 재설정 ====================================== 
           path: 'ResetPassword',
           name: 'Reset Password',
           component: ResetPassword,
         },
-        {
+        { // == 페이지 프로그레스 샘플 ================================
           path: 'PageProgress',
           name: 'Page Progress',
           component: PageProgress,
         },
       ],
     },
+    
+    { // 프로젝트 생성 - Parse Data
+      path: '/',
+      name: 'layoutPrjParse01',
+      component: layoutPrjParse01,
+      children: [
+        { // == Header 기본 : headerPrjParse01 ======================
+          path: 'ParseCSV',
+          name: '프로젝트 생성 중 : CSV',
+          component: ParseCSV,
+        },
+      ],
+    },
+    { // 프로젝트 생성 - Parse Data
+      path: '/',
+      name: 'layoutPrjParse02',
+      component: layoutPrjParse02,
+      children: [
+        { // == Header 기본 : headerPrjParse02 ======================
+          path: 'ParseLineBased',
+          name: '프로젝트 생성 중 : LineBsed',
+          component: ParseLineBased,
+        },
+
+      ],
+    },
+
     {
     path: '/',
     redirect: 'login',

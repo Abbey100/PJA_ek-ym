@@ -1,0 +1,45 @@
+@import '../../styles/app';
+
+.checkbox-group {
+    height: 16px;
+    color: $grey-default;
+  
+    .checkbox-control {
+      input[type="checkbox"]+label {
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $grey-placeholder;
+        border-radius: 2px;
+        background-color: #fff;
+      
+      }
+      input[type="checkbox"]:checked+label {
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-width: 0;
+        background-image: url('../../assets/img/icon/icon__checkbox-checked.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px 16px;
+        background-color: $point-deep;
+  
+          
+      }
+      
+      input[type="checkbox"] {
+          display: none;
+      }
+    }
+   
+    span {
+      display: inline-block;
+      padding-left: 6px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  

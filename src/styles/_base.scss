@@ -1,6 +1,8 @@
+
 html {
   overflow-y: hidden;
 }
+
 .v-application {
   .page-title {
     font-size: 2.4rem;
@@ -240,3 +242,24 @@ html {
   border-radius: 16px;
   z-index: 6;
 }
+
+.dl-l,
+.dl-r {
+  &::before {
+    content:'';
+    position: absolute;
+    display: block;
+    top: 8px;
+    width: 1px;
+    height: 16px;
+    border-left : 1px solid #D9D9D9;
+  }
+}
+.dl-l::before {
+  left: 0;
+
+}
+.dl-r::before {
+  right: 0;
+}
+

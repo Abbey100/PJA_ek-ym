@@ -41,7 +41,7 @@
       <v-col class="h-right d-flex align-center justify-end">
         
         <!-- 계정 생성 버튼 -->
-        <div class="create">
+        <div class="create d-none">
           <span class="pr-4 font-weight-regul">New to A-RRANGER?</span>
     
           <router-link
@@ -54,7 +54,7 @@
 
         <!-- Tag -->
 
-        <div class="tag-wrap d-none">
+        <div class="tag-wrap">
           <div class="dl-r pr-6 mr-6 d-flex justify-start column-flex align-center">
             <!-- 태그 추가 -->
             <v-btn
@@ -69,14 +69,59 @@
               + Tags</v-btn>
 
             <!-- 추가 된 태그 -->
+            <div class="complete-tag d-flex justify-start column-flex align-center pr-2 ml-2">
+              <span>입력 된 태그</span>
+              <v-btn
+                class ="btn-ico" 
+                height="16"
+                width="16"
+                elevation="0"
+                :ripple="false"
+                icon
+                plain
+              >
+                <i class="ico ico__clear"></i>
+              </v-btn>      
+            </div>
 
             <!-- 태그 입력 -->
+            <div class="input-tag d-flex justify-start column-flex align-center pr-2 ml-2">
+              <!-- 개발 요청 : 입력하는 텍스트에 맞추어 input width 늘어 나야 함 -->
+              <v-text-field
+                value="태그 입력"
+                hide-details
+              ></v-text-field>
+
+              <!-- 입력 태용 clear -->
+              <v-btn
+                height="16"
+                width="16"
+                elevation="0"
+                :ripple="false"
+                icon
+                plain
+              >
+                <i class="ico ico__clear"></i>
+              </v-btn>  
+
+              <!-- complete -->
+              <v-btn
+                height="16"
+                width="16"
+                elevation="0"
+                :ripple="false"
+                icon
+                plain
+              >
+                <i class="ico ico__complete"></i>
+              </v-btn>    
+            </div>
           </div>
         </div>
 
         <!-- Project reate button -->
         <v-btn
-          class="text-capitalize font-weight-regular btn-create-prj d-none"
+          class="text-capitalize font-weight-regular btn-create-prj"
           height="32"
           elevation="0"
           :ripple="false"
@@ -85,16 +130,17 @@
           Create Project</v-btn>        
       </v-col>
     </v-row>
+
+
+
     
   </v-app-bar>
 </template>
 
-
-
 <script>
 
   export default {
-    name: 'Header',
+    name: 'headerPrjParse02',
 
     methods: {
       logOut: function () {

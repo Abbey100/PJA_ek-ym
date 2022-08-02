@@ -12,7 +12,8 @@
     <li><router-link target="_blank" to="/CreateProject" >CreateProject</router-link> : 메인</li>
     <li><router-link target="_blank" to="/ImportFile" >ImportFile</router-link> : 파일 선택</li>
     <li><router-link target="_blank" to="/ImportDatabase" >ImportDatabase</router-link> : 데이타베이스 가져오기</li>
-    <li><router-link target="_blank" to="/ParseCSV" >ParsingCSV</router-link> : 프로젝트 생성 파싱</li>
+    <li><router-link target="_blank" to="/ParseCSV" >ParsingCSV</router-link> : 프로젝트 생성 파싱 : CSV</li>
+    <li><router-link target="_blank" to="/ParseLineBased" >▶ ParseLineBased</router-link> : 프로젝트 생성 파싱 : Linebased</li>
 </ul>
 </div>
 

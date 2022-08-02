@@ -2,6 +2,10 @@
 
 
 .ico {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
@@ -17,6 +21,20 @@
     &.ico__select-caret {
         background-position-y: -16px ;
     }
-  
+
+    // Parse data
+    &.ico__refresh {
+        background-position-y: -240px ;
+    }
+    // ===========================================
+
+    // header tag 
+    &.ico__clear {
+        background-position-y: -320px;
+    }
+    &.ico__complete {
+        background-position-y: -288px;
+    }
+    // ===========================================
   }
   

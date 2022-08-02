@@ -80,11 +80,22 @@ body {
 
 }
 
-
+.sign-in-option {
+  .checkbox-group {
+    height: 24px;
+    color: $grey-default;
+     
+    span {
+      display: inline-block;
+      padding-left: 6px;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.02em;
+    }
+  }
+}
 
 .checkbox-group {
-  height: 24px;
-  color: $grey-default;
 
   .checkbox-control {
     input[type="checkbox"]+label {
@@ -115,13 +126,6 @@ body {
     input[type="checkbox"] {
         display: none;
     }
-  }
- 
-  span {
-    display: inline-block;
-    padding-left: 6px;
-    font-size: 12px;
-    line-height: 16px;
   }
 }
 
