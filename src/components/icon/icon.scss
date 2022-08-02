@@ -12,6 +12,9 @@
 
     &.ico__close {
         background-position-y: -208px ;
+        &.sm {
+            background-position-y: -304px ;
+        }
     }
   
     &.ico__select-caret {
