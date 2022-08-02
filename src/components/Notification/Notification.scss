@@ -1,0 +1,13 @@
+@import '../../styles/app';
+
+
+.v-alert.v-sheet{
+    &.notification {
+        position: absolute;
+     }
+    &.noti-wh-outlined {
+        left: 50%;
+        border: 1px solid $border-dark;
+        min-width: 100px;
+    }
+}

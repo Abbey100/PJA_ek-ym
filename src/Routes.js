@@ -22,11 +22,24 @@ import ImportFile from '@/pages/CreateProject/ImportFile';
 import ImportDatabase from '@/pages/CreateProject/ImportDatabase';
 import ParseCSV from '@/pages/CreateProject/ParseCSV';
 import ParseLineBased from '@/pages/CreateProject/ParseLineBased';
+import ParseFixedWidth from '@/pages/CreateProject/ParseFixedWidth';
+import ParsePCAxis from '@/pages/CreateProject/ParsePCAxis';
+import ParseJsonFile from '@/pages/CreateProject/ParseJsonFile';
+import ParseWikitext from '@/pages/CreateProject/ParseWikitext';
+import ParseXML from '@/pages/CreateProject/ParseXML';
+import ParseOpenDoc from '@/pages/CreateProject/ParseOpenDoc';
+import SelectEnc from '@/pages/CreateProject/SelectEnc';
+
+
+
 
 import Error from "@/pages/Error/Error";
 import Login from "@/pages/Login/Login";
 import CreateAccount from "@/pages/CreateAccount/CreateAccount";
 import ResetPassword from "@/pages/ResetPassword/ResetPassword";
+
+//UserSetting
+import Usersetting from '@/pages/User/Usersetting';
 
 Vue.use(Router);
 
@@ -88,6 +101,41 @@ export default new Router({
           name: '프로젝트 생성 중 : LineBsed',
           component: ParseLineBased,
         },
+        { // == Header 기본 : headerPrjParse02 ======================
+          path: 'ParseFixedWidth',
+          name: '프로젝트 생성 중 : Fixed Width',
+          component: ParseFixedWidth,
+        },
+        { // == Header 기본 : headerPrjParse02 ======================
+          path: 'ParsePCAxis',
+          name: '프로젝트 생성 중 : Pc Axis',
+          component: ParsePCAxis,
+        },
+        { // == Header 기본 : headerPrjParse02 ======================
+          path: 'ParseJsonFile',
+          name: '프로젝트 생성 중 : JSON File',
+          component: ParseJsonFile,
+        },
+        { // == Header 기본 : headerPrjParse02 ======================
+          path: 'ParseWikitext',
+          name: '프로젝트 생성 중 : Wikitext',
+          component: ParseWikitext,
+        },
+        { // == Header 기본 : headerPrjParse02 ======================
+          path: 'ParseXML',
+          name: '프로젝트 생성 중 : XML',
+          component: ParseXML,
+        },
+        { // == Header 기본 : headerPrjParse02 ======================
+          path: 'ParseOpenDoc',
+          name: '프로젝트 생성 중 : Open Document',
+          component: ParseOpenDoc,
+        },
+        { // == Header 기본 : headerPrjParse02 ======================
+          path: 'SelectEnc',
+          name: '프로젝트 생성 중 : Select Encoding',
+          component: SelectEnc,
+        },
 
       ],
     },
@@ -128,7 +176,11 @@ export default new Router({
         name: '프로젝트 생성 파싱',
         component: ParseCSV,
       },
-     
+      {
+        path: 'Usersetting',
+        name: 'UserSetting',
+        component: Usersetting
+      },
     ],
   },
     {

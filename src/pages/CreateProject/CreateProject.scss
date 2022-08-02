@@ -4,12 +4,12 @@
 .create-project {
 
     height: calc(100vh - 64px);
+    overflow-y: auto ;
 
     .wrap {
         width: 1000px;
         padding: 120px 0;
         margin: 0 auto;
-
             
         @media screen and  (max-height: 768px) {
             padding-top : 32px
@@ -124,7 +124,6 @@
 }
 
 .active {
-
     .name{
         .v-input {
             width: 343px;
@@ -152,24 +151,45 @@
     }
 
 }
-
+.import-file-table {
+    position: relative;
+}
 .parse-data{
     color: $primary;
+
+               
+    @media screen and (max-width: 1280px) {
+        .parse {
+            position: absolute;
+            top: 64px;
+            right: 0;
+            bottom: 0;
+            
+        }
+        .import-file-table {
+            width: 1280px;
+            padding-right: 400px;
+        }
+
+        overflow-x: hidden;
+    }
 
     > .row {
         height: 100%;
     }
 
-    .checkbox-group {
+    .checkbox-group,
+    .checkless {
         color: $primary!important;
         span {
-            height: 24px;
+            min-height: 24px;
             padding-left: 0;
             font-size: $font-size-14;
             line-height: 24px;
             letter-spacing: -0.02em;
         }
     }
+
     .parse {
         max-width: 400px;
         border-left:1px solid $border-dark;
@@ -206,7 +226,7 @@
 
         }
 
-        .row:last-child {
+        > .row:last-child {
             margin-bottom: 7px;
         }
         
@@ -215,11 +235,12 @@
             border-bottom: 1px solid $border-default;
 
             .section-title {
+                width: 100%;
                 > span {
                     height: 24px;
                 }
                 font-size: $font-size-base;
-                // margin-bottom: 4px;
+                margin-bottom: 4px;
             }
 
             .v-input {
@@ -227,12 +248,72 @@
                     font-size: $font-size-base!important;
                 }
             }
+
+            .checkbox-group,
+            .text-group {
+                width: 100%;
+
+            }
+
+            .checkbox-group {
+                padding: 4px 0;
+            }
+
+            .text-group {
+                span {
+                    // height: 24px;
+                    flex-shrink: 0;
+                }
+            }          
         }
 
-        .single {
+        .multi-row {
+            .checkbox-control,
+            .radio-control {
+                position: relative;
+                top: 7px;
+            }
+    
+            .text-group {
+                > div {
+                    min-height: 28px;
+                }
+            }
             .checkbox-group {
-                height: 34px;
-                margin-bottom: 6px;
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &.text-only {
+                .checkbox-control,
+                .radio-control {
+                    position: relative;
+                    top: 4px;
+                }                
+                .text-group {
+                    span {
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            & + .text-only {
+                .text-group {
+                    span {
+                        line-height: 32px;
+                    }
+                }
+            }
+
+        }  
+
+        .single-row {
+            margin-bottom: 2px;
+            &.checkbox-group {
+                min-height: 34px;
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -246,6 +327,7 @@
                     padding: 0;
                 }
             }
+         
         }
 
         .col-sprt {
@@ -261,49 +343,13 @@
             }
         }
 
-        /* == check, radio 옵션 선택만 있는 경우 ================================*/
-        .chk-option {
-            .checkbox-group,
-            .text-group {
-                width: 100%;
-
-            }
-
-            .checkbox-group {
-                padding: 4px 0;
-            }
-
-            .checkbox-control,
-            .radio-control {
-                position: relative;
-                top: 4px;
-            }
-
-            .text-group {
-                span {
-                    // height: 24px;
-                    flex-shrink: 0;
-                }
-            }
-
-            &.multi-row {
-                .text-group {
-                    // > div:first-child {
-                    //     margin-bottom: 4px;
-                    // }
-                    > div {
-                        height: 28px;
-                    }
-                }
-                .checkbox-group {
-                    margin-bottom: 14px;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
+        .ws-import {
+            .v-btn {
+                margin-right: 6px;
             }
         }
+
+        /* == check, radio 옵션 선택만 있는 경우 ================================*/
 
         .text-group {
             .inline-input {
@@ -325,32 +371,171 @@
 }
 
 
+.fixed-width {
+    position: relative;
+    .divider {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 16px;
+        height: 100%;
 
-.base-table {
-    &.v-data-table > .v-data-table__wrapper > table > thead > tr:last-child > th {
-      border-bottom-color: $grey-default !important;
-      color: $font-default;
-      font-size: $font-size-data;
-      height: 41px;
+        .v-btn {
+            position: absolute;
+            top: 69px;
+            z-index: 1;
+        }
+
+        &::after {
+            content: '';
+            position: inherit;
+            display: block;
+            width: 1px;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 7px;
+            background-color: $point-deep;
+            z-index: 0;
+        }
+        &:hover {
+            cursor: ew-resize;
+        }
     }
+
     &.v-data-table > .v-data-table__wrapper > table > tbody > tr {
-        &:nth-child(odd) {
-            & > td {
-                background-color: #F6F6F6;
-            }
-        }
-
-        &:last-child {
-            & > td {
-                border-bottom: 1px solid $border-default;
-            }
-        }
-
         & > td {
-            height: 36px;
-            color: #5E636D;
-            font-size: $font-size-data;
-            font-weight: normal;
+            position: relative;
+            span {
+                position: relative;
+                z-index: 1;
+            }
+            &:nth-child(4n-1) {
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom:0;
+                    background-color: rgba(0,0,0,.08);
+                    z-index: 0;
+                }
+            }
         }
     }
-  }
+}
+
+
+
+.v-alert{
+    padding: 14px 40px !important;
+    &.v-sheet{
+        border-radius: 8px!important;
+    }
+    &.notification {
+        position: absolute;
+        left: 50%;
+     }
+    &.noti-wh-outlined {
+        border: 1px solid $border-dark;
+        min-width: 100px;
+        letter-spacing: -0,02em;
+    }
+}
+
+
+
+.dialog-title {
+    height: 52px;
+    border-bottom: 1px solid $border-grey-01;
+    font-size: 18px;
+    padding: 0 24px;
+    > div {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.sel-enc {
+    width: 800px;
+    height: 480px;
+}
+
+.enc-table {
+    &.v-data-table {
+        & > .v-data-table__wrapper > table > thead > tr:last-child > th {
+            > span {
+                position: relative;
+                bottom: -6px;
+            }
+        }
+
+        & > .v-data-table__wrapper > table > tbody > tr {
+            & > td {
+                &:first-child {
+                    width: 120px;
+                    color: $point-deep;
+                    text-decoration: underline;
+                    border-left: 1px solid $border-default !important;
+    
+                }
+                &:last-child {
+                    border-right: 1px solid $border-default !important;
+                }
+    
+            }
+        }        
+
+    }
+}
+
+
+.dialog-tab {
+    padding: 0 24px 24px;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        top: 39px;
+        background-color: $border-default;
+    }
+    .dialog-content {
+        background-color: $white-background;
+    }
+    .v-tabs-bar {
+        height: 40px !important;
+        background-color: transparent!important;
+    }
+
+    .v-tab {
+        margin-right: 16px !important;
+        height: 40px;
+        padding: 10px 0 0 0!important;
+        justify-content: left !important;
+        font-size : $font-size-base!important;
+        text-transform:none !important;
+        flex: 0 0 auto !important;
+        letter-spacing: 0!important;
+
+        &:not(.v-tab--active) {
+            color: $grey-default!important;
+            font-weight: normal!important;
+        }
+        &::before,
+        &::after {
+            display: none !important;
+        }
+
+        .v-ripple__container {
+            display: none !important;
+        }
+    }
+}

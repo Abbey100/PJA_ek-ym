@@ -22,6 +22,11 @@
   }
 }
 
+@media (min-width: 0) {
+  .container {
+      max-width: 100%!important;
+  }
+}
 
 // == form ================================================================================================ //
 
@@ -218,4 +223,47 @@ input[type="password"] {
 
 .theme--light.v-text-field.v-input--is-disabled .v-input__slot::before {
   border-image:none !important;
+}
+
+.v-btn {
+  .v-btn__content {
+    opacity: 1!important;
+  }
+}
+
+
+// override : 기본 테이블
+.base-table {
+  &.v-data-table > .v-data-table__wrapper > table > thead > tr:last-child > th {
+    border-bottom-color: $grey-default !important;
+    color: $font-default;
+    font-size: $font-size-data;
+    height: 41px;
+  }
+  &.v-data-table > .v-data-table__wrapper > table > tbody {
+      > tr {
+          & > td {
+              min-height: 36px;
+              color: #5E636D;
+              font-size: $font-size-data;
+              font-weight: normal;
+              border-bottom: none!important;
+
+          }     
+          &:nth-child(odd) {
+              & > td {
+                  background-color: #F6F6F6;
+              }
+          }
+  
+          &:last-child {
+              & > td {
+                  border-bottom: 1px solid $border-default !important;
+              }
+          }
+          &:hover {
+              background-color: transparent !important;
+          }
+      }
+  }
 }

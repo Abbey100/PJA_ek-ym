@@ -11,8 +11,22 @@
             border-color: $point-deep!important;
             color:$point-deep!important;
             background-color: #fff!important;
+           
         }
     }
+
+    &.v-btn--outlined {
+        &:before {
+            display: none;  
+          }
+        background-color: #fff!important;
+    }
+
+    &.btn-md {
+        font-size: 13px !important;
+        font-weight: normal !important;
+    }
+
 
     &.btn-md {
         .v-btn__content {
@@ -22,5 +36,7 @@
         }
      
     }
+
+
 
 }

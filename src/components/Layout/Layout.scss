@@ -3,8 +3,6 @@
 .content {
   .v-main__wrap {
     padding: $header-height 0 0 $header-height;
-    > .container  {
-      overflow-y: auto;
-    }
+  
   }
 }

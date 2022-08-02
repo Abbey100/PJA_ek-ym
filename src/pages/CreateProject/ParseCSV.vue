@@ -2,7 +2,7 @@
   <v-container fluid>
     <div class="create-project parse-data">
         <v-row class="d-flex justify-start column-flex">
-            <v-col class="import-file-talbe">
+            <v-col class="import-file-table">
                 <v-data-table
                     :headers="headers"
                     :items="desserts"
@@ -46,7 +46,7 @@
                 <div class="section-title mb-1">Columns are separated by</div>
 
                 <!-- radio 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
                   <div class="radio-control">
                     <input id="csv" type="radio" checked>
                     <label form="csv"></label>
@@ -55,7 +55,7 @@
                 </div>  
 
                 <!-- radio 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
                   <div class="radio-control">
                     <input id="csv" type="radio">
                     <label form="csv"></label>
@@ -64,7 +64,7 @@
                 </div>  
 
                 <!-- radio 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
                   <div class="radio-control">
                     <input id="csv" type="radio">
                     <label form="csv"></label>
@@ -81,16 +81,15 @@
                 </div>  
               </v-row>
 
-              <!-- == option check multipl-row ================================ -->
-              <v-row class="parse-section chk-option multi-row">
+              <v-row class="parse-section">
                 <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-top justify-start column-flex">
+                <div class="checkbox-group d-flex align-top justify-start column-flex multi-row  mb-3">
                   <div class="checkbox-control">
                     <input id="" type="checkbox" checked>
                     <label form=""></label>
                   </div>
                   <!-- input이 inline으로 들어가는 text group -->
-                  <div class="text-group column-flex align-start">
+                  <div class="text-group column-flex align-start ">
                     <div class="d-flex justify-start column-flex align-center">
                         <span class="px-2 ">Use character</span>
                         <span class="inline-input w-56">
@@ -104,28 +103,23 @@
                   </div>
                 </div>  
 
-
                 <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-top justify-start column-flex">
+                <div class="checkbox-group d-flex justify-start  multi-row text-only">
                   <div class="checkbox-control">
                     <input id="" type="checkbox" >
                     <label form=""></label>
                   </div>
                   <div class="text-group column-flex align-start">
                     <div class="d-flex justify-start">
-                        <span class="pl-2">Trim leading &amp; trailing whitespace from strings Escape</span>
+                        <span class="pl-2">Trim leading &amp; trailing whitespace from strings Escape<br>special character with \</span>
                     </div>
-                    <div class="d-flex justify-start mt-1">
-                      <span class="pl-2">special character with \</span>
-                    </div>
+            
                   </div>
                 </div>  
               </v-row>
 
-
-              <!-- == option check single ================================ -->
-              <v-row class="parse-section chk-option single">
-                <div class="checkbox-group d-flex align-top justify-start column-flex">
+              <v-row class="parse-section single-row">
+                <div class="checkbox-group d-flex align-center justify-start column-flex">
                   <div class="checkbox-control">
                     <input id="" type="checkbox" checked>
                     <label form=""></label>
@@ -142,16 +136,13 @@
                 </div>  
               </v-row>
 
-           
-              <!-- == option check single ================================ -->
-              <v-row class="parse-section chk-option">
+              <v-row class="parse-section">
                 <!-- radio 템플릿 -->
-                <div class="checkbox-group d-flex align-top justify-start column-flex mb-2">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
                   <div class="radio-control">
                     <input id="" type="radio" checked>
                     <label form=""></label>
                   </div>
-
                   <!-- input이 inline으로 들어가는 text group -->
                   <div class="text-group">
                     <div class="d-flex justify-start">
@@ -165,7 +156,7 @@
                 </div>  
 
                 <!-- radio 템플릿 -->
-                <div class="checkbox-group d-flex align-top justify-start column-flex">
+                <div class="checkbox-group d-flex align-top justify-start column-flex multi-row text-only">
                   <div class="radio-control">
                     <input id="" type="radio" >
                     <label form=""></label>
@@ -174,7 +165,7 @@
                     <div class="d-flex justify-start">
                         <span class="pl-2">Column names (comma separated)</span>
                     </div>
-                    <div class="mt-1 d-block">
+                    <div class="pb-1 d-block">
                       <span class="pl-2 d-block">
                       <v-text-field disabled block placeholder="내용을 입력하세요" type="numnber" single-line hide-details></v-text-field> 
                       </span>
@@ -183,15 +174,13 @@
                 </div>  
               </v-row>
 
-              <!-- == option check single ================================ -->
-              <v-row class="parse-section chk-option single">
+              <v-row class="parse-section">
                 <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-top justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row mb-1">
                   <div class="checkbox-control">
-                    <input id="" type="checkbox" checked>
+                    <input id="" type="checkbox" >
                     <label form=""></label>
                   </div>
-
                   <!-- input이 inline으로 들어가는 text group -->
                   <div class="text-group">
                     <div class="d-flex justify-start">
@@ -205,12 +194,11 @@
                 </div>  
 
                 <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-top justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex  single-row">
                   <div class="checkbox-control">
-                    <input id="" type="checkbox" checked>
+                    <input id="" type="checkbox" >
                     <label form=""></label>
                   </div>
-
                   <!-- input이 inline으로 들어가는 text group -->
                   <div class="text-group">
                     <div class="d-flex justify-start">
@@ -224,11 +212,9 @@
                 </div>  
               </v-row>
 
-
-              <!-- == option check only ================================ -->
-              <v-row class="parse-section single ">
+              <v-row class="parse-section">
                 <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
                   <div class="checkbox-control">
                     <input id="" type="checkbox" checked>
                     <label form=""></label>
@@ -237,7 +223,7 @@
                 </div>  
 
                 <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
                   <div class="checkbox-control">
                     <input id="" type="checkbox" checked>
                     <label form=""></label>
@@ -246,7 +232,7 @@
                 </div>  
 
                 <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
                   <div class="checkbox-control">
                     <input id="" type="checkbox" checked>
                     <label form=""></label>
@@ -255,7 +241,7 @@
                 </div>  
 
                 <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
                   <div class="checkbox-control">
                     <input id="" type="checkbox" checked>
                     <label form=""></label>
@@ -264,7 +250,7 @@
                 </div>  
 
                 <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex">
+                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
                   <div class="checkbox-control">
                     <input id="" type="checkbox" checked>
                     <label form=""></label>

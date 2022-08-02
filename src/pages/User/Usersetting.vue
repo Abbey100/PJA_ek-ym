@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <div class="container full-ui">
-        <div class="content wrap">
+        <div class="wrap">
             <!-- 페이지 타이틀 영역 -->
             <full-page-title :Title="this.Title" 
                              :MainMessage="this.MainMessage" 

@@ -19,9 +19,19 @@
                 </router-link>
             </li>
         </ul>
-        <v-avatar size="40">
-            <v-img src="@/assets/img/avatar.svg" height="40" contain></v-img>
-        </v-avatar>
+
+        <ul class="gnb-list">
+            <li class="gnb-item gnb__logout mb-4">
+                <router-link to="/login">
+                    <span>로그아웃</span>
+                </router-link>
+            </li>
+            <li class="gnb-item gnb__project-open">
+                <v-avatar size="40">
+                    <v-img src="@/assets/img/avatar.svg" height="40" contain></v-img>
+                </v-avatar>
+            </li>
+        </ul>
     </div>
 </template>
 

@@ -46,7 +46,7 @@
             }
             &.selected {
                 a {
-                    background-position: 0 -80px;
+                    background-position: 0 0;
                 }
             }
         }
@@ -79,6 +79,14 @@
             }
         }
 
+        .gnb__logout a{
+            background-position: 0 -240px;
 
+            &:hover{
+                border-radius: 20px;
+                background-color: $point-deep;
+            }
+        
+        }
     }
 }
