@@ -32,8 +32,11 @@
         </div>
 
         <!-- 프로젝트 이름 -->
-        <div class="project-name d-block ml-4 pt-1 d-flex column-flex align-center">
-          <span class="dl-l pl-4">전국도서관표준데이터.csv</span>
+        <!--  d-none : 프로젝트 생성 초기 화면에서 프로젝트 이름 영역은 보이지 않음 --> 
+        <div class="project-name d-none">
+          <div class="ml-4 pt-1 d-flex column-flex align-center">
+            <span class="dl-l pl-4">전국도서관표준데이터.csv</span>
+          </div>
         </div>
       </v-col>
 

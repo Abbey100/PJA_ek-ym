@@ -32,8 +32,10 @@
         </div>
 
         <!-- 프로젝트 이름 -->
-        <div class="project-name d-block ml-4 pt-1 d-flex column-flex align-center">
-          <span class="dl-l pl-4">전국도서관표준데이터.csv</span>
+        <div class="project-name">
+          <div class="ml-4 pt-1 d-flex column-flex align-center">
+            <span class="dl-l pl-4">전국도서관표준데이터.csv</span>
+          </div>
         </div>
       </v-col>
 

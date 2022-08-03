@@ -1,28 +1,30 @@
+
 html {
   overflow-y: hidden;
 }
+
 .v-application {
   .page-title {
     font-size: 2.4rem;
     color: $text-grey;
     margin-bottom: 0;
   }
-  // .v-card {
-  //   box-shadow: $card-shadow!important;
-  //   .v-card__title p{
-  //     color: $card-title-color;
-  //     line-height: 1.33;
-  //     margin: 0;
-  //     font-size: 20px;
-  //     font-weight: 400;
-  //   }
-  //   .card-dark-grey {
-  //     color: $title-grey!important;
-  //   }
-  //   .card-light-grey {
-  //     color: $text-color!important;
-  //   }
-  // }
+  .v-card {
+    box-shadow: $card-shadow!important;
+    .v-card__title p{
+      color: $card-title-color;
+      line-height: 1.33;
+      margin: 0;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .card-dark-grey {
+      color: $title-grey!important;
+    }
+    .card-light-grey {
+      color: $text-color!important;
+    }
+  }
   .v-navigation-drawer {
     .v-navigation-drawer__content {
       .v-list {
@@ -240,3 +242,24 @@ html {
   border-radius: 16px;
   z-index: 6;
 }
+
+.dl-l,
+.dl-r {
+  &::before {
+    content:'';
+    position: absolute;
+    display: block;
+    top: 8px;
+    width: 1px;
+    height: 16px;
+    border-left : 1px solid #D9D9D9;
+  }
+}
+.dl-l::before {
+  left: 0;
+
+}
+.dl-r::before {
+  right: 0;
+}
+
