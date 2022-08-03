@@ -21,17 +21,24 @@
         </ul>
 
         <ul class="gnb-list">
-            <li class="gnb-item gnb__logout mb-4">
-                <router-link to="/login">
-                    <span>로그아웃</span>
+            <li class="gnb-item gnb__setting mb-4">
+                <router-link to="/User">
+                    <span>설정</span>
                 </router-link>
             </li>
-            <li class="gnb-item gnb__project-open">
+            <li class="gnb-item gnb__logout">
+  
                 <v-avatar size="40">
-                    <v-img src="@/assets/img/avatar.svg" height="40" contain></v-img>
+                    <v-img src="https://cdn.vuetifyjs.com/images/lists/1.jpg" height="40" contain></v-img>
                 </v-avatar>
+
+                <!-- avatar hover 시 tooltip 보여줌  -->
+                <div class="tooltip">
+                    <span class="d-flex column-flex align-center">로그아웃</span>
+                </div> 
             </li>
         </ul>
+    
     </div>
 </template>
 
