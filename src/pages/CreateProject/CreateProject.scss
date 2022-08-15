@@ -452,6 +452,16 @@
 .sel-enc {
     width: 800px;
     height: 480px;
+    .dialog-content {
+        padding: 0;
+        height: calc(100% - 52px);
+        overflow-y: auto;
+    }
+
+    .base-table.v-data-table > .v-data-table__wrapper > table > tbody > tr > td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+    }
 }
 
 .enc-table {
