@@ -1,6 +1,6 @@
 <template>
     <v-app class="pa-6">
-        <headerDataBase />
+        <headerDataEdit />
         <GNB />
         <v-main class="content">
             <router-view />
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import headerDataBase from '@/components/Header/headerDataBase';
+    import headerDataEdit from '@/components/Header/headerDataEdit';
     import GNB from '@/components/GNB/GNB';
 
     // import Sidebar from '@/components/Sidebar/Sidebar';
@@ -19,7 +19,7 @@
     export default {
         name: 'layoutDataEdit',
         // components: {Footer, Header, Sidebar },
-        components: {headerDataBase, GNB },
+        components: {headerDataEdit, GNB },
     };
 </script>
 

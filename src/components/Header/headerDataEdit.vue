@@ -75,7 +75,7 @@
               </div>
 
               <!-- Dropdown :: visible - d-bloc-->
-              <v-card class="dropdown d-block" style="width: 106px;">
+              <v-card class="dropdown" style="width: 106px;">
                 <ul class="dropdown-menu">
                   <!-- dropdown hover & select : select -->
                   <li class="dropdown-item d-flex column-flex align-center active">
@@ -142,7 +142,7 @@
               </div>
 
               <!-- Dropdown :: visible - d-block -->
-              <v-card class="dropdown d-block" style="width: 112px;">
+              <v-card class="dropdown" style="width: 112px;">
                 <ul class="dropdown-menu">
 
                   <!-- dropdown hover & select : select -->
