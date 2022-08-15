@@ -1,0 +1,328 @@
+<template>
+  <v-container fluid >
+    
+    <div class="open-project edit-data">
+        <v-row class="d-flex justify-start column-flex">
+            <v-col class="import-file-table">
+
+              <div class="v-data-table elevation-0 base-table editable theme--light">
+                <div class="v-data-table__wrapper">
+                  <table>
+                    <colgroup>
+                      <col class="">
+                      <col class="">
+                      <col class="">
+                      <col class="">
+                      <col class="">
+                      <col class="">
+                      <col class="">
+                      <col class="">
+                      <col class="">
+                    </colgroup>
+
+                    <thead class="v-data-table-header">
+                      <tr>
+                        <th role="columnheader" aria-sort="none" class="text-start sortable">
+                          <div class="text-wrap">
+                            <span>All</span>
+                            <i class="ico ico__select-caret"></i>
+                          </div>
+                        </th>
+                        <th role="columnheader" aria-sort="none" class="text-start sortable">
+                          <div class="text-wrap">
+                            <span>도서관 구분</span>
+                            <i class="ico ico__select-caret"></i>
+                          </div>
+                        </th>
+                        <th role="columnheader" aria-sort="none" class="text-start sortable">
+                          <div class="text-wrap">
+                            <span>도서관 구분</span>
+                            <i class="ico ico__select-caret"></i>
+                          </div>
+                        </th>
+                        <th role="columnheader" aria-sort="none" class="text-start sortable">
+                          <div class="text-wrap">
+                            <span>도서관 코드</span>
+                            <i class="ico ico__select-caret"></i>
+                          </div>
+                        </th>
+                        <th role="columnheader" aria-sort="none" class="text-start sortable">
+                          <div class="text-wrap">
+                            <span>면적</span>
+                            <i class="ico ico__select-caret"></i>
+                          </div>
+                        </th>
+                        <th role="columnheader" aria-sort="none" class="text-start sortable">
+                          <div class="text-wrap">
+                            <span>시구군</span>
+                            <i class="ico ico__select-caret"></i>
+                          </div>
+                        </th>
+                        <th role="columnheader" aria-sort="none" class="text-start sortable">
+                          <div class="text-wrap">
+                            <span>장서수</span>
+                            <i class="ico ico__select-caret"></i>
+                          </div>
+                        </th>
+                        <th role="columnheader" aria-sort="none" class="text-start sortable">
+                          <div class="text-wrap">
+                            <span>방문자수</span>
+                            <i class="ico ico__select-caret"></i>
+                          </div>
+                        </th>
+                        <th role="columnheader" aria-sort="none" class="text-start sortable">
+                          <div class="text-wrap">
+                            <span>대출지수</span>
+                            <i class="ico ico__select-caret"></i>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="">
+                        <td class="text-start d-flex align-center">
+                          <div class="mark-wrap">
+                            <span class="mark" @click="markStar">
+                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                            </span>
+                            <span class="mark" @click="markFlag">
+                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                            </span>
+                          </div>
+
+                          <div class="text-wrap">
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>2014</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                              
+                        </td>
+
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between">
+                            <span>LIVTYPE002</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>526</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>20,104</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+
+                        <td class="text-start ">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>성북구</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3900</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3915</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>9360</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                             
+                        </td>
+                      </tr>
+
+                      <tr class="">
+                        <td class="text-start d-flex align-center">
+                          <div class="mark-wrap">
+                            <span class="mark" @click="markStar">
+                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                            </span>
+                            <span class="mark" @click="markFlag">
+                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                            </span>
+                          </div>
+
+                          <div class="text-wrap">
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>2014</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                              
+                        </td>
+
+                        <td class="text-start ">
+                          <div class="text-wrap justify-space-between">
+                            <span>LIVTYPE002</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                     
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>526</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>20,104</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+
+                        <!-- hover 시 : hover 는 보여주기 위한 임시 클래스 -->
+                        <td class="text-start hover">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>성북구</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3900</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3915</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>9360</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                             
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td class="text-start d-flex align-center">
+                          <div class="mark-wrap">
+                            <span class="mark" @click="markStar">
+                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                            </span>
+                            <span class="mark" @click="markFlag">
+                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                            </span>
+                          </div>
+
+                          <div class="text-wrap">
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>2014</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                              
+                        </td>
+
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between">
+                            <span>LIVTYPE002</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>526</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>20,104</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+
+                        <td class="text-start ">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>성북구</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3900</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3915</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>9360</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                             
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          
+            </v-col>
+
+
+            <!-- 사이드 패널 공통 클래스로 -->
+            <v-col class="side-panel data-control">
+              <SidePanelTab />
+            </v-col>
+        </v-row>
+    </div>
+
+  </v-container>
+</template>
+
+
+
+<script>
+  import SidePanelTab from './SidePanelTab'
+
+  export default {
+    name: 'DataEditaBase',
+    components: {SidePanelTab,},
+    data () {
+      return {
+        tooltipText: "변경내역을 복사하려면 ‘추출’, 이전복사한 이력을 적용하려면 ‘적용'을 선택하세요",
+
+        isMarkStar : false,
+        isMarkFlag : false,
+        checked:false,
+      }
+    },  
+    methods: {
+      markStar: function() {
+          this.isMarkStar = !this.isMarkStar;
+      },
+      markFlag: function() {
+          this.isMarkFlag = !this.isMarkFlag;
+      }
+    }      
+  } 
+
+</script>
+
+<style src="./OpenProject.scss" lang="scss"/>
