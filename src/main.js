@@ -14,6 +14,7 @@ import FullPageTitle from './components/Title/FullPageTitle';
 import Tooltip from '@/components/Tooltip/Tooltip';
 import Checkbox from '@/components/Checked/Checkbox';
 import Radio from '@/components/Checked/Radio';
+import SidePanel from '@/components/SidePanel/SidePanel';
 
 
 Vue.use(Toast);
@@ -31,6 +32,7 @@ Vue.component('full-page-title', FullPageTitle);
 Vue.component('tooltip', Tooltip);
 Vue.component('checkbox', Checkbox);
 Vue.component('radio', Radio);
+Vue.component('side-panel', SidePanel);
 
 new Vue({
   vuetify,

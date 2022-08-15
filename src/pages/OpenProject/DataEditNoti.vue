@@ -11,17 +11,19 @@
       </template>
     </NotiFilled>
     <div class="open-project edit-data">
-        <v-row class="d-flex justify-start column-flex">
-            <v-col class="import-file-table">
+      <v-row class="d-flex justify-start column-flex">
+        <v-col class="import-file-table">
 
-            </v-col>
+        </v-col>
+        
 
-
-            <!-- 사이드 패널 공통 클래스로 -->
-            <v-col class="side-panel data-control">
-              <SidePanelTab />
-            </v-col>
-        </v-row>
+        <!-- 사이드 패널 공통 클래스 수정, 컴포넌트 화 -->
+        <side-panel class="data-control">
+          <template slot="panelContent">
+            <SidePanelTab />
+          </template>
+        </side-panel>
+      </v-row>
     </div>
 
   </v-container>

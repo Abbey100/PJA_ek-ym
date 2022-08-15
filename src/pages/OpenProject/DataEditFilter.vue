@@ -10,11 +10,12 @@
           
             </v-col>
 
-
-            <!-- 사이드 패널 공통 클래스로 -->
-            <v-col class="side-panel data-control">
-              <SidePanelFilter />
-            </v-col>
+            <!-- 사이드 패널 공통 클래스 수정, 컴포넌트 화 -->
+            <side-panel class="data-control">
+              <template slot="panelContent">
+                <SidePanelFilter />
+              </template>
+            </side-panel>            
         </v-row>
     </div>
 

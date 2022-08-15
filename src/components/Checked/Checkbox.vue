@@ -1,5 +1,5 @@
 <template>
-  <div class="checked-group d-flex justify-start">
+  <div class="checked-group align-center d-flex justify-start">
     <div class="checkbox-control">
       <input type="checkbox" id="">
       <label for=""></label>

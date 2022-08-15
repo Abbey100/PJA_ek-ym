@@ -282,14 +282,15 @@
                   </table>
                 </div>
               </div>
-          
             </v-col>
 
 
-            <!-- 사이드 패널 공통 클래스로 -->
-            <v-col class="side-panel data-control">
-              <SidePanelTab />
-            </v-col>
+            <!-- 사이드 패널 공통 클래스 수정, 컴포넌트 화 -->
+            <side-panel class="data-control">
+              <template slot="panelContent">
+                <SidePanelTab />
+              </template>
+            </side-panel>
         </v-row>
     </div>
 

@@ -13,93 +13,9 @@
                     class="elevation-0 base-table"
                 ></v-data-table>            
             </v-col>
-            <v-col class="parse">
-              <v-row class="parse-title d-flex justify-space-between column-felx aling-center">
-                <b>PC-Axis</b>
-                <v-btn
-                    class="text-capitalize update-pre "
-                    height="16"
-                    elevation="0"
-                    :ripple="false"
-                    text
-                >
-                  Update Preview
-                  <i class="ico ico__refresh"></i>
-                </v-btn>
-              </v-row>
 
-              <!-- == Character Encoding ================================ -->
-              <v-row class="parse-section char-enc">
-                <v-text-field 
-                  placeholder=""
-                  label="Character Encoding"
-                  value="EUC-KR"
-                  text-color="primary"
-                  hide-details
-                  outlined
-                >
-                </v-text-field>
-              </v-row>
-
-              <v-row class="parse-section">
-              <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
-                  <div class="checkbox-control">
-                    <input id="" type="checkbox" >
-                    <label form=""></label>
-                  </div>
-
-                  <!-- input이 inline으로 들어가는 text group -->
-                  <div class="text-group">
-                    <div class="d-flex justify-start">
-                        <span class="px-2">Ignore first</span>
-                        <span class="inline-input w-56">
-                          <v-text-field placeholder="0" tyle="number" single-line hide-details></v-text-field> 
-                        </span>
-                        <span class="pl-2">line(s) at beginning of file</span>
-                    </div>
-                  </div>
-                </div>  
-
-                <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
-                  <div class="checkbox-control">
-                    <input id="" type="checkbox" >
-                    <label form=""></label>
-                  </div>
-
-                  <div class="text-group">
-                    <div class="d-flex justify-start">
-                        <span class="px-2">Discard initial</span>
-                        <span class="inline-input w-56">
-                          <v-text-field placeholder="0" tyle="number" single-line hide-details></v-text-field> 
-                        </span>
-                        <span class="pl-2">row(s) of data</span>
-                    </div>
-                  </div>
-                </div> 
-
-                <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
-                  <div class="checkbox-control">
-                    <input id="" type="checkbox" >
-                    <label form=""></label>
-                  </div>
-                  <span class="pl-2">Store blank rows</span>
-                </div>  
-
-                <!-- checkbox 템플릿 -->
-                <div class="checkbox-group d-flex align-center justify-start column-flex single-row">
-                  <div class="checkbox-control">
-                    <input id="" type="checkbox" >
-                    <label form=""></label>
-                  </div>
-                  <span class="pl-2">Store blank cells as nulls</span>
-                </div>  
-
-     
-              </v-row>
-            </v-col>
+            <!-- 사이드 패널 공통 클래스 수정, 컴포넌트 화 -->
+            <SpParsePCAxis />
         </v-row>
     </div>
 
@@ -109,8 +25,10 @@
 
 
 <script>
+  import SpParsePCAxis from './SidePanel/SpParsePCAxis'
   export default {
     name: 'ParsePCAxis',
+    components: {SpParsePCAxis},
 
     data () {
       return {
