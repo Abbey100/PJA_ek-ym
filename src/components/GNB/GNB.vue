@@ -32,10 +32,13 @@
                     <v-img src="https://cdn.vuetifyjs.com/images/lists/1.jpg" height="40" contain></v-img>
                 </v-avatar>
 
-                <!-- avatar hover 시 tooltip 보여줌  -->
-                <div class="tooltip">
-                    <span class="d-flex column-flex align-center">로그아웃</span>
-                </div> 
+                <!-- 2022.08.14 전역 component로 수정 
+                    avatar hover 시 tooltip 보여줌  
+                -->
+                <tooltip 
+                    class="dir-left"
+                    :tooltipText="tooltipText"
+                />                  
             </li>
         </ul>
     
@@ -43,9 +46,14 @@
 </template>
 
 <script>
-
 export default {
-  name: 'GNB',
+    name: 'GNB',
+
+    data () {
+        return {
+            tooltipText: "로그아웃",
+        }
+    }
 }
 </script>
 
