@@ -36,6 +36,7 @@ import SelectEnc from '@/pages/CreateProject/SelectEnc';
 import DataEditaBase from '@/pages/OpenProject/DataEditBase';
 import DataEditCell from '@/pages/OpenProject/DataEditCell';
 import DataEditPop from '@/pages/OpenProject/DataEditPop';
+import DataEditNoti from '@/pages/OpenProject/DataEditNoti';
 import DataEditFilter from '@/pages/OpenProject/DataEditFilter';
 import ApplyOpHistory from '@/pages/EditPopup/ApplyOpHistory';
 import ExtractOphistory from '@/pages/EditPopup/ExtractOphistory';
@@ -163,6 +164,11 @@ export default new Router({
           path: 'DataEditCell',
           name: '데이터 편집 : DataEditCell',
           component: DataEditCell,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'DataEditNoti',
+          name: '알림 : DataEditNoti',
+          component: DataEditNoti,
         },
         { // == Header 기본 : layoutDataEdit ======================
           path: 'DataEditFilter',

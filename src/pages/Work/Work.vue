@@ -7,6 +7,7 @@
     <li><router-link target="_blank" to="/DataEditCell" >DataEditCell</router-link> : 데이터 편집 - 셀</li>    
     <li><router-link target="_blank" to="/DataEditFilter" >DataEditFilter</router-link> : 사이드 패널 - 필터</li>    
     <li><router-link target="_blank" to="/DataEditPop" >DataEditPop</router-link> : Table Pop</li>    
+    <li><router-link target="_blank" to="/DataEditNoti" >NotiFilled</router-link> : Notification</li>    
     <li><router-link target="_blank" to="/ApplyOPHistory" >ApplyOPHistory</router-link> : Apply Operation History</li>    
     <li><router-link target="_blank" to="/ExtractOphistory" >ExtractOphistory</router-link> : Extract Operation History</li>    
     <li><router-link target="_blank" to="/SplitColumns" >SplitColumns</router-link> : Split Columns</li>    
