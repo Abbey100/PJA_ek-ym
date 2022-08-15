@@ -38,5 +38,3 @@
     }
 
 </script>
-
-<style src="./DialogComp.scss" lang="scss"/>
