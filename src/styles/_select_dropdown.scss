@@ -1,0 +1,111 @@
+.select-control {
+    position: relative;
+    .select {
+      height: 32px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: $border-light;
+      border-radius: 8px;
+      font-size: $font-size-base;
+      background-color: #FAFBFC;
+      cursor: pointer;
+      .select-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      // caret
+      .select-caret {
+        height: 100%;
+        display: flex;
+        align-items : center;
+        margin-left: 4px;
+      }
+    }
+  
+    .dropdown {
+      display: none;
+      border: 1px solid $grey-default;
+      position: absolute !important;
+      margin-top: 2px;
+      z-index: 1;
+  
+      .dropdown-menu  {
+        padding: 4px 0!important;
+      }
+      .dropdown-item {
+        position: relative;
+        padding: 0 4px 0 8px;
+        height: 32px;
+        font-weight: normal!important;
+        cursor: pointer;
+
+        &.d-section {
+            margin-top: 7px;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -4px;
+                width: 100%;
+                height: 1px;
+                background-color: $grey-light;
+            }
+        }     
+
+        i {
+            margin-right: 6px;
+        }
+
+        &.ico-hide {
+            i {
+                display: none;
+                visibility: hidden;
+            }
+        }
+
+        &:hover{
+          background-color: rgba(124,153,255,.2);
+        }
+  
+        &.active {
+          background-color: $point-deep !important;
+          color: #fff;
+        }
+  
+        .ico__caret-arr__right {
+          display: none;
+        }     
+        
+        &.sub-menu:hover {
+          .dropdown {
+            display: block !important;
+            visibility: visible !important;
+          }
+        }
+      }
+  
+      .sub-menu {
+        .ico__caret-arr__right {
+          display: block !important;
+          visibility: visible !important;
+        }   
+      }
+    }
+  
+    &.plain {
+      .select {
+        border-color: #fff;
+        background-color: transparent;
+      }
+  
+    }
+    
+  }

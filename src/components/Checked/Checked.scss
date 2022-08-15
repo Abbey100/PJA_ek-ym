@@ -1,0 +1,100 @@
+@import '../../styles/app';
+@import '../icon/icon';
+
+.checked-group {
+  width: 100%;
+  color: $grey-default;
+  
+  .checkbox-control,
+  .radio-control {
+      & + span ,
+      & + div{ 
+      color: $primary;
+      font-size: $font-size-14;
+    }
+  }
+
+  .checkbox-control,
+  .radio-control {
+      & + span { 
+      display: inline-block;
+    }
+  }
+
+  &.multi {
+    .checkbox-control,
+    .radio-control {
+      margin-top: 2px;
+      align-self: start!important;
+      & + span ,
+      & + div{  
+        line-height: 20px;
+      }
+    }
+  }
+  &.checked {
+    .checkbox-control {
+      @extend %checked-set;
+    }
+  }  
+}
+
+.checkbox-control {
+  
+  align-self: center;
+  input[type="checkbox"]+label {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $grey-placeholder;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  input[type="checkbox"]:checked+label {
+    @extend %checked-set;
+  }
+
+  
+  input[type="checkbox"] {
+      display: none;
+  }
+}
+
+.radio-control {
+  align-self: center;
+  input[type="radio"]+label {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $grey-placeholder;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  input[type="radio"]:checked+label {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-color: $point-deep;
+    background-color: #fff;
+
+    &::before {
+      content : '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      margin: 3px;
+      background-color: $point-deep;
+    }
+  } 
+  
+  input[type="radio"] {
+    display: none;
+  }
+}
