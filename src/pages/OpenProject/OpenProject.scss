@@ -1,0 +1,295 @@
+@import "../../styles/app";
+
+
+.open-project {
+    height: calc(100vh - 64px);
+
+    > .row {
+        height: 100%;
+    }
+}
+
+
+.edit-data {
+    .v-data-table {
+       
+    }
+}
+
+.editable {
+    &.v-data-table {
+        &,
+        .v-data-table__wrapper {
+            height: 100%;
+        }
+
+        .v-data-table-header th.sortable:hover {
+            color: #878787!important;
+        }
+        th[role="columnheader"] {
+            > div{
+                > i {
+                    margin-left: 8px;
+                }
+            }
+        }
+            
+        .text-wrap {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        %td-edit {
+            position: relative;
+
+            .text-wrap  {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                padding: 0 8px 0 16px;
+                border-width: 1px;
+                border-style: solid;
+            }
+            > span {
+                display: block;
+                width: calc(100% - 24px);
+            }
+            .ico__edit {
+                background-color: #fff;
+                border-radius: 2px;
+                border: 1px solid $border-default;
+                box-sizing: content-box;
+            }
+
+        }
+        td {
+            cursor: pointer;
+            .ico__edit {
+                display: none;
+            }
+            &.hover,
+            &:hover:not(:first-child) {
+                @extend %td-edit;
+                .text-wrap {
+                    border-color: $border-dark;
+                    background-color: #fff;
+
+
+                    .ico__edit {
+                        display: block;
+                    }
+                }
+            }
+
+            &.active-edit {
+                @extend %td-edit;
+                .text-wrap {
+                    border-color: $point-deep;
+                    background-color: rgba(145,124,255,.2);
+                } 
+                .ico__edit {
+                    display: block;
+                }
+            }
+
+        }
+    }
+}
+
+.mark-wrap {
+    position: relative;
+    left: -7px;
+    cursor: pointer;
+    .mark {
+        display: inline-block;
+        padding: 4px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.layer-pop {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    padding: 20px 16px 16px;
+    border: 1px solid $grey-default;
+    background-color: #fff;
+
+    &.cell-edit {
+        width: 405px;
+        height: 240px;
+
+        .dir-arrow {
+            left: 229px;
+        }
+        
+        .data-type {
+            > span {
+                width: 80px;
+            }
+        }
+        textarea {
+            resize: none;
+            height: 96px;
+        }
+
+    }
+}
+
+
+
+// 셀 에디트
+.dir-arrow {
+    position: inherit;
+    top: 30px;
+    right: 8px;
+    display: block;
+    width: 17px;
+    height: 12px;
+    background-image: url('../../assets/img/img__layerpop-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 17px 12px;
+    background-position: 0 0;
+    z-index: 1;
+}
+
+.layer-pop {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    padding: 20px 16px 16px;
+    border: 1px solid $grey-default;
+    background-color: #fff;
+
+    &.cell-edit {
+        width: 405px;
+        height: 240px;
+
+        .dir-arrow {
+            left: 229px;
+        }
+
+        textarea {
+            resize: none;
+            height: 96px;
+        }
+    }
+
+}
+
+
+
+
+.select-control {
+    position: relative;
+    .select {
+      height: 32px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: $border-light;
+      border-radius: 8px;
+      font-size: $font-size-base;
+      cursor: pointer;
+      .select-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      // caret
+      .select-caret {
+        height: 100%;
+        display: flex;
+        align-items : center;
+        margin-left: 4px;
+      }
+    }
+  
+    .dropdown {
+      display: none;
+      border: 1px solid $grey-default;
+      position: absolute !important;
+      margin-top: 2px;
+      z-index: 1;
+  
+      .dropdown-menu  {
+        padding: 4px 0!important;
+      }
+      .dropdown-item {
+        position: relative;
+        padding: 0 4px 0 8px;
+        height: 32px;
+        font-weight: normal!important;
+        cursor: pointer;
+
+        &.d-section {
+            margin-top: 7px;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -4px;
+                width: 100%;
+                height: 1px;
+                background-color: $grey-light;
+            }
+        }     
+
+        i {
+            margin-right: 6px;
+        }
+
+          &.ico-hide {
+            i {
+              display: none;
+              visibility: hidden;
+            }
+        }
+
+        &:hover{
+          background-color: rgba(124,153,255,.2);
+        }
+  
+        &.active {
+          background-color: $point-deep !important;
+          color: #fff;
+        }
+  
+        .ico__caret-arr__right {
+          display: none;
+        }     
+        
+        &.sub-menu:hover {
+          .dropdown {
+            display: block !important;
+            visibility: visible !important;
+          }
+        }
+      }
+  
+      .sub-menu {
+        .ico__caret-arr__right {
+          display: block !important;
+          visibility: visible !important;
+        }   
+      }
+    }
+  
+    &.plain {
+      .select {
+        border-color: #fff;
+      }
+  
+    }
+    
+  }

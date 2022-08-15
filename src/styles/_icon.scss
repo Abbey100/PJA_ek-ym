@@ -1,0 +1,82 @@
+
+%ico-16 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+}
+
+.ico {
+    @extend %ico-16;
+    background-image: url('../assets/img/ico-16.svg');
+    background-position-x: 0;
+
+
+    &.ico__close {
+        background-position-y: -208px ;
+        &.sm {
+            background-position-y: -304px ;
+        }
+    }
+  
+    &.ico__select-caret {
+        background-position-y: -16px ;
+    }
+
+    // Parse data
+    &.ico__refresh {
+        background-position-y: -240px ;
+    }
+    // ===========================================
+
+    // header tag 
+    &.ico__clear {
+        background-position-y: -320px;
+    }
+    &.ico__complete {
+        background-position-y: -288px;
+    }
+    // ===========================================
+
+    // fixed width table column delete   
+    &.ico__delete {
+        background-position-y: -368px;
+    }
+
+    // pagenation
+    &.ico__first {
+        background-position-y: -400px ;
+        transform: rotate(180deg);
+    }
+    &.ico__last {
+        
+        background-position-y: -400px ;
+    }
+    &.ico__pre {
+        background-position-y: -16px ;
+        transform: rotate(90deg);
+    }    
+    &.ico__next {
+        background-position-y: -16px ;
+        transform: rotate(-90deg);
+    }    
+  }
+
+  // show as : rows / records
+  .ico__show {
+    background-image: url('../../assets/img/ico__show-as.svg'); 
+    &.ico__rows-bl {
+        background-position: 0 0;
+    }
+    &.ico__rows-wh {
+        background-position: 0 -16px;
+    }
+    &.ico__records-bl {
+        background-position: 0 -32px;
+    }
+    &.ico__records-wh {
+        background-position: 0 -48px;
+    }
+  }
+  
