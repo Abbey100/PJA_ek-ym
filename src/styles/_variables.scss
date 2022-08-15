@@ -1,5 +1,5 @@
 @import '~vuetify/src/styles/styles.sass';
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 // Sidebar //
 $drawer-items-padding:                     32px !default;
@@ -48,10 +48,18 @@ $unselect:          #9AA0B3;
 
 $background-dark:   #EBEEF1;
 
+$tbw02 :            #fafbfc;
 
+$gnr-deep-pale:     #DDDEE7;
+$gnr-light:           $grey-light;
+$gnr-bg-default :     $body-bg;
+$gnr-bg-dark :       #EBEEF1;
+$gnr-tooltip-primary: rgba(32,32,32,.75);
+$gnr-default:       #666666;
+$gnr-border-default : #DEDFE0;
 
 // 기본 폰트 변경
-$body-font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+$body-font-family: 'Noto Sans KR', 'sans-serif';
 $heading-font-family: $body-font-family; 
 
 /* Typography 
@@ -72,17 +80,18 @@ $h6-font-size:                14px !default;
 
 
 
-$font-size-16 : 16px;
-$font-size-14 : 14px;
-$font-size-base : 12px;
-$font-size-data : 10px;
+$font-size-16 : 16px !default;
+$font-size-14 : 14px !default;
+$font-size-13 : 13px !default;
+$font-size-base : 12px !default;
+$font-size-data : 10px !default;
 
 $title__24 : 24px;
 
 
 
 // Card //
-$card-shadow: 0 3px 11px 0 #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A;
+$card-shadow: 0 3px 11px 0 rgba(0,0,0,.16), 0 3px 3px -2px rgba(0,0,0,.16), 0 1px 8px 0 rgba(0,0,0,.16);
 
 // Buttons //
 $button-shadow: 0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A;

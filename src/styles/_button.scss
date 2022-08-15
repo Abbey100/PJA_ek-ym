@@ -20,6 +20,18 @@
             display: none;  
           }
         background-color: #fff!important;
+
+        &.point-deep { // outlined
+            border-color: $point-deep !important;
+        
+            &::before {
+                display: none;
+            }
+        
+            .v-btn__content {
+                color: $point-deep!important;
+            }
+        }        
     }
 
     &.btn-md {
@@ -36,7 +48,17 @@
         }
      
     }
-
+    &.point-deep { // filled
+        border-color: $point-deep !important;
+  
+        &::before {
+          display: none;
+        }
+  
+        .v-btn__content {
+            color: #fff!important;
+        }
+      }
 
 
 }
