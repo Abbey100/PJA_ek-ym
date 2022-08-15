@@ -66,7 +66,7 @@
 
               </div>
 
-              <div class="Section-action d-flex">
+              <div class="Section-action d-flex justify-space-between">
                 <div class="button-group">
                   <v-btn
                     class="text-capitalize btn-md mr-2"
