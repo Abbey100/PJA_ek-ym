@@ -32,7 +32,8 @@
                     <v-img src="https://cdn.vuetifyjs.com/images/lists/1.jpg" height="40" contain></v-img>
                 </v-avatar>
 
-                <!-- 2022.08.14 전역 component로 수정 
+                <!-- Sprint 2에 수정 됨 
+                    2022.08.14 전역 component로 수정 
                     avatar hover 시 tooltip 보여줌  
                 -->
                 <tooltip 

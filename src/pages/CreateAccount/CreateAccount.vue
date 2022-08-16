@@ -95,7 +95,8 @@
                   </v-col>
 
                   <!-- 옵션 선택 -->
-                  <!-- Checkbox 템플릿 -->
+                  <!-- Sprint 2에 수정 됨 
+                      체크박스 컴포넌트화 및 반영  -->
                   <v-col class="sign-in-option mt-6">
                     <checkbox>
                         <template slot="checkedContent">

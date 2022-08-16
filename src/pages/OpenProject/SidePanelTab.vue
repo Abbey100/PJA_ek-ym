@@ -70,7 +70,7 @@
                 <template v-for="(item, i) in items">
                 <v-divider
                     v-if="!item"
-                    :key="`divider+${i}`"
+                    :key="`divider-${i}`"
                 ></v-divider>
 
                 <v-list-item
