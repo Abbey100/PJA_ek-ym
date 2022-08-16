@@ -9,63 +9,62 @@
     <!-- dialog 의 inline style은 dialog의 위치를 위한 임시 코드  -->
     <div class="dialog" style="position: absolute; left:50%; top: 20%; margin-left: -400px;  z-index:6">
         <v-card
-            elevation="3"
+          elevation="3"
         >
-            <div class="sel-enc">
-                <div class="dialog-title ">
-                    <div class="d-flex column-flex align-center justify-space-between">
-                        <b>Select Encoding</b>
-                        <div class="dialog=close">
-                            <v-btn
-                                class ="btn-ico" 
-                                height="16"
-                                width="16"
-                                elevation="0"
-                                :ripple="false"
-                                icon
-                                plain
-                            >
-                                <i class="ico ico__close"></i>
-                            </v-btn>      
-                        </div>
-                    </div>
+          <div class="sel-enc">
+            <div class="dialog-title ">
+              <div class="d-flex column-flex align-center justify-space-between">
+                <b>Select Encoding</b>
+                <div class="dialog=close">
+                    <v-btn
+                      class ="btn-ico" 
+                      height="16"
+                      width="16"
+                      elevation="0"
+                      :ripple="false"
+                      icon
+                      plain
+                    >
+                      <i class="ico ico__close"></i>
+                    </v-btn>      
+                  </div>
                 </div>
+              </div>
 
-                <div class="dialog-content">
-                    <v-tabs grow class="dialog-tab">
-                        <v-tabs-slider></v-tabs-slider>
-                        <v-tab :href="`#common-encodings`">
-                            Common Encodings
-                        </v-tab>
-                        <v-tab :href="`#all-encodings`">
-                            All Encodings
-                        </v-tab>
+              <div class="dialog-content">
+                <v-tabs grow class="dialog-tab">
+                  <v-tabs-slider></v-tabs-slider>
+                  <v-tab :href="`#common-encodings`">
+                      Common Encodings
+                  </v-tab>
+                  <v-tab :href="`#all-encodings`">
+                      All Encodings
+                  </v-tab>
 
-                        <v-tab-item :value="'common-encodings'" >
-                            <v-data-table
-                                :headers="headers"
-                                :items="desserts"
-                                :items-per-page="8"
-                                hide-default-footer
-                                disable-sort
-                                class="elevation-0 base-table enc-table"
-                            ></v-data-table>                        
-                        </v-tab-item>
-                        <v-tab-item :value="'all-encodings'" >
-                           <v-data-table
-                                :headers="headers"
-                                :items="desserts"
-                                :items-per-page="8"
-                                hide-default-footer
-                                disable-sort
-                                class="elevation-0 base-table enc-table"
-                            ></v-data-table>                             
-                        </v-tab-item>
-                    </v-tabs>
-
-                
-                </div>
-            </div>
+                  <v-tab-item :value="'common-encodings'" >
+                    <v-data-table
+                      :headers="headers"
+                      :items="desserts"
+                      :items-per-page="8" 
+                      hide-default-footer
+                      disable-sort
+                      dense 
+                      class="elevation-0 base-table enc-table"
+                    ></v-data-table>                        
+                  </v-tab-item>
+                  <v-tab-item :value="'all-encodings'" >
+                    <v-data-table
+                      :headers="headers"
+                      :items="desserts"
+                      :items-per-page="8"
+                      hide-default-footer
+                      disable-sort    
+                      class="elevation-0 base-table enc-table"
+                    ></v-data-table>                             
+                  </v-tab-item>
+                </v-tabs>
+              </div>
+          </div>
         </v-card>
     </div>
 

@@ -1,6 +1,19 @@
 <template>
-<div class=" d-flex column-flex align-center justify-center mt-10">
+<div class=" d-flex column-flex align-start justify-center work-wrap">
 <ul class="work--list"> 
+    <li class="sprint mb-4 "> SPRINT 2</li>
+    <li class="mb-2"><b>Data Edit</b></li>
+    <li><router-link target="_blank" to="/DataEditaBase" >DataEditBase</router-link> : 데이터 편집 기본</li>    
+    <li><router-link target="_blank" to="/DataEditCell" >DataEditCell</router-link> : 데이터 편집 - 셀</li>    
+    <li><router-link target="_blank" to="/DataEditFilter" >DataEditFilter</router-link> : 사이드 패널 - 필터</li>    
+    <li><router-link target="_blank" to="/DataEditPop" >DataEditPop</router-link> : Table Pop</li>    
+    <li><router-link target="_blank" to="/DataEditNoti" >NotiFilled</router-link> : Notification</li>    
+    <li><router-link target="_blank" to="/ApplyOPHistory" >ApplyOPHistory</router-link> : Apply Operation History</li>    
+    <li><router-link target="_blank" to="/ExtractOphistory" >ExtractOphistory</router-link> : Extract Operation History</li>    
+    <li><router-link target="_blank" to="/SplitColumns" >SplitColumns</router-link> : Split Columns</li>    
+    <li><router-link target="_blank" to="/JoinColumns" >JoinColumns</router-link> : JoinColumns</li>    
+
+    <li class="sprint mb-4 mt-12"> SPRINT 1</li>
     <li class="mb-2"><b>Create Project</b></li>
     <li><router-link target="_blank" to="/PageProgress" >Page</router-link> : 페이지 이동 Progress </li>
     <li><router-link target="_blank" to="/FileProgress" >File</router-link> : 파일 업로드 progress</li>
@@ -38,7 +51,19 @@
     }
 </script>
 <style>
-   
+    .sprint {
+        padding: 4px;
+        text-align: center;
+        background-color:#FFF7CF;
+        font-size: 14px;
+        font-weight: bold;
+    }
+   .work-wrap {
+    overflow: auto !important;
+    height: calc(100vh - 64px);
+    padding: 40px 0;
+    background: #fff !important
+   }
    .work--list {
     width: 640px;
    }

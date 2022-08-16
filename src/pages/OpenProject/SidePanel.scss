@@ -1,0 +1,92 @@
+@import "../../styles/app";
+
+
+.side-panel {
+
+    &.data-control {
+        .guide-text {
+            font-size: $font-size-base;
+            line-height: 15px;
+            b {
+                margin-bottom: 6px;
+            }
+        }
+    }
+ 
+    .undo-redo {
+        .button-group {
+            position: relative;
+            padding-bottom: 16px;
+            .v-btn {
+                margin-right: 6px;
+            }
+
+            .tooltip-view{
+                position: absolute;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+
+                &:hover,
+                &.hover {
+                  .tooltip {
+                    display: block;
+                  }
+                }   
+            }
+        }
+        .filter-search {
+            margin-left:-16px;
+            margin-right: -24px;
+            padding: 16px 24px 16px 16px;
+            background-color: #DEE6EA;
+            border-top: 1px solid $grey-light;;
+        }
+    }
+
+    .v-list {
+        margin-left: -16px;
+        margin-right: -24px;
+        background-color: transparent;
+        box-shadow: none;
+        .v-item-group {
+            padding: 0 !important;
+            border-bottom: 1px solid $border-default;
+        }
+        .v-list-item {
+            min-height: 49px;
+            padding-left: 32px;
+            padding-right: 24px;
+
+            &.v-list-item--active {
+                color: #fff;
+                &::before {
+                    opacity: 1;
+                    background-color: $point-light;
+                    z-index: 0;
+                }
+            }
+            
+            &:hover {
+                background-color: $gnr-deep-pale;
+                border-color: $gnr-light;
+            }
+        }
+        .v-list-item__title {
+            font-size: $font-size-base;
+        }
+
+        .v-divider {
+            border-color: $border-default;
+        }
+        .v-list-item__content {
+            z-index: 1;
+        }
+       
+    }
+    .v-list-item-group {
+
+
+    }
+}
+

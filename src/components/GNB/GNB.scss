@@ -92,38 +92,20 @@
         .gnb__logout {
             position: relative;
             cursor: pointer;
-
+            
             .tooltip {
-                position: fixed;
-                display: none;
-                left: 72px;
-                bottom: 32px;
-                border-radius: 8px;
-                min-height: 40px;
-                min-width: 120px;
-                background-color: rgba(32,32,32,.75);
-                padding: 8px 16px;
-                span {
-                    padding: 0!important;
-                    min-height: 24px;
-                    color: #fff;
-                    font-size: $font-size-base;
+                top: -8px;
+                left: 54px;
+                &.dir-left {
+                    .tooltip-arr {
+                        top: 20px;
+                    }
                 }
-                &::after {
-                    content: '';
-                    position: absolute;
-                    width: 6px;
-                    height: 12px;
-                    left: -6px;
-                    top: 14px;
-                    background-image: url('../../assets/img/icon/tooltip-arrow.svg');
-                    background-size: 6px 12px;
-                    background-repeat: no-repeat;
-                    overflow: hidden;
-                    background-position: 0 0;
+                .tooltip-text {
+                    font-size: 12px !important;
                 }
             }
-                        &:hover {
+            &:hover {
                 &::before,
                 &::after {
                     content: '';
@@ -152,9 +134,7 @@
                 .tooltip {
                     display: block!important;
                 }
-
             }
-        
         }
     }
 }

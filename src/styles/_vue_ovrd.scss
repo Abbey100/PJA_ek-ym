@@ -1,4 +1,4 @@
-* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+* { font-family: 'Noto Sans KR', sans-serif;}
 
 .theme--light{
     &.v-input input, 
@@ -36,6 +36,12 @@
 }
 .v-input {
   font-size: $font-size-14;
+
+  &.v-textarea {
+    background-color: #fff !important;
+    caret-color: #fff !important;
+  }
+
 
   // override : 라벨  
   .v-label {
@@ -120,7 +126,6 @@
       display: block;
     }
   }
-
   // override : input 기본 스타일
   fieldset {
       top: 0!important;
@@ -186,6 +191,7 @@ input[type="password"] {
 }
 
 
+
 // override : underline animation reset
 .v-text-field--single-line {
   padding-top: 0;
@@ -225,6 +231,12 @@ input[type="password"] {
   border-image:none !important;
 }
 
+.v-textarea {
+  &.v-text-field--outlined fieldset {
+    background-color: #fff!important;
+  }
+}
+
 .v-btn {
   .v-btn__content {
     opacity: 1!important;
@@ -243,7 +255,7 @@ input[type="password"] {
   &.v-data-table > .v-data-table__wrapper > table > tbody {
       > tr {
           & > td {
-              min-height: 36px;
+              height: 36px;
               color: #5E636D;
               font-size: $font-size-data;
               font-weight: normal;

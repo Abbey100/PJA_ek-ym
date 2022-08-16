@@ -119,8 +119,7 @@
 </template>
 
 <script>
-  import AttachItem from '@/components/AttachItem/AttachItem';
-
+    import AttachItem from '@/components/AttachItem/AttachItem';
 
     export default {
         name: 'ImportFile',
@@ -128,7 +127,7 @@
         data : () => ({
             fileType: "CSV",
             fileName: "전국문화축제표준데이터.csv",
-              
+                
         }),
     }
 

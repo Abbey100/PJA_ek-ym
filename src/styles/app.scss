@@ -2,12 +2,18 @@
 @import 'variables';
 @import 'base';
 @import 'button';
+@import 'dialog';
+@import 'select_dropdown';
 @import 'vue_ovrd';
 
 // 전역 스타일
 .container {
    .full-width {
     width: 100% !important;
+   }
+
+   .full-height {
+    height: 100% !IMPORTANT;
    }
 }
 

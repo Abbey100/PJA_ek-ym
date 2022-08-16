@@ -1,6 +1,7 @@
 @import "../../styles/app";
-.main-header {
 
+.main-header {
+  min-width: 1280px !important;
   .v-list {
     .v-list-item:hover {
       background-color: #F3F5FF;
@@ -164,4 +165,117 @@
   }
 
 }
+
+
+.data-edit {
+  .h-right {
+    margin-top: -16px !important;
+    margin-bottom: -16px !important;
+    font-size: $font-size-base;
+
+    > div {
+     height: 100%;
+    }
+
+    .dl-l {
+      position: relative;
+  
+      &::before {
+        content:'';
+        top: 0;
+        margin-top: 0;
+        height: 100%;
+        border-left : 1px solid $border-light;
+      }
+    }
+  
+  }
+  .pagination {
+    max-width: 231px;
+    padding: 20px 24px !important;
+
+    .button-group {
+      height: 24px;
+    }
+    
+    .page-input{
+      .v-input {
+        .v-input__slot{
+          padding: 4px 6px !important ;
+          width: 36px;
+          min-height: 24px !important;
+          border-radius: 2px!important;
+        }
+        fieldset {
+          padding: 0;
+        }
+      }
+      padding-top: 0!important;
+    }
+  }
+
+  .show-as {
+    max-width: 413px;
+    padding: 16px 24px !important;
+
+    .show-control {
+      position: relative;
+      padding: 0 8px 0 0;
+      height: 32px;
+      background-color: $white-pale ;
+      border-radius: 8px;
+
+      > span {
+        min-width: 64px;
+        display: inline-block;
+      }
+      
+    }
+    .dl-r::before {
+      height: 10px;
+      margin-top: -5px;
+    }
+
+    .select-control {
+      &.plain {
+        .select {
+         border: none!important;
+          padding: 0 0 0 8px!important;
+        }
+      }
+    }
+  }
+
+
+  .project-control {
+    max-width: 257px;
+    padding: 16px 0 16px 24px !important;
+
+    &.dl-l::before {
+        border-color: $border-default !important;
+    }
+
+    .btn-open {
+      min-width: 97px !important;
+    }
+
+    .select-control{
+      .select {
+        width: 120px;
+        padding-right: 12px !important;
+        border-color: #61768B !important;
+        color: #fff !important;
+        background-color: #61768B !important;
+      }
+    }
+    
+    .dropdown {
+      
+      .dropdown-item {
+
+      }
+    }
+  }
+}
+
 

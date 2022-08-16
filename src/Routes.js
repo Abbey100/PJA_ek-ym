@@ -1,10 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-// component
+// component :: Component
 import Layout from '@/components/Layout/Layout';                     // Layout : 기본 레이아웃
 import layoutPrjParse01 from '@/components/Layout/layoutPrjParse01'; // 프로젝트 생성 Parse data Header 01 레이아웃
 import layoutPrjParse02 from '@/components/Layout/layoutPrjParse02'; // 프로젝트 생성 Parse data Header 02 레이아웃
+import layoutDataPop from '@/components/Layout/layoutDataPop';     // 프로젝트 편집 기본 header
+import layoutDataEdit from '@/components/Layout/layoutDataEdit';     // 프로젝트 편집  
 import LayoutFull from '@/components/LayoutFull/LayoutFull';         // 로그인 용 I Shape 레이아웃
 
 // 작업 목록
@@ -30,9 +32,18 @@ import ParseXML from '@/pages/CreateProject/ParseXML';
 import ParseOpenDoc from '@/pages/CreateProject/ParseOpenDoc';
 import SelectEnc from '@/pages/CreateProject/SelectEnc';
 
+// EditData
+import DataEditaBase from '@/pages/OpenProject/DataEditBase';
+import DataEditCell from '@/pages/OpenProject/DataEditCell';
+import DataEditPop from '@/pages/OpenProject/DataEditPop';
+import DataEditNoti from '@/pages/OpenProject/DataEditNoti';
+import DataEditFilter from '@/pages/OpenProject/DataEditFilter';
+import ApplyOpHistory from '@/pages/EditPopup/ApplyOpHistory';
+import ExtractOphistory from '@/pages/EditPopup/ExtractOphistory';
+import SplitColumns from '@/pages/EditPopup/SplitColumns';
+import JoinColumns from '@/pages/EditPopup/JoinColumns';
 
-
-
+//
 import Error from "@/pages/Error/Error";
 import Login from "@/pages/Login/Login";
 import CreateAccount from "@/pages/CreateAccount/CreateAccount";
@@ -136,10 +147,69 @@ export default new Router({
           name: '프로젝트 생성 중 : Select Encoding',
           component: SelectEnc,
         },
-
       ],
     },
 
+    { // 프로젝트 편집 - Edit Data
+      path: '/',
+      name: 'layoutDataEdit',
+      component: layoutDataEdit,
+      children: [
+        { // == Header Export : layoutDataExport ======================
+          path: 'DataEditaBase',
+          name: '데이터 편집 : DataEditBase',
+          component: DataEditaBase,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'DataEditCell',
+          name: '데이터 편집 : DataEditCell',
+          component: DataEditCell,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'DataEditNoti',
+          name: '알림 : DataEditNoti',
+          component: DataEditNoti,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'DataEditFilter',
+          name: '데이터 편집 : DataEditFilter',
+          component: DataEditFilter,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'ApplyOpHistory',
+          name: '팝업 : ApplyOpHistory',
+          component: ApplyOpHistory,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'ExtractOphistory',
+          name: '팝업 : ExtractOphistory',
+          component: ExtractOphistory,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'SplitColumns',
+          name: '팝업 : SplitColumns',
+          component: SplitColumns,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'JoinColumns',
+          name: '팝업 : JoinColumns',
+          component: JoinColumns,
+        },
+      ],
+    },
+
+    { // 프로젝트 편집 - Edit Data
+      path: '/',
+      name: 'layoutDataPop',
+      component: layoutDataPop,
+      children: [
+        { // == Header Export : layoutDataExport ======================
+          path: 'DataEditPop',
+          name: 'header & data edit pop menu',
+          component: DataEditPop,
+        },
+      ]
+    },
     {
     path: '/',
     redirect: 'login',

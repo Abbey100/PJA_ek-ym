@@ -1,0 +1,185 @@
+@import '../../styles/app';
+
+.dialog-content {
+    .v-input {
+        &.inline-input {
+            position: relative;
+            top: -3px;
+            font-size: $font-size-base;
+        }
+    }
+}
+.extract-op {
+    .col {
+        width: 438px;
+    }
+    .dialog-section {
+        height: 395px;
+    }
+    .text-item {
+        display: block;
+        height: 16px;
+        color: $grey-placeholder;
+        font-size: 13px;
+    }
+
+    .dialog-content {
+        .checked-group {
+            padding: 5px 0;
+        }
+    }     
+}
+
+.split-col {
+    .dialog-section {
+        
+        &.how-to {
+            > .checked-group {
+                height: 24px;
+            }
+        }
+
+        &.after-split {
+            .checked-group {
+                padding: 5px 0;
+            }
+        }
+
+        .separator {
+            font-size: $font-size-14;
+            margin-bottom: 10px;
+            .row:first-child {
+                margin-bottom:2px
+            }
+            .inline-input {
+                max-width: 112px;
+            }
+
+            .checked-group {
+                width: 200px;
+                height: 24px;
+            }
+        }
+
+        .separator, 
+        .field-length {
+            padding: 5px 0;
+        }
+    }
+
+}
+
+.dialog-content {
+    .Section-action {
+        height:40px;
+        padding: 8px 0 0 0;
+        .button-group:last-child {
+            width: 80px;
+        }
+    }   
+}
+
+.join-column {
+    .v-list {
+        .checked-group {
+            max-width: 24px;
+        }
+    }
+
+    .v-list-item {
+        margin-bottom: 4px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $gnr-bg-dark;
+        border-radius: 4px;
+        background-color: $gnr-bg-default;
+        .v-list-item__title {
+            color: $primary;
+            font-size: $font-size-14;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            border-color: $gnr-default;
+            background-color: #fff;
+        }
+    }
+ 
+    .v-list-item[aria-selected="true"] {
+        .v-list-item__title {
+            color: #fff;
+        }
+        border-color: $point-deep;
+        background-color: #A8B1FF;
+
+        .checked-group {
+            .checkbox-control {
+                input[type="checkbox"]+label {
+                    @extend %checked-set;
+                }
+            }
+        }
+    }
+
+    .v-list-item--link:before {
+        display: none;
+    }  
+
+    .theme--light.v-list-item--active::before {
+        opacity: 0;
+    }
+
+    .drag-n-drop {
+        max-width: 279px;
+
+        .section-action {
+            .button-group {
+                width: 100%;
+            }
+        }
+    }
+
+    .join-options {
+        letter-spacing: -0.04em;
+        .dialog-section {
+            height: 379px;
+        }
+
+        .inline-input {
+            max-width: 112px;
+            &.w-02 {
+                max-width: 179px;
+            }
+        }
+
+        .descript {
+            margin-top: 2px;
+            color: $grey-placeholder;
+            line-height: 20px;
+        }
+
+        .dialog-section > .row {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .option-group {
+            padding: 5px 0;
+        }
+    }
+
+}
+
+
+
+.thead {
+    .dropdown {
+        top: 20px;
+        left: 0px;
+    }
+}
+

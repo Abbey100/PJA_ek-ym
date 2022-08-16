@@ -95,33 +95,26 @@
                   </v-col>
 
                   <!-- 옵션 선택 -->
-                  <!-- Checkbox 템플릿 -->
+                  <!-- Sprint 2에 수정 됨 
+                      체크박스 컴포넌트화 및 반영  -->
                   <v-col class="sign-in-option mt-6">
-                    <div class="checkbox-group d-flex align-center justify-start column-flex">
-                        <div class="checkbox-control">
-                          <input type="checkbox" id="terms">
-                          <label for="terms"></label>
-                        </div>
-                      <span>I have read and agree to the <a href="#" class="font-weight-medium">Terms of Service</a></span>
-                    </div>
+                    <checkbox>
+                        <template slot="checkedContent">
+                          <span>I have read and agree to the <a href="#" class="font-weight-medium">Terms of Service</a></span>
+                        </template>
+                    </checkbox>  
 
-                    <!-- Checkbox 템플릿 -->
-                    <div class="checkbox-group d-flex align-center justify-start column-flex">
-                      <div class="checkbox-control">
-                        <input id="policy" checked type="checkbox">
-                        <label form="policy"></label>
-                      </div>
-                      <span>I have read and agree to the  <a href="#" class="font-weight-medium"> Privacy Policy</a></span>
-                    </div>  <!-- Checkbox 템플릿 끝 -->
+                    <checkbox>
+                        <template slot="checkedContent">
+                          <span>I have read and agree to the  <a href="#" class="font-weight-medium"> Privacy Policy</a></span>
+                        </template>
+                    </checkbox>                    
 
-                    <!-- Checkbox 템플릿 -->
-                    <div class="checkbox-group d-flex align-center justify-start column-flex">
-                      <div class="checkbox-control">
-                        <input id="offers" type="checkbox">
-                        <label form="offers"></label>
-                      </div>
-                      <span>Keep me updated on news and offers</span>
-                    </div>  <!-- Checkbox 템플릿 끝 -->
+                    <checkbox>
+                        <template slot="checkedContent">
+                           <span>Keep me updated on news and offers</span>
+                        </template>
+                    </checkbox>                    
                   </v-col>
 
                   

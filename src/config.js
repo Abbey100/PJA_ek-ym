@@ -11,6 +11,7 @@ export default {
       grayBold: '#4a4a4a',
 
       greyDefault: '#66666',
+      pointLight: '#7C99FF',
   },
 };
 

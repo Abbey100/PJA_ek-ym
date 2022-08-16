@@ -2,8 +2,8 @@
     <div class="circular-progress d-flex column-flex align-center justify-center">
         <v-progress-circular 
             :value="60"
-            :size="100"
-            :width="15"
+            :size="80"
+            :width="6"
             color="#5551FF"
             background-color="#EBEEF1"
 

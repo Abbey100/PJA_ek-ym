@@ -1,15 +1,16 @@
+
 @import '../../styles/app';
 
-
-.ico {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+%ico-16 {
+    display: inline-block;
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
     background-size: 16px auto;
+}
+
+.ico {
+    @extend %ico-16;
     background-image: url('../../assets/img/ico-16.svg');
     background-position-x: 0;
 
@@ -20,9 +21,45 @@
             background-position-y: -304px ;
         }
     }
-  
+
+    &.ico__search {
+        background-position-y: -448px;
+    }
+
+    &.ico__input-clear {
+        background-position-y: -176px;
+    }
+
+    &.ico__exclaimation {
+        background-position-y: -432px;
+    }
+
     &.ico__select-caret {
         background-position-y: -16px ;
+    }
+    &.ico__select-caret__wh {
+        background-position-y: -512px ;
+    }
+    &.ico__caret-arr__right {
+        background-position-y: -16px;
+        transform: rotate(-90deg);
+    }
+
+    &.ico__edit {
+        background-position-y: -416px;
+    }
+
+    &.ico__star-off {
+        background-position-y: -64px;
+    }
+    &.ico__star-on {
+        background-position-y: -528px;
+    }
+    &.ico__flag-off {
+        background-position-y: -80px;
+    }
+    &.ico__flag-on {
+        background-position-y: -544px;
     }
 
     // Parse data
@@ -44,5 +81,112 @@
     &.ico__delete {
         background-position-y: -368px;
     }
-  }
-  
+
+    // pagenation
+    &.ico__first {
+        background-position-y: -400px ;
+        transform: rotate(180deg);
+    }
+    &.ico__last {
+        background-position-y: -400px ;
+    }
+    &.ico__pre {
+        background-position-y: -16px ;
+        transform: rotate(90deg);
+    }    
+    &.ico__next {
+        background-position-y: -16px ;
+        transform: rotate(-90deg);
+    }  
+    
+    // header : open & export
+    &.ico__open {
+        background-position-y: -352px ;
+    }
+    &.ico__export {
+        background-position-y: -336px ;
+    }
+}
+
+  // show as : rows / records
+.ico.ico__show {
+    background-image: url('../../assets/img/ico__show-as.svg'); 
+    &.ico__rows-bl {
+        background-position: 0 0;
+    }
+    &.ico__rows-wh {
+        background-position: 0 -16px;
+    }
+    &.ico__records-bl {
+        background-position: 0 -32px;
+    }
+    &.ico__records-wh {
+        background-position: 0 -48px;
+    }
+}
+
+ //
+.ico.ico__pop-menu {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px auto;    
+    background-image: url('../../assets/img/ico__pop-menu.svg') ; 
+    &.ico__pop--logo {
+        background-position: 0 0;
+    }
+    &.ico__pop--xls {
+        background-position: 0 -20px;
+    }
+    &.ico__pop--code {
+        background-position: 0 -40px;
+    }
+    &.ico__pop--odf {
+        background-position: 0 -60px;
+    }
+    &.ico__pop--sql {
+        background-position: 0 -80px;
+    }
+    &.ico__pop--template {
+        background-position: 0 -100px;
+    }
+    &.ico__pop--drive {
+        background-position: 0 -120px;
+    }
+    &.ico__pop--sheet {
+        background-position: 0 -140px;
+    }
+    &.ico__pop--edit-cell {
+        background-position: 0 -160px;
+    }
+    &.ico__pop--edit-col {
+        background-position: 0 -180px;
+    }
+    &.ico__pop--transpose {
+        background-position: 0 -200px;
+    }
+    &.ico__pop--sort {
+        background-position: 0 -220px;
+    }
+    &.ico__pop--view {
+        background-position: 0 -240px;
+    }
+    &.ico__pop--rename {
+        background-position: 0 -260px;
+    }
+    &.ico__pop--remove {
+        background-position: 0 -280px;
+    }
+    &.ico__pop--begin {
+        background-position: 0 -300px;
+    }
+    &.ico__pop--end {
+        background-position: 0 -320px;
+    }
+    &.ico__pop--right {
+        background-position: 0 -340px;
+    }
+    &.ico__pop--left {
+        background-position: 0 -360px;
+    }
+}

@@ -1,5 +1,5 @@
 @import '../../styles/app';
-@import '../../components/Checkbox/Checkbox';
+@import '../../components/Checked/Checked';// full request
 
 .create-project {
 
@@ -156,7 +156,6 @@
 }
 .parse-data{
     color: $primary;
-
                
     @media screen and (max-width: 1280px) {
         .parse {
@@ -190,184 +189,6 @@
         }
     }
 
-    .parse {
-        max-width: 400px;
-        border-left:1px solid $border-dark;
-        background-color: $background-dark;
-
-        .parse-title {
-            height: 41px;
-            padding: 15px 24px 0 15px;
-            font-size: $font-size-base !important;
-            border-bottom: 1px solid $grey-light;
-                
-            .update-pre {
-                font-size: 11px!important;
-                line-height: 16px;
-
-                span {
-                   letter-spacing: -0.02em;
-                }
-
-                &.v-btn {
-                    padding: 0 !important;
-
-                    &::before {
-                        display: none!important;
-                    }
-                    .v-btn__content {
-                        color: $point-bulely;
-                    }
-                    i {
-                        margin-left: 2px;
-                    }
-                }
-            }
-
-        }
-
-        > .row:last-child {
-            margin-bottom: 7px;
-        }
-        
-        .parse-section {
-            padding: 16px 24px 15px 15px;
-            border-bottom: 1px solid $border-default;
-
-            .section-title {
-                width: 100%;
-                > span {
-                    height: 24px;
-                }
-                font-size: $font-size-base;
-                margin-bottom: 4px;
-            }
-
-            .v-input {
-                input {
-                    font-size: $font-size-base!important;
-                }
-            }
-
-            .checkbox-group,
-            .text-group {
-                width: 100%;
-
-            }
-
-            .checkbox-group {
-                padding: 4px 0;
-            }
-
-            .text-group {
-                span {
-                    // height: 24px;
-                    flex-shrink: 0;
-                }
-            }          
-        }
-
-        .multi-row {
-            .checkbox-control,
-            .radio-control {
-                position: relative;
-                top: 7px;
-            }
-    
-            .text-group {
-                > div {
-                    min-height: 28px;
-                }
-            }
-            .checkbox-group {
-                margin-bottom: 20px;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-
-            &.text-only {
-                .checkbox-control,
-                .radio-control {
-                    position: relative;
-                    top: 4px;
-                }                
-                .text-group {
-                    span {
-                        line-height: 24px;
-                    }
-                }
-            }
-
-            & + .text-only {
-                .text-group {
-                    span {
-                        line-height: 32px;
-                    }
-                }
-            }
-
-        }  
-
-        .single-row {
-            margin-bottom: 2px;
-            &.checkbox-group {
-                min-height: 34px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-            .inline-input {
-                position: relative;
-                top: -1px;
-            }
-            &.v-input {
-                input {
-                    padding: 0;
-                }
-            }
-         
-        }
-
-        .col-sprt {
-            .v-input {
-                max-width: 160px;
-                display: inline-block;
-            }
-
-            &.single {
-                .checkbox-group {
-                    margin-bottom: 0;
-                }
-            }
-        }
-
-        .ws-import {
-            .v-btn {
-                margin-right: 6px;
-            }
-        }
-
-        /* == check, radio 옵션 선택만 있는 경우 ================================*/
-
-        .text-group {
-            .inline-input {
-                position: relative;
-                top: -1px;
-                &.w-56{
-                    width: 56px;
-                }
-                &.w-40 {
-                    width: 40px;
-                }
-          
-            }
-            span {
-                letter-spacing: -0.02em;
-            }
-        }
-    }
 }
 
 
@@ -449,20 +270,20 @@
 
 
 
-.dialog-title {
-    height: 52px;
-    border-bottom: 1px solid $border-grey-01;
-    font-size: 18px;
-    padding: 0 24px;
-    > div {
-        width: 100%;
-        height: 100%;
-    }
-}
 
 .sel-enc {
     width: 800px;
     height: 480px;
+    .dialog-content {
+        padding: 0;
+        height: calc(100% - 52px);
+        overflow-y: auto;
+    }
+
+    .base-table.v-data-table > .v-data-table__wrapper > table > tbody > tr > td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+    }
 }
 
 .enc-table {
@@ -493,49 +314,3 @@
     }
 }
 
-
-.dialog-tab {
-    padding: 0 24px 24px;
-    position: relative;
-    &::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        left: 0;
-        top: 39px;
-        background-color: $border-default;
-    }
-    .dialog-content {
-        background-color: $white-background;
-    }
-    .v-tabs-bar {
-        height: 40px !important;
-        background-color: transparent!important;
-    }
-
-    .v-tab {
-        margin-right: 16px !important;
-        height: 40px;
-        padding: 10px 0 0 0!important;
-        justify-content: left !important;
-        font-size : $font-size-base!important;
-        text-transform:none !important;
-        flex: 0 0 auto !important;
-        letter-spacing: 0!important;
-
-        &:not(.v-tab--active) {
-            color: $grey-default!important;
-            font-weight: normal!important;
-        }
-        &::before,
-        &::after {
-            display: none !important;
-        }
-
-        .v-ripple__container {
-            display: none !important;
-        }
-    }
-}
