@@ -60,6 +60,7 @@ export default new Router({
     { 
       path: '/',
       name: 'LayoutFull',
+      redirect: 'work',
       component: LayoutFull,
       children: [
         { // == 작업 목록 ============================================
