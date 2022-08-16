@@ -50,7 +50,8 @@
         background-color: transparent;
         box-shadow: none;
         .v-item-group {
-            padding: 0;
+            padding: 0 !important;
+            border-bottom: 1px solid $border-default;
         }
         .v-list-item {
             min-height: 49px;
