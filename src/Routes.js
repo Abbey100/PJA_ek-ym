@@ -42,6 +42,7 @@ import ApplyOpHistory from '@/pages/EditPopup/ApplyOpHistory';
 import ExtractOphistory from '@/pages/EditPopup/ExtractOphistory';
 import SplitColumns from '@/pages/EditPopup/SplitColumns';
 import JoinColumns from '@/pages/EditPopup/JoinColumns';
+import SortBy from '@/pages/EditPopup/SortBy';
 
 //
 import Error from "@/pages/Error/Error";
@@ -194,6 +195,11 @@ export default new Router({
           path: 'JoinColumns',
           name: '팝업 : JoinColumns',
           component: JoinColumns,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'SortBy',
+          name: '팝업 : SortBy',
+          component: SortBy,
         },
       ],
     },

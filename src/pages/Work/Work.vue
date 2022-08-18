@@ -1,7 +1,11 @@
 <template>
 <div class=" d-flex column-flex align-start justify-center work-wrap">
 <ul class="work--list"> 
-    <li class="sprint mb-4 "> SPRINT 2</li>
+    <li class="sprint mb-4 "> SPRINT 3</li>
+    <li class="mb-2"><b>Sort by</b></li>
+    <li><router-link target="_blank" to="/SortBy" >Sort By</router-link> : 정렬</li>  
+
+    <li class="sprint mb-4 mt-12"> SPRINT 2</li>
     <li class="mb-2"><b>Data Edit</b></li>
     <li><router-link target="_blank" to="/DataEditaBase" >DataEditBase</router-link> : 데이터 편집 기본</li>    
     <li><router-link target="_blank" to="/DataEditCell" >DataEditCell</router-link> : 데이터 편집 - 셀</li>    
