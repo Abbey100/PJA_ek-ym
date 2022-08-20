@@ -25,7 +25,8 @@
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>All</span>
-                            <i class="ico ico__select-caret"></i>                                
+                            <!-- 2022.08.20 수정사항: table head dropdown menu icon 이미지로 변경 -->
+                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
@@ -33,7 +34,9 @@
                           <!-- dropdown 상위에는 select-control 반드시 필요 -->
                           <div class="text-wrap select-control">
                             <span>도서관 구분</span>
-                            <i class="ico ico__select-caret"></i>
+                            <!-- 2022.08.20 수정사항: table head dropdown menu icon 이미지로 변경 -->
+                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+
 
                             <!-- Dropdown -->
                             <v-card class="dropdown d-block" style="min-width: 160px; top: 20px;  left:0px">
@@ -77,19 +80,25 @@
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 구분</span>
-                            <i class="ico ico__select-caret"></i>
+                            <!-- 2022.08.20 수정사항: table head dropdown menu icon 이미지로 변경 -->
+                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 코드</span>
-                            <i class="ico ico__select-caret"></i>
+                            <!-- 2022.08.20 수정사항: table head dropdown menu icon 이미지로 변경 -->
+                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap select-control">
                             <span>면적</span>
-                            <i class="ico ico__select-caret"></i>
+                            <!-- 2022.08.20 수정사항: table head dropdown menu icon 이미지로 변경 -->
+                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+
                             <!-- Dropdown -->
                             <v-card class="dropdown d-block" style="min-width: 160px; top: 20px;  left:0px">
                               <ul class="dropdown-menu">
@@ -131,25 +140,33 @@
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>시구군</span>
-                            <i class="ico ico__select-caret"></i>
+                            <!-- 2022.08.20 수정사항: table head dropdown menu icon 이미지로 변경 -->
+                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>장서수</span>
-                            <i class="ico ico__select-caret"></i>
+                            <!-- 2022.08.20 수정사항: table head dropdown menu icon 이미지로 변경 -->
+                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>방문자수</span>
-                            <i class="ico ico__select-caret"></i>
+                            <!-- 2022.08.20 수정사항: table head dropdown menu icon 이미지로 변경 -->
+                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>대출지수</span>
-                            <i class="ico ico__select-caret"></i>
+                            <!-- 2022.08.20 수정사항: table head dropdown menu icon 이미지로 변경 -->
+                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+
                           </div>
                         </th>
                       </tr>
