@@ -42,6 +42,10 @@ import ApplyOpHistory from '@/pages/EditPopup/ApplyOpHistory';
 import ExtractOphistory from '@/pages/EditPopup/ExtractOphistory';
 import SplitColumns from '@/pages/EditPopup/SplitColumns';
 import JoinColumns from '@/pages/EditPopup/JoinColumns';
+import SortBy from '@/pages/EditPopup/SortBy';
+
+// Facet Side
+import FacetSideFilter from '@/pages/FacetSide/SideFilter';
 
 //
 import Error from "@/pages/Error/Error";
@@ -194,6 +198,16 @@ export default new Router({
           path: 'JoinColumns',
           name: '팝업 : JoinColumns',
           component: JoinColumns,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'SortBy',
+          name: '팝업 : SortBy',
+          component: SortBy,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'FacetSideFilter',
+          name: '팝업 : FacetSideFilter',
+          component: FacetSideFilter,
         },
       ],
     },
