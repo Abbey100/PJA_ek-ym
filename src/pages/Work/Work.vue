@@ -4,6 +4,7 @@
     <li class="sprint mb-4 "> SPRINT 3</li>
     <li class="mb-2"><b>Sort by</b></li>
     <li><router-link target="_blank" to="/SortBy" >Sort By</router-link> : 정렬</li>  
+    <li><router-link target="_blank" to="/FacetSideFilter" >FacetSide Filter</router-link> : 사이드 패널 - 필터</li>  
 
     <li class="sprint mb-4 mt-12"> SPRINT 2</li>
     <li class="mb-2"><b>Data Edit</b></li>
