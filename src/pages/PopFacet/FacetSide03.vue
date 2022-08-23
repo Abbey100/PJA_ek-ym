@@ -84,10 +84,14 @@
                 </div>
               </div>
             </v-col>
-
-
-            <!-- 사이드 패널 공통 클래스 수정, 컴포넌트 화 -->
-            <SideFilter />
+            
+      
+            <side-panel class="data-control">
+              <template slot="panelContent">
+                <SidePanelTab03 />
+              </template>
+            </side-panel>
+            
         </v-row>
     </div>
 
@@ -97,20 +101,11 @@
 
 
 <script>
-  import SideFilter from './FacetSide/01Filter'
-
+  import SidePanelTab03 from './SidePanelTab03'
   export default {
-    name: 'FacetSide',
-    components: {SideFilter,},
-    data () {
-      return {
-        tooltipText: "변경내역을 복사하려면 ‘추출’, 이전복사한 이력을 적용하려면 ‘적용'을 선택하세요",
+    name: 'FacetSide03',
+    components:{SidePanelTab03},
 
-        isMarkStar : false,
-        isMarkFlag : false,
-        checked:false,
-      }
-    },  
     methods: {
       markStar: function() {
           this.isMarkStar = !this.isMarkStar;

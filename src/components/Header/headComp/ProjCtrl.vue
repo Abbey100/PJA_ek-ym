@@ -15,12 +15,13 @@
     <div class="select-control">
       <!-- select -->
       <div class="select pl-4 pr-2">
-        <div class="select-item">                
-          <i class="ico ico__export mr-2"></i>
+        <div class="select-item"> 
+          <!-- 2022.08.20 수정사항: icon 이미지로 변경 -->     
+          <v-img class="mr-2" src="@/assets/icon--16/ico__export--grey.svg"></v-img>
           Export
         </div>
         <span class="select-caret">
-          <i class="ico ico__select-caret__wh"></i>
+        <v-img src="@/assets/icon--16/ico__arr--down--wh.svg"></v-img>
         </span>
       </div>
 

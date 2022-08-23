@@ -45,7 +45,9 @@ import JoinColumns from '@/pages/EditPopup/JoinColumns';
 import SortBy from '@/pages/EditPopup/SortBy';
 
 // Facet Side
-import FacetSideFilter from '@/pages/FacetSide/SideFilter';
+import FacetSide01 from '@/pages/PopFacet/FacetSide01';
+import FacetSide02 from '@/pages/PopFacet/FacetSide02';
+import FacetSide03 from '@/pages/PopFacet/FacetSide03';
 
 //
 import Error from "@/pages/Error/Error";
@@ -205,9 +207,19 @@ export default new Router({
           component: SortBy,
         },
         { // == Header 기본 : layoutDataEdit ======================
-          path: 'FacetSideFilter',
-          name: '팝업 : FacetSideFilter',
-          component: FacetSideFilter,
+          path: 'FacetSide01',
+          name: 'Facet Side : FacetSide01',
+          component: FacetSide01,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'FacetSide02',
+          name: 'Facet Side : FacetSide02',
+          component: FacetSide02,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'FacetSide03',
+          name: 'Facet Side : FacetSide03',
+          component: FacetSide03,
         },
       ],
     },
