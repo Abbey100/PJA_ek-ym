@@ -88,7 +88,7 @@
       
             <side-panel class="data-control">
               <template slot="panelContent">
-                <SidePanelTab02 />
+                <SidePanelFilter />
               </template>
             </side-panel>
             
@@ -101,10 +101,10 @@
 
 
 <script>
-  import SidePanelTab02 from './SidePanelTab02'
+  import SidePanelFilter from './01FacetFilter/SidePanelFilter'
   export default {
-    name: 'SidePanel02',
-    components:{SidePanelTab02},
+    name: 'FacetSide01',
+    components:{SidePanelFilter},
 
     methods: {
       markStar: function() {

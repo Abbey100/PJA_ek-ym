@@ -26,9 +26,9 @@
 
 <script>
     import TopButtonGroup from '@/components/SidePanel/TopButtonGroup'
-    import SideFilter from './SideGadget/01Filter'
+    import SideFilter from './01Filter'
      export default {
-        name: 'SidePanelTab01',  
+        name: 'SidePanelFilter',  
         components:{TopButtonGroup, SideFilter}   
     } 
 

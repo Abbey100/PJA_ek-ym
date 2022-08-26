@@ -68,5 +68,16 @@
             border-top-color: $gnr-tooltip-primary;
         }
     }
+    &.align-center {
+        .tooltip-wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .tooltip-arr {
+            right: auto;
+            left: auto;
+        }
+    }
 }
 

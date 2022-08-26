@@ -5,12 +5,17 @@
     .gadget-header {
         height: 40px;
         padding-top: 10px !important;
+        padding-left: 16px;
+        padding-right: 24px;
+        margin-left: -16px;
+        margin-right: -24px;
         .gadget-control,
         .gadget-title {
             height: 30px;
             font-weight: bold;
         }
         .gadget-title {
+            font-size: $font-size-14;
             .ls-sm { letter-spacing: -0.08em;}
         }        
 
@@ -51,33 +56,37 @@
             .v-btn:not(.v-btn--round).v-size--default {
                 min-width: auto!important;
             }
-              
         }
         
     }
-    .facet-graph {
-        .library-area {
-            width: 360px;
-            height: 72px;
-            > div {
-                width: 100%;
-                height: 100%;
-                background-color: $gnr-light;
+}
+
+.invert-mode {
+    .gadget-header {
+        background-color: $caution;
+    }
+
+    .facet-text-list {
+        .facet-title {
+            text-decoration: line-through;
+        }
+    }
+
+    .gadget-cont-ctrl {
+        .invert-active{
+            &.v-btn {
+                top: 1px;
+                padding: 0px 5px 2px 2px !important;
+                background-color: #CDA451 !important;
+
+                .v-btn__content {
+                font-weight: normal!important;
+
+                    color: $gnr-bg-dark !important;
+                    text-decoration: line-through !important;
+                }
             }
-        }
-        .range,
-        .checked-value {
-            font-size: $font-size-14;
-        }
-        .range {
-            margin-top: 10px;
-            width: 100%;
-            line-height: 18px;
-        }
-        .checked-value {
-            color: $gnr-border-dark;
         }
     }
 }
-
 

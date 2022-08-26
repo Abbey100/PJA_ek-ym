@@ -13,8 +13,10 @@
         <v-tab-item :value="'facet-filter'" >
             <div class="tab-content">
                 <TopButtonGroup />
-                <SideFilter />
-                <SideNumeric />
+                <SideText1 />
+                <SideText2 />
+                <SideText3 />
+                <SideText3Invert />
             </div>
         </v-tab-item>
         <v-tab-item :value="'undo-redo'" class="undo-redo">
@@ -27,11 +29,20 @@
 
 <script>
     import TopButtonGroup from '@/components/SidePanel/TopButtonGroup'
-    import SideFilter from './SideGadget/01Filter'
-    import SideNumeric from './SideGadget/02Numeric'
+    import SideText1 from './03Text1'
+    import SideText2 from './03Text2'
+    import SideText3 from './03Text3'
+    import SideText3Invert from './03Text3Invert'
      export default {
-        name: 'SidePanelTab03',  
-        components:{TopButtonGroup, SideFilter, SideNumeric}   
+        name: 'SidePanelText',  
+        components:
+        {
+            TopButtonGroup,
+            SideText1,
+            SideText2,
+            SideText3,
+            SideText3Invert
+        }   
     } 
 
 </script>

@@ -29,12 +29,12 @@
 
 <script>
     import TopButtonGroup from '@/components/SidePanel/TopButtonGroup'
-    import SideNumeric from './SideGadget/02Numeric'
-    import SideTimeline from './SideGadget/02Timeline'
-    import SideNumericLog from './SideGadget/02NumericLog'
-    import SideTextLength from './SideGadget/02TextLength'
+    import SideNumeric from './02Numeric'
+    import SideTimeline from './02Timeline'
+    import SideNumericLog from './02NumericLog'
+    import SideTextLength from './02TextLength'
      export default {
-        name: 'SidePanelTab02',  
+        name: 'SidePanelNum',  
         components:{TopButtonGroup, SideNumeric, SideTimeline, SideNumericLog, SideTextLength}   
     } 
 

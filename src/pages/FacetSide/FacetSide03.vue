@@ -88,7 +88,7 @@
       
             <side-panel class="data-control">
               <template slot="panelContent">
-                <SidePanelTab01 />
+                <SidePanelText />
               </template>
             </side-panel>
             
@@ -101,10 +101,10 @@
 
 
 <script>
-  import SidePanelTab01 from './SidePanelTab01'
+  import SidePanelText from './03Text/SidePanelText'
   export default {
-    name: 'FacetSide01',
-    components:{SidePanelTab01},
+    name: 'FacetSide03',
+    components:{SidePanelText},
 
     methods: {
       markStar: function() {

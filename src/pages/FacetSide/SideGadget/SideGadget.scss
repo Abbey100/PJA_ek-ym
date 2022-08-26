@@ -1,0 +1,210 @@
+@import "../../../styles/app";
+
+.gadget-header {
+
+    .gadget-title {
+
+        a.count {
+            color : $point-deep;
+            font-weight: normal;
+            font-size: $font-size-14;
+            text-decoration: underline;
+            margin-left: 6px;
+        }
+    }  
+}
+
+.gadget-body {
+    font-size: $font-size-14;
+
+    .facet-text-ctrl {
+        height: 41px;
+        padding: 8px 0;
+        border-bottom: 1px solid $border-dark;
+
+        .v-btn {
+            font-weight: normal;
+            font-size: $font-size-base;
+            padding-right: 4px;
+            padding-left: 8px;
+            border: 1px solid $gnr-default;
+            background-color: #fff;
+            color: $gnr-default;
+
+            &.active {
+                color: #fff;
+                font-weight: normal;
+                border: 1px solid $point-bulely;
+                box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25)!important;
+                background-color: $point-deep;
+            }
+        }
+        // v-img 반응형 무효화
+        .v-responsive {
+            flex : 0 0 auto
+        }
+
+        // 정렬 버튼
+        .name, .count {
+            padding: 0;
+            text-transform : none;
+            font-weight: normal;
+            min-width: 59px;
+            .v-btn__content {
+                line-height: 14px;
+                margin-top: -2px;
+            }
+        }
+        .name {
+            border-radius: 4px 0 0 4px!important;
+        }
+        .count {
+            border-radius: 0 4px 4px 0!important;
+        }
+        .cluster {
+            min-width: 61px;
+            padding: 0 12px !important;
+            border-radius: 4px !important;
+        }
+    }
+
+    .facet-num {
+        color: $gnr-border-dark;
+    }    
+}
+
+.facet-graph {
+    .library-area {
+        width: 360px;
+        height: 72px;
+        > div {
+            width: 100%;
+            height: 100%;
+            background-color: $gnr-light;
+        }
+    }
+ 
+    .range {
+        margin-top: 10px;
+        width: 100%;
+        line-height: 18px;
+    }
+}
+
+.facet-text {
+    .edit-view {
+        position: relative;
+        height: 32px;
+        background-color: #F8F8F8;
+        margin-left: -16px;
+        margin-right: -24px;
+        padding: 0 24px 0 16px;
+        cursor: pointer;
+        &:hover {
+            background-color: $point-light;
+            color: #fff;
+
+            .tooltip {
+                display: block;
+                top: 16px;
+                left: 132px;
+            }
+        }
+    }
+}
+
+.facet-text-list {
+    font-size: $font-size-14;
+    padding-bottom: 16px;
+    max-height: 256px;
+    overflow-y: auto;
+    .facet-text-item {
+        height: 32px;
+        padding: 0 8px;
+        cursor: pointer;
+        &:hover {
+            background-color: $gnr-list-hvoer;
+            .item-ctrl > span {
+                display: block!important;
+            }
+        }
+    }
+
+    .facet-num {
+        position: relative;
+        top: 2px;
+        margin-left: 2px;
+    }
+
+    .item-ctrl {
+        font-size: $font-size-base;
+        .pd-l {
+            padding-left: 6px;
+        }
+        .pd-r {
+            padding-right : 6px;
+        }
+        .dl-r::before {
+            right: 0;
+            height: 8px;
+            margin-top: -3px;
+            border-color: $gnr-border-dark;
+        }
+
+        > span {
+            display: none;
+            a {
+                color: $gnr-default;
+                text-decoration: none;
+            }
+            &:hover a{
+                color: $point-deep;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .include-active {
+        .facet-title {
+            font-weight: bold;
+            color: $alert;
+        }
+        .item-ctrl {
+            .item-exclude {
+                display: block!important;
+            }
+        }
+    }    
+}
+
+
+.facet-scatter {
+
+    .button-wrap {
+        width: 122px;
+    }
+
+    .scatter-graph {
+        width: 156px;
+    }
+
+
+    .data-ctrl-btn {
+        // v-img 반응형 무효화
+        .v-responsive {
+            flex : 0 0 auto
+        }     
+        
+
+        .v-btn__content {
+            font-size: $font-size-14;
+            letter-spacing: -0.08em;
+            color: $gnr-default;
+        }
+        .v-btn {
+            min-width: auto;
+            margin: 0 5px;
+        }
+    }
+}
+

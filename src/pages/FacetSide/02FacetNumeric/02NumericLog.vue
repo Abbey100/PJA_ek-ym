@@ -1,9 +1,9 @@
 <template>
 <gadget>
-    <template slot="gadgetTitle"><span class="ls-sm">Unicode characters by c...</span></template>
+    <template slot="gadgetTitle">BodyWeight (Kg)</template>
     <template slot="gadgetContCtrl">
         <div class="gadget-cont-ctrl d-flex align-center">
-            <GdgBtnChange />
+            <GdgBtnChange class="mr-2" />
             <GdgBtnReset />
         </div>
     </template>
@@ -17,7 +17,7 @@
                 </div>
             </v-row>
             <v-row class="range d-flex justify-center">
-                <b>60.00 - 90.00</b>
+                <b>0.00 - 36,000.00</b>
             </v-row>
         </div>
     </template>
@@ -26,14 +26,14 @@
 
 
 <script>
-    import GdgBtnChange from './GdgBtnChange'
-    import GdgBtnReset from './GdgBtnReset'
+    import GdgBtnChange from '../SideGadget//GdgBtnChange'
+    import GdgBtnReset from '../SideGadget/GdgBtnReset'
 
     export default {
-    name: 'SideTextLength',
+    name: 'SideNumericLog',
     components : {GdgBtnChange, GdgBtnReset}
   } 
 
 </script>
 
-<style src="./SideGadget.scss" lang="scss"/>
+<style src="../SideGadget/SideGadget.scss" lang="scss"/>

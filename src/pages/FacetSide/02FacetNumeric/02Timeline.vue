@@ -3,7 +3,7 @@
     <template slot="gadgetTitle">오픈일</template>
     <template slot="gadgetContCtrl">
         <div class="gadget-cont-ctrl d-flex align-center">
-            <GdgBtnChange />
+            <GdgBtnChange class="mr-2" />
             <GdgBtnReset />
         </div>
     </template>
@@ -24,7 +24,7 @@
                     <template slot="checkedContent">
                         <div class="d-flex flex-column pl-2">
                             <span>Time</span>
-                            <span class="checked-value">11</span>
+                            <span class="facet-num">11</span>
                         </div>
                     </template>                    
                 </checkbox>
@@ -32,7 +32,7 @@
                     <template slot="checkedContent">
                         <div class="d-flex flex-column pl-2">
                             <span>Non-Time</span>
-                            <span class="checked-value">11</span>
+                            <span class="facet-num">11</span>
                         </div>
                     </template>                    
                 </checkbox>
@@ -40,7 +40,7 @@
                     <template slot="checkedContent">
                         <div class="d-flex flex-column pl-2">
                             <span>Blank</span>
-                            <span class="checked-value">11</span>
+                            <span class="facet-num">11</span>
                         </div>
                     </template>                    
                 </checkbox>
@@ -48,7 +48,7 @@
                     <template slot="checkedContent">
                         <div class="d-flex flex-column pl-2">
                             <span>Error</span>
-                            <span class="checked-value">11</span>
+                            <span class="facet-num">11</span>
                         </div>
                     </template>                    
                 </checkbox>
@@ -60,8 +60,8 @@
 
 
 <script>
-    import GdgBtnChange from './GdgBtnChange'
-    import GdgBtnReset from './GdgBtnReset'
+    import GdgBtnChange from '../SideGadget/GdgBtnChange'
+    import GdgBtnReset from '../SideGadget/GdgBtnReset'
 
     export default {
     name: 'SideTimeline',
@@ -70,4 +70,4 @@
 
 </script>
 
-<style src="./SideGadget.scss" lang="scss"/>
+<style src="../SideGadget/SideGadget.scss" lang="scss"/>
