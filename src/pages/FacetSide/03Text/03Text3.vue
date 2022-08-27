@@ -14,7 +14,7 @@
     
     <template slot="gadgetBody">
         <div class="gadget-body facet-text">
-            <FacetTextCtrl />
+            <FacetTextToggle />
             <FacetTextListExclude />
         </div>
     </template>
@@ -26,7 +26,7 @@
     import GdgBtnChange from '../SideGadget/GdgBtnChange'
     import GdgBtnInvert from '../SideGadget/GdgBtnInvert'
     import GdgBtnReset from '../SideGadget/GdgBtnReset'
-    import FacetTextCtrl from '../SideGadget/FacetTextCtrl'
+    import FacetTextToggle from '../SideGadget/FacetTextToggle'
     import FacetTextListExclude from '../SideGadget/FacetTextListExclude'
 
     export default {
@@ -36,7 +36,7 @@
             GdgBtnChange, 
             GdgBtnInvert, 
             GdgBtnReset, 
-            FacetTextCtrl, 
+            FacetTextToggle, 
             FacetTextListExclude
         },
     }

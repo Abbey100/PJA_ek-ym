@@ -16,7 +16,7 @@
       <!-- select -->
       <div class="select pl-4 pr-2">
         <div class="select-item"> 
-          <!-- 2022.08.20 수정사항: icon 이미지로 변경 -->     
+          <!-- Sprint 3 수정사항 : icon 이미지로 변경 -->     
           <v-img class="mr-2" src="@/assets/icon--16/ico__export--grey.svg"></v-img>
           Export
         </div>

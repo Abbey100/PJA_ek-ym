@@ -14,6 +14,7 @@
             <div class="tab-content">
                 <TopButtonGroup />
                 <SideText1 />
+                <SideText1Edit />
                 <SideText2 />
                 <SideText3 />
                 <SideText3Invert />
@@ -30,6 +31,7 @@
 <script>
     import TopButtonGroup from '@/components/SidePanel/TopButtonGroup'
     import SideText1 from './03Text1'
+    import SideText1Edit from './03Text1Edit'
     import SideText2 from './03Text2'
     import SideText3 from './03Text3'
     import SideText3Invert from './03Text3Invert'
@@ -39,6 +41,7 @@
         {
             TopButtonGroup,
             SideText1,
+            SideText1Edit,
             SideText2,
             SideText3,
             SideText3Invert

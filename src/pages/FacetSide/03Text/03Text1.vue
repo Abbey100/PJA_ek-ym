@@ -9,7 +9,7 @@
     
     <template slot="gadgetBody">
         <div class="gadget-body facet-text">
-            <FacetTextCtrl />
+            <FacetTextToggle />
             <FacetTextList />
         </div>
     </template>
@@ -19,12 +19,12 @@
 
 <script>
     import GdgBtnChange from '../SideGadget/GdgBtnChange'
-    import FacetTextCtrl from '../SideGadget/FacetTextCtrl'
+    import FacetTextToggle from '../SideGadget/FacetTextToggle'
     import FacetTextList from '../SideGadget/FacetTextList'
 
     export default {
         name: 'SideText1',
-        components : {GdgBtnChange, FacetTextCtrl, FacetTextList},
+        components : {GdgBtnChange, FacetTextToggle, FacetTextList},
     }
 
 </script>

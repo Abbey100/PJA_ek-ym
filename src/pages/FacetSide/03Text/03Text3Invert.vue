@@ -28,7 +28,7 @@
     
     <template slot="gadgetBody">
         <div class="gadget-body facet-text">
-            <FacetTextCtrl />
+            <FacetTextToggle />
             
             <ul class="facet-text-list pl-0">
                 <li class="facet-text-item d-flex justify-space-between align-center" >
@@ -47,6 +47,37 @@
                 </li>
             </ul>
         </div>
+
+     <div class="layer-pop cell-edit d-block">
+<span class="dir-arrow"></span>
+        <v-textarea
+            outlined
+            hide-details
+            name="input-7-4"
+            value="LIVTYPE002"
+            class="pt-0"
+        ></v-textarea>
+        
+        <div class="layer-bottom d-flex justify-end aling-center mt-5">
+
+            <div class="button-group">
+            <v-btn
+                class="text-capitalize btn-md point-deep mr-2"
+                height="32"
+                elevation="0"
+                :ripple="false"
+                outlined
+            >취소</v-btn>  
+
+            <v-btn
+                class="text-capitalize btn-md point-deep"
+                height="32"
+                elevation="0"
+                :ripple="false"
+            >적용</v-btn>                                  
+            </div>
+        </div>
+    </div>
     </template>
 </gadget>
 </template>
@@ -55,7 +86,7 @@
 <script>
     import GdgBtnChange from '../SideGadget/GdgBtnChange'
     import GdgBtnReset from '../SideGadget/GdgBtnReset'
-    import FacetTextCtrl from '../SideGadget/FacetTextCtrl'
+    import FacetTextToggle from '../SideGadget/FacetTextToggle'
 
     export default {
         name: '03Text3Invert',
@@ -63,7 +94,7 @@
         {
             GdgBtnChange, 
             GdgBtnReset, 
-            FacetTextCtrl, 
+            FacetTextToggle, 
         },
 
         data () {

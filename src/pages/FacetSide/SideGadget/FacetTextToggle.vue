@@ -1,8 +1,9 @@
 <template>
     <div class="facet-text-ctrl d-flex justify-space-between">
+        <!--  활성화 :  active -->
         <div class="button-group pb-0">
             <v-btn
-                class="name active mr-0"
+                class="name facet-text-toggle active mr-0"
                 height="24"
                 elevation="0"
                 :ripple="false" 
@@ -11,7 +12,7 @@
                 <v-img src="@/assets/icon--16/ico__arr--descent--wh.svg" />
             </v-btn> 
             <v-btn
-                class="count"
+                class="count facet-text-toggle"
                 height="24"
                 elevation="0"
                 :ripple="false" 
@@ -35,7 +36,7 @@
 
 <script>
     export default {
-    name: 'FacetTextCtrl',
+    name: 'FacetTextToggle',
 } 
 
 </script>

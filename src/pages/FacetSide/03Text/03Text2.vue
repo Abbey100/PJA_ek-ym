@@ -19,22 +19,24 @@
                 />  
             </div>
               
-            <FacetTextCtrl />
+            <FacetTextToggle />
             <FacetTextList2 />
         </div>
     </template>
+    
 </gadget>
+   
 </template>
 
 
 <script>
     import GdgBtnChange from '../SideGadget/GdgBtnChange'
-    import FacetTextCtrl from '../SideGadget/FacetTextCtrl'
+    import FacetTextToggle from '../SideGadget/FacetTextToggle'
     import FacetTextList2 from '../SideGadget/FacetTextList2'
 
     export default {
         name: 'SideText2',
-        components : {GdgBtnChange, FacetTextCtrl, FacetTextList2},
+        components : {GdgBtnChange, FacetTextToggle, FacetTextList2},
 
         data () {
         return {

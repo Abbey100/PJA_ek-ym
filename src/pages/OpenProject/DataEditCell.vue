@@ -25,63 +25,63 @@
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>All</span>
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                             <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 구분</span>
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                             <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 구분</span>
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                             <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 코드</span>
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                             <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>면적</span>
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                             <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>시구군</span>
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                             <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>장서수</span>
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                             <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>방문자수</span>
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                             <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>대출지수</span>
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                             <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                           </div>
                         </th>
@@ -197,7 +197,7 @@
                                     Text
                                   </div>
                                   <span class="select-caret">
-                            <!-- 2022.08.20 수정사항: table head dropdown Open icon 이미지로 변경 -->
+                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
                                     <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
                                   </span>
                                 </div>

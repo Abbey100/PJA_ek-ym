@@ -14,10 +14,80 @@
                 <v-img src="@/assets/img/img__dummy-scatter.png" />
             </div>
 
-            <div class="button-wrap ml-10">
-
-                <div class="scatter-ctrl-btn">
-                버튼 영역
+            <div class="button-wrap ml-10 flex-column">
+                <div class="scatter-ctrl-btn d-flex align-center flex-column mb-4">
+                    <div class="button-group lin-log">
+                        <v-btn
+                            class="facet-text-toggle active mr-0"
+                            height="24"
+                            elevation="0"
+                            :ripple="false" 
+                        >
+                             lin
+                        </v-btn> 
+                        <v-btn
+                            class="facet-text-toggle mr-0"
+                            height="24"
+                            elevation="0"
+                            :ripple="false" 
+                        >
+                            log
+                        </v-btn> 
+                    </div>
+                    <div class="button-group">
+                        <v-btn
+                            class="btn-ico facet-text-toggle active mr-0 px-2"
+                            height="24"
+                            elevation="0"
+                            :ripple="false" 
+                        >
+                            <!-- normal : ico__scatter-01 -->
+                            <v-img src="@/assets/icon--16/ico__scatter-01--wh.svg" />
+                        </v-btn> 
+                        <v-btn
+                            class="btn-ico facet-text-toggle mr-0 px-2"
+                            height="24"
+                            elevation="0"
+                            :ripple="false" 
+                        >
+                            <v-img src="@/assets/icon--16/ico__scatter-02.svg" />
+                        </v-btn> 
+                        <v-btn
+                            class="btn-ico facet-text-toggle mr-0 px-2"
+                            height="24"
+                            elevation="0"
+                            :ripple="false" 
+                        >
+                            <v-img src="@/assets/icon--16/ico__scatter-03.svg" />
+                        </v-btn> 
+                    </div>
+                    <div class="button-group">
+                        <v-btn
+                            class="btn-ico facet-text-toggle active mr-0 px-2"
+                            height="24"
+                            elevation="0"
+                            :ripple="false" 
+                        >
+                            <!-- normal : ico__scatter-01 -->
+                            <v-img src="@/assets/icon--16/ico__scatter-dot-01--wh.svg" />
+                        </v-btn> 
+                        <v-btn
+                            class="btn-ico facet-text-toggle mr-0 px-2"
+                            height="24"
+                            elevation="0"
+                            :ripple="false" 
+                        >
+                            <v-img src="@/assets/icon--16/ico__scatter-dot-02.svg" />
+                        </v-btn> 
+                        <v-btn
+                            class="btn-ico facet-text-toggle mr-0 px-2"
+                            height="24"
+                            elevation="0"
+                            :ripple="false" 
+                        >
+                            <v-img src="@/assets/icon--16/ico__scatter-dot-03.svg" />
+                        </v-btn> 
+                    </div>
                 </div>
 
                 <div class="data-ctrl-btn d-flex justify-center">

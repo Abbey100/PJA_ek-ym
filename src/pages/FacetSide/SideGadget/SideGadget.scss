@@ -22,23 +22,6 @@
         padding: 8px 0;
         border-bottom: 1px solid $border-dark;
 
-        .v-btn {
-            font-weight: normal;
-            font-size: $font-size-base;
-            padding-right: 4px;
-            padding-left: 8px;
-            border: 1px solid $gnr-default;
-            background-color: #fff;
-            color: $gnr-default;
-
-            &.active {
-                color: #fff;
-                font-weight: normal;
-                border: 1px solid $point-bulely;
-                box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25)!important;
-                background-color: $point-deep;
-            }
-        }
         // v-img 반응형 무효화
         .v-responsive {
             flex : 0 0 auto
@@ -55,16 +38,52 @@
                 margin-top: -2px;
             }
         }
-        .name {
-            border-radius: 4px 0 0 4px!important;
-        }
-        .count {
-            border-radius: 0 4px 4px 0!important;
-        }
         .cluster {
             min-width: 61px;
             padding: 0 12px !important;
             border-radius: 4px !important;
+            font-weight: normal;
+            font-size: $font-size-base;
+            border: 1px solid $gnr-default;
+            background-color: #fff;
+            color: $gnr-default;
+        }
+    }
+    .scatter-ctrl-btn {
+        .v-btn {
+            min-width: auto;
+        }
+    }
+    .facet-text-toggle {
+        font-weight: normal;
+        font-size: $font-size-base;
+        padding-right: 4px;
+        padding-left: 8px;
+        border: 1px solid $gnr-default;
+        background-color: #fff;
+        color: $gnr-default;
+        text-transform:none;
+
+        &.active {
+            color: #fff;
+            font-weight: normal;
+            // border: 1px solid $point-bulely;
+            box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25)!important;
+            background-color: $point-deep;
+        }
+
+        &:first-child {
+            border-radius: 4px 0 0 4px!important;
+        }
+        &:last-child {
+            border-radius: 0 4px 4px 0!important;
+        }
+        
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0!important;
         }
     }
 
@@ -188,7 +207,27 @@
         width: 156px;
     }
 
-
+    
+    .scatter-ctrl-btn {
+        padding:19px 0;
+        .button-group {
+            padding-bottom: 6px;
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+        .lin-log {
+            .v-btn:first-child {
+                max-width: 46px;
+            }
+            .v-btn:last-child {
+                max-width: 49px;
+            }
+        }
+        .btn-ico {
+            width: 32px;
+        }
+    }
     .data-ctrl-btn {
         // v-img 반응형 무효화
         .v-responsive {
@@ -207,4 +246,3 @@
         }
     }
 }
-
