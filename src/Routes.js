@@ -48,6 +48,7 @@ import SortBy from '@/pages/EditPopup/SortBy';
 import FacetSide01 from '@/pages/FacetSide/FacetSide01';
 import FacetSide02 from '@/pages/FacetSide/FacetSide02';
 import FacetSide03 from '@/pages/FacetSide/FacetSide03';
+import FacetSide03EditPop from '@/pages/FacetSide/FacetSide03EditPop';
 import FacetSide04 from '@/pages/FacetSide/FacetSide04';
 
 //
@@ -221,6 +222,11 @@ export default new Router({
           path: 'FacetSide03',
           name: 'Facet Side : FacetSide03',
           component: FacetSide03,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'FacetSide03EditPop',
+          name: 'Facet Side : FacetSide03EditPop',
+          component: FacetSide03EditPop,
         },
         { // == Header 기본 : layoutDataEdit ======================
           path: 'FacetSide04',

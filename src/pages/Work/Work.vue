@@ -7,6 +7,7 @@
     <li><router-link target="_blank" to="/FacetSide01" >FacetSide 01</router-link> : Facet Filter </li>  
     <li><router-link target="_blank" to="/FacetSide02" >FacetSide 02</router-link> : Facet Numeric </li>  
     <li><router-link target="_blank" to="/FacetSide03" >FacetSide 03</router-link> : Facet Text </li>  
+    <li><router-link target="_blank" to="/FacetSide03EditPop" >FacetSide 03 EditPop</router-link> : Facet Text Edit pop</li>  
     <li><router-link target="_blank" to="/FacetSide04" >FacetSide 04</router-link> : Facet Scatter </li>  
 
     <li class="sprint mb-4 mt-12"> SPRINT 2</li>

@@ -134,9 +134,12 @@
 
 .facet-text-list {
     font-size: $font-size-14;
+    margin-right: -24px;
+    padding-right: 24px;
     padding-bottom: 16px;
     max-height: 256px;
     overflow-y: auto;
+
     .facet-text-item {
         height: 32px;
         padding: 0 8px;
@@ -244,5 +247,20 @@
             min-width: auto;
             margin: 0 5px;
         }
+    }
+}
+.layer-pop.facet-edit {
+    width: 413px;
+    height: 184px;
+
+    .dir-arrow {
+        &.dir-right {
+            transform: rotate(90deg);
+            right: -12px;
+        }
+    }
+
+    .v-input__slot {
+        height: 96px;
     }
 }

@@ -48,36 +48,6 @@
             </ul>
         </div>
 
-     <div class="layer-pop cell-edit d-block">
-<span class="dir-arrow"></span>
-        <v-textarea
-            outlined
-            hide-details
-            name="input-7-4"
-            value="LIVTYPE002"
-            class="pt-0"
-        ></v-textarea>
-        
-        <div class="layer-bottom d-flex justify-end aling-center mt-5">
-
-            <div class="button-group">
-            <v-btn
-                class="text-capitalize btn-md point-deep mr-2"
-                height="32"
-                elevation="0"
-                :ripple="false"
-                outlined
-            >취소</v-btn>  
-
-            <v-btn
-                class="text-capitalize btn-md point-deep"
-                height="32"
-                elevation="0"
-                :ripple="false"
-            >적용</v-btn>                                  
-            </div>
-        </div>
-    </div>
     </template>
 </gadget>
 </template>

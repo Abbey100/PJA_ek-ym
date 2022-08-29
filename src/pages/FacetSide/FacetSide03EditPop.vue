@@ -97,22 +97,55 @@
       
             <side-panel class="data-control">
               <template slot="panelContent">
-                <SidePanelText />
+                <SidePanelTextEditPop />
               </template>
             </side-panel>
             
         </v-row>
-    </div>    
+    </div>
+
+    <!-- Sprint3 : Facet Text eidt layer popup -->
+    <div class="layer-pop  facet-edit d-block" style="right: 140px; top:238px">
+      <span class="dir-arrow dir-right"></span>
+      <v-textarea
+          outlined
+          hide-details
+          name="input-7-4"
+          value="LIVTYPE002"
+          class="pt-0"
+          no-resize
+      ></v-textarea>
+      
+      <div class="layer-bottom d-flex justify-end aling-center mt-5">
+
+          <div class="button-group">
+          <v-btn
+              class="text-capitalize btn-md point-deep mr-2"
+              height="32"
+              elevation="0"
+              :ripple="false"
+              outlined
+          >취소</v-btn>  
+
+          <v-btn
+              class="text-capitalize btn-md point-deep"
+              height="32"
+              elevation="0"
+              :ripple="false"
+          >적용</v-btn>                                  
+          </div>
+      </div>
+    </div> 
   </v-container>
 </template>
 
 
 
 <script>
-  import SidePanelText from './03Text/SidePanelText'
+  import SidePanelTextEditPop from './03Text/SidePanelTextEditpop'
   export default {
-    name: 'FacetSide03',
-    components:{SidePanelText},
+    name: 'FacetSide03EditPop',
+    components:{SidePanelTextEditPop},
 
     methods: {
       markStar: function() {
