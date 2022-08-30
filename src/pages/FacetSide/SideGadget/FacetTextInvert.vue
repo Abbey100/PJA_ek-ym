@@ -6,14 +6,11 @@
                 <span class="facet-num">{{itemCount}}</span>
             </div>
             <div class="item-ctrl d-flex" >
-                <span class="item-edit dl-r pd-r">
+                <span class="item-edit dl-r pd-r6">
                     <a href="">edit</a>
                 </span>
-                <span class="item-include dl-r pd-l pd-r">
+                <span class="item-include pd-l6 pd-r6">
                     <a href="">include</a>
-                </span>
-                <span class="item-exclude pd-l">
-                    <a href="">exclude</a>
                 </span>
             </div>
         </li>

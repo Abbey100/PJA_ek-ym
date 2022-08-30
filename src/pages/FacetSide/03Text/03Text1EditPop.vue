@@ -19,10 +19,10 @@
                     <div class="item-ctrl d-flex" >
 
                         <!-- Sprint3 : style은 팝업 상태를 보여 주기 위한 임시 코드 -->
-                        <span class="item-edit dl-r pd-r" style="display:block">
+                        <span class="item-edit dl-r pd-r6" style="display:block">
                             <a href="">edit</a>
                         </span>
-                        <span class="item-include dl-r pd-l pd-r" style="display:block">>
+                        <span class="item-include pd-l6" style="display:block">
                             <a href="">include</a>
                         </span>
                     </div>
@@ -33,10 +33,10 @@
                         <span class="facet-num">{{itemCount}}</span>
                     </div>
                     <div class="item-ctrl d-flex" >
-                        <span class="item-edit dl-r pd-r">
+                        <span class="item-edit dl-r pd-r6">
                             <a href="">edit</a>
                         </span>
-                        <span class="item-include pd-l pd-r">
+                        <span class="item-include pd-l6">
                             <a href="">include</a>
                         </span>
                     </div>
@@ -47,10 +47,10 @@
                         <span class="facet-num">{{itemCount}}</span>
                     </div>
                     <div class="item-ctrl d-flex" >
-                        <span class="item-edit dl-r pd-r">
+                        <span class="item-edit dl-r pd-r6">
                             <a href="">edit</a>
                         </span>
-                        <span class="item-include dl-r pd-l pd-r">
+                        <span class="item-include pd-l6">
                             <a href="">include</a>
                         </span>
                     </div>
@@ -61,10 +61,10 @@
                         <span class="facet-num">{{itemCount}}</span>
                     </div>
                     <div class="item-ctrl d-flex" >
-                        <span class="item-edit dl-r pd-r">
+                        <span class="item-edit dl-r pd-r6">
                             <a href="">edit</a>
                         </span>
-                        <span class="item-include dl-r pd-l pd-r">
+                        <span class="item-include pd-l6">
                             <a href="">include</a>
                         </span>
                     </div>
@@ -75,10 +75,10 @@
                         <span class="facet-num">{{itemCount}}</span>
                     </div>
                     <div class="item-ctrl d-flex" >
-                        <span class="item-edit dl-r pd-r">
+                        <span class="item-edit dl-r pd-r6">
                             <a href="">edit</a>
                         </span>
-                        <span class="item-include dl-r pd-l pd-r">
+                        <span class="item-include pd-l6">
                             <a href="">include</a>
                         </span>
                     </div>
@@ -89,10 +89,10 @@
                         <span class="facet-num">{{itemCount}}</span>
                     </div>
                     <div class="item-ctrl d-flex" >
-                        <span class="item-edit dl-r pd-r">
+                        <span class="item-edit dl-r pd-r6">
                             <a href="">edit</a>
                         </span>
-                        <span class="item-include dl-r pd-l pd-r">
+                        <span class="item-include pd-l6">
                             <a href="">include</a>
                         </span>
                     </div>
@@ -103,10 +103,10 @@
                         <span class="facet-num">{{itemCount}}</span>
                     </div>
                     <div class="item-ctrl d-flex" >
-                        <span class="item-edit dl-r pd-r">
+                        <span class="item-edit dl-r pd-r6">
                             <a href="">edit</a>
                         </span>
-                        <span class="item-include dl-r pd-l pd-r">
+                        <span class="item-include pd-l6">
                             <a href="">include</a>
                         </span>
                     </div>

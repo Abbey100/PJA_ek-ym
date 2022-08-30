@@ -25,7 +25,7 @@
                 text
             >
                 <!-- Sprint 3 수정사항 : icon 이미지로 변경 -->
-                <v-img src="@/assets/icon--16/ico__refresh.svg" class="mr-2" />
+                <v-img src="@/assets/icon--16/ico__refresh.svg" class="mr-1" />
                 Refresh
             </v-btn>
         </div>

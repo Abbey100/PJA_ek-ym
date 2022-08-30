@@ -69,7 +69,7 @@
             font-weight: normal;
             // border: 1px solid $point-bulely;
             box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25)!important;
-            background-color: $point-deep;
+            background-color: $point-bulely;
         }
 
         &:first-child {
@@ -104,7 +104,7 @@
     }
  
     .range {
-        margin-top: 10px;
+        margin-top: 10px !important;
         width: 100%;
         line-height: 18px;
     }
@@ -134,9 +134,11 @@
 
 .facet-text-list {
     font-size: $font-size-14;
-    margin-right: -24px;
-    padding-right: 24px;
-    padding-bottom: 16px;
+    // margin-right: -24px;
+    // padding-right: 24px;
+    // padding-bottom: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
     max-height: 256px;
     overflow-y: auto;
 
@@ -154,16 +156,16 @@
 
     .facet-num {
         position: relative;
-        top: 2px;
+        top: 1px;
         margin-left: 2px;
     }
 
     .item-ctrl {
         font-size: $font-size-base;
-        .pd-l {
+        .pd-l6 {
             padding-left: 6px;
         }
-        .pd-r {
+        .pd-r6 {
             padding-right : 6px;
         }
         .dl-r::before {

@@ -9,9 +9,9 @@
     </template>
     
     <template slot="gadgetBody">
-        <div class="gadget-body facet-graph py-2">
+        <div class="gadget-body facet-graph pt-2">
             <v-row class="graph-area">
-                    <!-- 라이브러리 삽입 시 아래 graph-wrap은 삭제 해 주세요 -->
+                <!-- Sprint 3 : 라이브러리 삽입 시 아래 graph-wrap은 삭제  -->
                 <div class="graph-wrap">
                     <v-img src="@/assets/img/img__dummy-graph.png" />
                 </div>
@@ -24,7 +24,7 @@
                     <template slot="checkedContent">
                         <div class="d-flex flex-column pl-2">
                             <span>Time</span>
-                            <span class="facet-num">11</span>
+                            <span class="facet-num mt-1">11</span>
                         </div>
                     </template>                    
                 </checkbox>
@@ -32,7 +32,7 @@
                     <template slot="checkedContent">
                         <div class="d-flex flex-column pl-2">
                             <span>Non-Time</span>
-                            <span class="facet-num">11</span>
+                            <span class="facet-num mt-1">11</span>
                         </div>
                     </template>                    
                 </checkbox>
@@ -40,7 +40,7 @@
                     <template slot="checkedContent">
                         <div class="d-flex flex-column pl-2">
                             <span>Blank</span>
-                            <span class="facet-num">11</span>
+                            <span class="facet-num mt-1">11</span>
                         </div>
                     </template>                    
                 </checkbox>
@@ -48,7 +48,7 @@
                     <template slot="checkedContent">
                         <div class="d-flex flex-column pl-2">
                             <span>Error</span>
-                            <span class="facet-num">11</span>
+                            <span class="facet-num mt-1">11</span>
                         </div>
                     </template>                    
                 </checkbox>

@@ -105,7 +105,7 @@
     </div>
 
     <!-- Sprint3 : Facet Text eidt layer popup -->
-    <div class="layer-pop  facet-edit d-block" style="right: 140px; top:238px">
+    <div class="layer-pop  facet-edit d-block" style="right: 124px; top:238px">
       <span class="dir-arrow dir-right"></span>
       <v-textarea
           outlined
