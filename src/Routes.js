@@ -42,6 +42,14 @@ import ApplyOpHistory from '@/pages/EditPopup/ApplyOpHistory';
 import ExtractOphistory from '@/pages/EditPopup/ExtractOphistory';
 import SplitColumns from '@/pages/EditPopup/SplitColumns';
 import JoinColumns from '@/pages/EditPopup/JoinColumns';
+import SortBy from '@/pages/EditPopup/SortBy';
+
+// Facet Side
+import FacetSide01 from '@/pages/FacetSide/FacetSide01';
+import FacetSide02 from '@/pages/FacetSide/FacetSide02';
+import FacetSide03 from '@/pages/FacetSide/FacetSide03';
+import FacetSide03EditPop from '@/pages/FacetSide/FacetSide03EditPop';
+import FacetSide04 from '@/pages/FacetSide/FacetSide04';
 
 //
 import Error from "@/pages/Error/Error";
@@ -195,6 +203,36 @@ export default new Router({
           path: 'JoinColumns',
           name: '팝업 : JoinColumns',
           component: JoinColumns,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'SortBy',
+          name: '팝업 : SortBy',
+          component: SortBy,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'FacetSide01',
+          name: 'Facet Side : FacetSide01',
+          component: FacetSide01,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'FacetSide02',
+          name: 'Facet Side : FacetSide02',
+          component: FacetSide02,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'FacetSide03',
+          name: 'Facet Side : FacetSide03',
+          component: FacetSide03,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'FacetSide03EditPop',
+          name: 'Facet Side : FacetSide03EditPop',
+          component: FacetSide03EditPop,
+        },
+        { // == Header 기본 : layoutDataEdit ======================
+          path: 'FacetSide04',
+          name: 'Facet Side : FacetSide04',
+          component: FacetSide04,
         },
       ],
     },

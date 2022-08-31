@@ -45,6 +45,10 @@
         transform: rotate(-90deg);
     }
 
+    &.ico__arrow-right {
+        background-position-y: -594px;
+    }
+
     &.ico__edit {
         background-position-y: -416px;
     }

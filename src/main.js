@@ -15,6 +15,7 @@ import Tooltip from '@/components/Tooltip/Tooltip';
 import Checkbox from '@/components/Checked/Checkbox';
 import Radio from '@/components/Checked/Radio';
 import SidePanel from '@/components/SidePanel/SidePanel';
+import Gadget from '@/components/Gadget/Gadget';
 
 
 Vue.use(Toast);
@@ -33,6 +34,7 @@ Vue.component('tooltip', Tooltip);
 Vue.component('checkbox', Checkbox);
 Vue.component('radio', Radio);
 Vue.component('side-panel', SidePanel);
+Vue.component('gadget', Gadget);
 
 new Vue({
   vuetify,

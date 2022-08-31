@@ -12,6 +12,7 @@ export default {
 
       greyDefault: '#66666',
       pointLight: '#7C99FF',
+      pointDeep: '#5551FF',
   },
 };
 

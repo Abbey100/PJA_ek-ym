@@ -4,6 +4,8 @@
     max-width: 400px;
     border-left:1px solid $border-dark;
     background-color: $background-dark;
+    overflow-y: auto;
+    height: 100%;
 
     &.data-control {
         .guide-text {
@@ -35,6 +37,17 @@
         }
         .tab-content {
             padding: 24px 0;
+            > .button-group {
+                .r-btn {
+                    .v-btn {
+                        color: $gnr-default;
+                        font-weight: normal ;
+                    }
+                    span {
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
         .v-tabs-bar {
             height: 40px !important;
@@ -44,6 +57,7 @@
         .v-tab {
             margin-right: 16px !important;
             height: 40px;
+            min-width: 40px;
             padding: 10px 0 0 0!important;
             justify-content: left !important;
             font-size : $font-size-base!important;
@@ -69,6 +83,12 @@
             }
         }
     } 
+    .panel-section {
+        margin-left: -16px;
+        margin-right: -24px;
+        padding: 0 24px 15px 16px;
+        border-bottom: 1px solid $gnr-light;
+    }
 }
 
 

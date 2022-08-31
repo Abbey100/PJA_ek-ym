@@ -116,8 +116,6 @@
 
 .layer-pop {
     position: absolute;
-    top: 39px;
-    left: 0;
     padding: 20px 16px 16px;
     border: 1px solid $grey-default;
     background-color: #fff;
@@ -125,6 +123,8 @@
     &.cell-edit {
         width: 405px;
         height: 240px;
+        top: 39px;
+        left: 0;
 
         .dir-arrow {
             left: 229px;
@@ -135,12 +135,17 @@
                 width: 80px;
             }
         }
+        
         textarea {
             resize: none;
             height: 96px;
         }
-
     }
+    .v-textarea .v-input__slot {
+        fieldset {
+            background-color: #fafbfc !important;
+        }
+    } 
 }
 
 
@@ -162,13 +167,13 @@
 
 .layer-pop {
     position: absolute;
-    top: 39px;
-    left: 0;
     padding: 20px 16px 16px;
     border: 1px solid $grey-default;
     background-color: #fff;
 
     &.cell-edit {
+        top: 39px;
+        left: 0;        
         width: 405px;
         height: 240px;
 
@@ -181,6 +186,11 @@
             height: 96px;
         }
     }
+    .v-textarea .v-input__slot {
+        fieldset {
+            background-color: #fafbfc !important;
+        }
+    }    
 
 }
 
