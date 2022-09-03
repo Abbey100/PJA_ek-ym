@@ -15,6 +15,7 @@
     }
     .dialog-section {
         height: 395px;
+
     }
     .text-item {
         display: block;
@@ -211,6 +212,7 @@
 .custom-text{
     .section-title {
         max-width: 104px;
+        margin-bottom: 0;
         color: $primary;
         font-weight: normal !important;
         .placeholder {
@@ -218,16 +220,120 @@
             color: $grey-placeholder !important;
         }
     }
+    .select {
+        padding-left: 16px !important;
+    }
     .checked-group {
         width: auto;
         padding-left: 2px;
     }
     .dialog-section {
+        overflow: hidden;
+        &.custom-text-info {
+            .select {
+                height: 48px;
+            }
+        }
+        &.custom-text-detail {
+            padding: 0;
+
+            thead {
+                background-color: $gnr-bg-default;
+            }
+            th {
+                height: 28px !important;
+            }
+        }
         &.on-error {
             padding: 28px 16px 32px;
 
             .inline-input {
                 width: 80px
+            }
+        }
+    }
+
+    .dialog-tab {
+        overflow: hidden;
+        padding: 0;
+        .v-slide-group__wrapper {
+            padding: 0 16px;
+        }
+    }
+    .tab-descript {
+        padding: 8px 16px;
+        color: $point-deep;
+    }
+    .scrollbody {
+        thead, tbody {
+            display: block;
+        }
+        tbody {
+            overflow-y: auto;
+        }
+
+        tr {
+            display: flex;
+        }
+        th, td {
+            display: flex;
+            align-items: center;
+        }
+
+        &.preview {
+            tbody {
+                height: 182px;
+            }
+            th, td {
+                &:nth-child(1) {
+                    width: 15%;
+                }
+                &:nth-child(2) {
+                    width: 20%;
+                }
+                &:nth-child(3) {
+                    width: 65%;
+                }
+            }
+        }
+
+        &.history {
+            tbody {
+                height: 182px;
+            }
+            th, td {
+                &:nth-child(1) {
+                    width: 36px;
+                    padding-right: 0 ;
+                }
+                &:nth-child(2) {
+                    width: 10%;
+                    padding-left: 0;
+                }
+                &:nth-child(3) {
+                    width: 20%;
+                }
+                &:nth-child(4) {
+                    width: 70%;
+                }
+            }
+        }
+
+        &.help {
+            tbody {
+                height: 150px;
+            }
+            td {
+                height: auto !important;
+                padding: 10px 16px;
+                &:nth-child(1) {
+                    width: 16%;
+                }
+                &:nth-child(2) {
+                    width: 85%;
+                    white-space: pre-line;
+      
+                }                
             }
         }
     }

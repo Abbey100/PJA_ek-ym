@@ -301,8 +301,17 @@ html {
 }
 
 
-
 .v-image.v-responsive {
   flex : 0 0 auto !important
 }     
 
+
+
+
+/* == text-field, textarea 공통 속성 ======================================================================================= */
+
+.v-input.v-textarea .v-input__slot {
+    fieldset {
+        background-color: #fafbfc !important;
+    }
+} 

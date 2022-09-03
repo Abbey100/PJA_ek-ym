@@ -16,18 +16,51 @@
         <div class="dialog-content bg-default pt-0">
           <div class="section-row mt-6">
             <div class="dialog-section custom-text-info">
-              <v-row>
+              <v-row class="mb-2  d-flex align-center">
                 <v-col class="section-title">Language</v-col>
-                <v-col></v-col>
+                <v-col>
+                  <div class="select-control" style="width: 100%;">
+                      <!-- select -->
+                      <div class="select">
+                        <div class="select-item">General Refine Expression Language (GREL)</div>
+                        <span class="select-caret">
+                          <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                        </span>
+                      </div>
+
+                      <!-- Dropdown :: visible - d-block -->
+                      <v-card class="dropdown" style="width: 100%;">
+                        <ul class="dropdown-menu">
+
+                          <li class="dropdown-item d-flex column-flex align-center active">
+                            <span>Text</span>
+                          </li>
+                          
+                        </ul>
+                      </v-card>
+                    </div>                
+                </v-col>
               </v-row>
 
 
-              <v-row>
+              <v-row class="d-flex align-center">
                 <v-col class="section-title">
-                  Expression
-                  <span class="placeholder d-block">No syntax error</span>
+                  <div class="title-wrap">
+                    Expression
+                    <span class="placeholder d-block">No syntax error</span>
+                  </div>
                 </v-col>
-                <v-col></v-col>
+                <v-col>
+                  <v-textarea
+                    outlined
+                    hide-details
+                    no-resize
+                    height="72"
+                    name=""
+                    value="value"
+                    class="pt-0"
+                  ></v-textarea>
+                </v-col>
               </v-row>
             
             </div>
@@ -35,34 +68,7 @@
           
           <div class="section-row mt-6">
             <div class="dialog-section custom-text-detail">
-              <v-tabs grow class="panel-tab">
-                  <v-tabs-slider></v-tabs-slider>
-                  <v-tab :href="`#custom-text-preview`">Preview </v-tab>
-                  <v-tab :href="`#custom-text-history`">History</v-tab>
-                  <v-tab :href="`#custom-text-starred`">Starred</v-tab>
-                  <v-tab :href="`#custom-text-help`">Help</v-tab>
-
-                  <v-tab-item :value="'custom-text-preview'" >
-                    <v-data-table
-                        :headers="headers"
-                        :items="desserts"
-                        :items-per-page="2"
-                        hide-default-footer
-                        disable-sort
-                        class="elevation-0 base-table"
-                      ></v-data-table>            
-                  </v-tab-item>
-
-                  <v-tab-item :value="'custom-text-history'">
-                      History
-                  </v-tab-item>
-                  <v-tab-item :value="'custom-text-starred'">
-                      Starred
-                  </v-tab-item>
-                  <v-tab-item :value="'custom-text-help'">
-                      Help
-                  </v-tab-item>
-              </v-tabs>
+              <CustomTab />
             </div>
           </div>
 
@@ -80,6 +86,7 @@
                     </radio>   
                     <radio class="mr-10">
                         <template slot="checkedContent"><span class="pl-2">Store error</span></template>
+                        <div class="help-title">Variables</div>
                     </radio>   
                   </div>
                   <div>
@@ -119,34 +126,14 @@
 <script>
 import dlgTitle from '@/components/DialogComp/DialogTitle'
 import dlgActDefault from '@/components/DialogComp/DialogActionDefault'
+import CustomTab from './CustomTextTab/CustomTab'
+
 
 export default {
   name: 'CustomText',
-  components: {dlgTitle, dlgActDefault},
+  components: {dlgTitle, dlgActDefault, CustomTab},
   data : () => ({
-    titleText : "Custom text transform on column [ 2021-02 ]",
-    headers: [
-      {
-        text: 'row',
-        align: 'start',
-        sortable: false,
-        value: 'th00',
-      },
-      { text: 'value', value: 'th01' },
-      { text: 'toNumber(value)', value: 'th02' },
-    ],    
-    desserts: [
-      {
-        th00: '1',
-        th01: '1',
-        th02: '11',
-      },
-      {
-        th00: '2',
-        th01: '2',
-        th02: '12',
-      },
-    ],          
+    titleText : "Custom text transform on column [ 2021-02 ]",       
 }),     
 } 
 
