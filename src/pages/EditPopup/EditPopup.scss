@@ -206,3 +206,29 @@
     }
 
 }
+
+
+.custom-text{
+    .section-title {
+        max-width: 104px;
+        color: $primary;
+        font-weight: normal !important;
+        .placeholder {
+            font-size: 12px;
+            color: $grey-placeholder !important;
+        }
+    }
+    .checked-group {
+        width: auto;
+        padding-left: 2px;
+    }
+    .dialog-section {
+        &.on-error {
+            padding: 28px 16px 32px;
+
+            .inline-input {
+                width: 80px
+            }
+        }
+    }
+}
