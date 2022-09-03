@@ -4,21 +4,25 @@
 
             <!-- 메뉴 선택자 : selected-->
             <li class="gnb-item gnb__project-create mb-8 selected">
-                <v-icon>$i16_Open</v-icon>
+                <v-icon>$createprojectActive</v-icon>
                 <span> 프로젝트 생성 </span>
                 <!-- <router-link to="/CreateProject">
                     <span>프로젝트 생성</span>
                 </router-link> -->
             </li>
             <li class="gnb-item gnb__project-open mb-8">
-                <router-link to="/">
+                <v-icon>$importRest</v-icon>
+                <span> 프로젝트 열기 </span>
+                <!-- <router-link to="/">
                     <span>프로젝트 열기</span>
-                </router-link>
+                </router-link> -->
             </li>
             <li class="gnb-item gnb__project-import">
-                <router-link to="/">
+                <v-icon>$openprojectRest</v-icon>
+                <span> 프로젝트 가져오기 </span>
+                <!-- <router-link to="/">
                     <span>프로젝트 가져오기</span>
-                </router-link>
+                </router-link> -->
             </li>
         </ul>
 

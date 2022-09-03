@@ -306,3 +306,12 @@ html {
   flex : 0 0 auto !important
 }     
 
+
+.v-icon {
+  position:relative;
+  .v-icon__component {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
