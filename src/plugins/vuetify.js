@@ -35,19 +35,18 @@ export default new Vuetify({
         }
     },
     icons: {
-        
         values: {
             i16_Open: {component: i16_Open},
             // GNB 
-            createprojectActive: {component: createprojectActive},
-            createprojectRest: {component: createprojectRest},
-            importActive: {component: importActive},
-            importRest: {component: importRest},
-            logout: {component: logout},
-            enprojectActive: {component: openprojectActive},
-            openprojectRest: {component: openprojectRest},
-            setingActive: {component: setingActive},
-            settingRest: {component: settingRest},
+            GcpActive: {component: createprojectActive},
+            GcpRest: {component: createprojectRest},
+            GiActive: {component: importActive},
+            GiRest: {component: importRest},
+            Glogout: {component: logout},
+            GopActive: {component: openprojectActive},
+            GopRest: {component: openprojectRest},
+            GsActive: {component: setingActive},
+            GsRest: {component: settingRest},
      }
     }
 });
