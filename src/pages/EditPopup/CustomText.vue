@@ -7,7 +7,7 @@
     </v-overlay>    
 
     <!-- dialog 의 inline style은 dialog의 위치를 위한 임시 코드  -->
-      <v-card class="dialog custom-text" elevation="3" style="position: absolute; left:50%; top: 20%; margin-left: -400px;  z-index:6">
+      <v-card class="dialog custom-text" elevation="3" style="position: absolute; left:50%; top: 5%; margin-left: -400px;  z-index:6">
         
         <!-- Dialog Title -->
         <dlgTitle :titleText="titleText" />
@@ -133,8 +133,8 @@ export default {
   name: 'CustomText',
   components: {dlgTitle, dlgActDefault, CustomTab},
   data : () => ({
-    titleText : "Custom text transform on column [ 2021-02 ]",       
-}),     
+    titleText : "Custom text transform on column [ 2021-02 ]",        
+  }),     
 } 
 
 </script>

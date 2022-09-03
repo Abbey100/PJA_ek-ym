@@ -20,15 +20,16 @@
           <div class="tab-descript">
             View the GREL reference in the OpenRefine User Manual for further details
           </div>
+          <div class="help-title">Variables</div>
           <TabHelp />
       </v-tab-item>
   </v-tabs>
 </template>
 
 <script>
-import TabPreview from './CustomTextTab/Preview'
-import TabHistory from './CustomTextTab/History'
-import TabHelp from './CustomTextTab/Help'
+import TabPreview from './Preview'
+import TabHistory from './History'
+import TabHelp from './Help'
 
 export default {
   name: 'customTab', 

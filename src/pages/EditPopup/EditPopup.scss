@@ -264,6 +264,13 @@
         padding: 8px 16px;
         color: $point-deep;
     }
+    .help-title {
+        padding: 12px 16px 6px 16px;
+        color: $gnr-default;
+        font-weight: bold;
+        border-bottom: 1px solid $gnr-default;
+        background-color: $gnr-bg-default;
+    }
     .scrollbody {
         thead, tbody {
             display: block;
