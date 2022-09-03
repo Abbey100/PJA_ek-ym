@@ -145,14 +145,26 @@
         .v-btn--outlined {
             &::before {
                 display: none;
-              }
+            }
         }
-
     }
 
 }
 .import-file-table {
     position: relative;
+    width: calc(100% - 400px);
+
+    .full-height {
+        &.v-data-table,
+        .v-data-table__wrapper{
+            height: 100%;
+        }
+    }
+    .v-data-table-header {
+        span {
+            white-space: nowrap;
+        }
+     }
 }
 .parse-data{
     color: $primary;
