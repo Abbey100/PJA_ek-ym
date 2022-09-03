@@ -58,7 +58,7 @@
                                     <!-- Sub Menu 
                                           left 좌표는 부모 Pop의 width
                                     -->
-                                    <v-card class="dropdown" style="min-width: 196px; left:160px; top:-12px ">
+                                    <v-card class="dropdown" style="min-width: 196px; left:158px; top:-8px ">
                                       <ul class="dropdown-menu">
                                           <li
                                             v-for="subView01 in subViews01" :key ="subView01"
@@ -119,7 +119,7 @@
                                   <!-- Sub Menu 
                                         left 좌표는 부모 Pop의 width
                                   -->
-                                  <v-card class="dropdown" style="min-width: 241px; left:160px; top:-12px ">
+                                  <v-card class="dropdown" style="min-width: 241px; left:158px; top:-8px ">
                                     <ul class="dropdown-menu">
                                         <li
                                           v-for="subView02 in subViews02" :key ="subView02"

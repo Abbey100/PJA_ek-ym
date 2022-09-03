@@ -22,7 +22,7 @@
                     </v-col>
                     <v-col  cols="auto">
                         <v-list-item>
-                          <span class="form-desc">jpg 또는 png 파일만 업로드 가능합니다.</span>
+                          <span class="form-desc">jpg 또는 png 파일로 업로드해 주세요.</span>
                         </v-list-item>
 
                         <!-- Attached -->

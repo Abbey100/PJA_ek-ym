@@ -116,7 +116,8 @@
                           </div>
                         </td>
                         <td class="text-start">
-                          <div class="text-wrap justify-space-between"> 
+                          <div class="text-wrap justify-space-between type-num"> 
+                            <!-- // 숫자로 설정된 글자의 경우 'type_num' 클래스 추가 -->
                             <span>526</span>
                             <i class="ico ico__edit"></i>
                           </div>                          
@@ -184,7 +185,7 @@
                      
                         </td>
                         <td class="text-start">
-                          <div class="text-wrap justify-space-between"> 
+                          <div class="text-wrap justify-space-between type-num"> 
                             <span>526</span>
                             <i class="ico ico__edit"></i>
                           </div>                          
@@ -250,7 +251,7 @@
                           </div>
                         </td>
                         <td class="text-start">
-                          <div class="text-wrap justify-space-between"> 
+                          <div class="text-wrap justify-space-between type-num"> 
                             <span>526</span>
                             <i class="ico ico__edit"></i>
                           </div>                          
