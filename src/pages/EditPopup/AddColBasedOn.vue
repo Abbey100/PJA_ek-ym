@@ -7,11 +7,9 @@
     </v-overlay>    
 
     <!-- dialog 의 inline style은 dialog의 위치를 위한 임시 코드  -->
-    <!-- table-edit : 공통 속성
-        custom-text : 팝업 구분  -->
-    <v-card class="dialog table-edit custom-text" elevation="3" style="position: absolute; left:50%; top: 5%; margin-left: -400px;  z-index:6">
-      <!-- Menu : Edit cells > Common transforms > To text -->
-      
+    <v-card class="dialog table-edit based-on" elevation="3" style="position: absolute; left:50%; top: 5%; margin-left: -400px;  z-index:6">
+      <!-- Menu : Edit column > Add column based on... -->
+
       <!-- Dialog Title -->
       <dlgTitle :titleText="titleText" />
 
@@ -19,6 +17,40 @@
       <div class="dialog-content bg-default pt-0">
         <div class="section-row mt-6">
           <div class="dialog-section ">
+
+            <!-- column name input -->
+            <v-row class="mb-2">
+              <v-col class="item-title">New column name</v-col>
+              <v-col>
+                <v-text-field 
+                  v-model="text"
+                  placeholder="Placeholder"
+                  text-color="primary"
+                  hide-details
+                  outlined
+                  class="pt-0"
+                  >
+              </v-text-field>               
+              </v-col>
+            </v-row>
+
+            <!-- On Error -->
+            <v-row class="d-flex align-center mb-2">
+              <v-col class="item-title">On Error </v-col>
+              <v-col class="d-flex justify-start align-center">
+                <radio class="mr-10">
+                    <template slot="checkedContent"><span class="pl-2">set to Blank</span></template>
+                </radio> 
+                <radio class="mr-10">
+                    <template slot="checkedContent"><span class="pl-2">store error</span></template>
+                </radio> 
+                <radio>
+                    <template slot="checkedContent"><span class="pl-2">copy calue from original column</span></template>
+                </radio> 
+              </v-col>
+            </v-row>
+
+            <!-- Language -->
             <v-row class="mb-2">
               <v-col class="item-title">Language</v-col>
               <v-col>
@@ -45,14 +77,9 @@
               </v-col>
             </v-row>
 
-
-            <v-row class="align-center">
-              <v-col class="item-title">
-                <div class="wrap">
-                  Expression
-                  <span class="placeholder d-block">No syntax error</span>
-                </div>
-              </v-col>
+            <!-- Expression -->
+            <v-row>
+              <v-col class="item-title">Expression</v-col>
               <v-col>
                 <v-textarea
                   outlined
@@ -64,7 +91,8 @@
                   class="pt-0"
                 ></v-textarea>
               </v-col>
-            </v-row>
+            </v-row>            
+
           
           </div>
         </div>
@@ -74,47 +102,7 @@
             <CustomTab />
           </div>
         </div>
-
-        <div class="section-row mt-6">
-          <div class="dialog-section on-error">
-            <v-row>
-              <v-col class="item-title">on error</v-col>
-              <v-col>
-                <div class="d-flex justify-start mb-3">
-                  <radio class="mr-10">
-                      <template slot="checkedContent"><span class="pl-2">Keep original</span></template>
-                  </radio>   
-                  <radio class="mr-10">
-                      <template slot="checkedContent"><span class="pl-2">Set to blank</span></template>
-                  </radio>   
-                  <radio class="mr-10">
-                      <template slot="checkedContent"><span class="pl-2">Store error</span></template>
-                      <div class="help-title">Variables</div>
-                  </radio>   
-                </div>
-                <div>
-                  <checkbox class="single-row">
-                    <template slot="checkedContent">
-                        <div class="text-group">
-                          <div class="d-flex justify-start">
-                            <span class="px-2">Re-transform up to</span>
-                            <span class="inline-input">
-                                <v-text-field 
-                                  type="text" 
-                                  single-line 
-                                  hide-details>
-                                </v-text-field> 
-                            </span>
-                            <span class="pl-2">times until no change</span>
-                          </div>
-                        </div>
-                    </template>
-                  </checkbox>   
-                </div>
-              </v-col>
-            </v-row>
-          </div>
-        </div>          
+        
       </div>
 
       <!-- Dialog Action -->
@@ -133,10 +121,10 @@ import CustomTab from './CustomTextTab/CustomTab'
 
 
 export default {
-  name: 'EditCellToText',
+  name: 'AddColBasedOn',
   components: {dlgTitle, dlgActDefault, CustomTab},
   data : () => ({
-    titleText : "Custom text transform on column [ 2021-02 ]",        
+    titleText : "Add column based on column Numbers",        
   }),     
 } 
 

@@ -46,6 +46,10 @@ import SortBy from '@/pages/EditPopup/SortBy';
 
 // EditPop Custom Text
 import CustomText from '@/pages/EditPopup/CustomText';
+import AddColBasedOn from '@/pages/EditPopup/AddColBasedOn';
+import SplitMulti from '@/pages/EditPopup/SplitMulti';
+import CellReplace from '@/pages/EditPopup/CellReplace';
+import SingleInput from '@/pages/EditPopup/SingleInput';
 
 
 // Facet Side
@@ -246,6 +250,26 @@ export default new Router({
           path: 'CustomText',
           name: 'Facet CustomText ',
           component: CustomText,
+        },
+        { // Add Column Based on
+          path: 'AddColBasedOn',
+          name: 'AddColBasedOn ',
+          component: AddColBasedOn,
+        },
+        { // Split Multi
+          path: 'SplitMulti',
+          name: 'SplitMulti ',
+          component: SplitMulti,
+        },
+        { // Replace
+          path: 'CellReplace',
+          name: 'CellReplace ',
+          component: CellReplace,
+        },
+        { // Single Input popup
+          path: 'SingleInput',
+          name: 'SingleInput ',
+          component: SingleInput,
         },
       ],
     },
