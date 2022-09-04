@@ -17,7 +17,7 @@
       <div class="select pl-4 pr-2">
         <div class="select-item"> 
           <!-- Sprint 3 수정사항 : icon 이미지로 변경 -->     
-          <v-img class="mr-2" src="@/assets/icon--16/ico__export--grey.svg"></v-img>
+          <v-img class="mr-2" src="@/assets/icon--16/ico__export--wh.svg"></v-img>
           Export
         </div>
         <span class="select-caret">
@@ -26,7 +26,7 @@
       </div>
 
       <!-- Dropdown -->
-      <v-card class="dropdown"  style="min-width: 235px; left:-115px;" :class="{'d-block' : isIconHide}">
+      <v-card class="dropdown d-block"  style="min-width: 235px; left:-115px;" :class="{'d-block' : isIconHide}">
         <ul class="dropdown-menu" >
             <li
               v-for="item in items" :key ="item"
