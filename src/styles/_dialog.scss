@@ -102,6 +102,9 @@
     .button-group {
         width: 100%;
     }
+    .v-btn:not(.v-btn--round).v-size--default {
+        min-width: 56px
+    }
 }
 
 .dialog.single-input {

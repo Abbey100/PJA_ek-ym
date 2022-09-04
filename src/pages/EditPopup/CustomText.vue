@@ -69,16 +69,16 @@
           </div>
         </div>
         
-        <div class="section-row mt-6">
+        <div class="section-row mt-4">
           <div class="dialog-section custom-text-detail">
             <CustomTab />
           </div>
         </div>
 
-        <div class="section-row mt-6">
+        <div class="section-row mt-4">
           <div class="dialog-section on-error">
             <v-row>
-              <v-col class="item-title">on error</v-col>
+              <v-col class="item-title align-start mr-2">On error</v-col>
               <v-col>
                 <div class="d-flex justify-start mb-3">
                   <radio class="mr-10">

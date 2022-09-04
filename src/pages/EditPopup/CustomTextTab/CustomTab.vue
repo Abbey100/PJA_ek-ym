@@ -17,7 +17,7 @@
           Starred
       </v-tab-item>
       <v-tab-item :value="'custom-text-help'">
-          <div class="tab-descript">
+          <div class="tab-descript d-flex align-center">
             View the GREL reference in the OpenRefine User Manual for further details
           </div>
           <div class="help-title">Variables</div>

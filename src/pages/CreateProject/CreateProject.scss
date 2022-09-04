@@ -150,9 +150,31 @@
     }
 
 }
+
+.open-project.edit-data {
+    .import-file-table {
+       
+        .v-data-table {
+            thead th:first-child {
+                min-width: 88px;
+            }
+         }  
+    }
+}
+
 .import-file-table {
     position: relative;
     width: calc(100% - 400px);
+
+    .v-data-table {
+        thead th{
+            min-width: 36px;
+
+            &:first-child {
+                min-width: 64px;
+            }
+        }
+     }    
 
     .full-height {
         &.v-data-table,
@@ -169,22 +191,6 @@
 .parse-data{
     color: $primary;
                
-    @media screen and (max-width: 1280px) {
-        .parse {
-            position: absolute;
-            top: 64px;
-            right: 0;
-            bottom: 0;
-            
-        }
-        .import-file-table {
-            width: 1280px;
-            padding-right: 400px;
-        }
-
-        overflow-x: hidden;
-    }
-
     > .row {
         height: 100%;
     }

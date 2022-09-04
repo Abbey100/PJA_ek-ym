@@ -90,21 +90,3 @@
         border-bottom: 1px solid $gnr-light;
     }
 }
-
-
-
-@media screen and (max-width: 1280px) {
-    .side-panel{
-        position: absolute;
-        top: 64px;
-        right: 0;
-        bottom: 0;
-        
-        .import-file-table {
-            width: 1280px;
-            padding-right: 400px;
-        }
-        overflow-x: hidden;
-    }  
-}
-

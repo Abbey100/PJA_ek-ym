@@ -39,17 +39,6 @@
                   </template>
                 </checkbox>                                   
               </v-row>   
-              <v-row class="pl-6">
-                <span class="mr-2">Split into</span>
-                <v-text-field
-                  label=""
-                  value=""
-                  class="inline-input "
-                  single-line
-                  hide-details
-                ></v-text-field>    
-                <span class="ml-2">columnd st most (lesve blank for no limit)</span>                             
-              </v-row>    
             </div>     
             <!-- END by separator -->   
 

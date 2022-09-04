@@ -26,7 +26,10 @@
       </div>
 
       <!-- Dialog Action -->
-      <dlgActDefault />  
+      <dlgActDefault 
+        :dlgPrimaryBtn="dlgPrimaryBtn"
+        :dlgSecondaryBtn="dlgSecondaryBtn"
+      />  
 
     </v-card>
   </v-container>
@@ -43,7 +46,9 @@ export default {
   name: 'SingleInput',
   components: {dlgTitle, dlgActDefault},
   data : () => ({
-    titleText : "Enter separator to use netween values",        
+    titleText : "Enter separator to use netween values",    
+    dlgPrimaryBtn: "확인",
+    dlgSecondaryBtn: "취소",    
   }),     
 } 
 

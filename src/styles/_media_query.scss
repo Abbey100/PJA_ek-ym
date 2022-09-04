@@ -1,0 +1,15 @@
+@media screen and (max-width: 1280px) {
+    .side-panel{
+        position: absolute;
+        top: 64px;
+        right: 0;
+        bottom: 0;
+        overflow-x: hidden;
+    }  
+    
+    .import-file-table {
+        width: 1280px !important;
+        padding-right: 400px !important;
+    }
+}
+
