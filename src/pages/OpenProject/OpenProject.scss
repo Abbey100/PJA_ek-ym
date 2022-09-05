@@ -20,7 +20,8 @@
     &.v-data-table {
         &,
         .v-data-table__wrapper {
-            height: 100%;
+            height: calc(100vh - 64px);
+            overflow-y: auto !important;
         }
 
         .v-data-table-header th.sortable:hover {

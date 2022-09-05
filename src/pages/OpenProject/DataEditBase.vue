@@ -3,10 +3,10 @@
     
     <div class="open-project edit-data">
         <v-row class="d-flex justify-start column-flex">
-            <v-col class="import-file-table">
+            <v-col class="import-file-table ">
 
-              <div class="v-data-table elevation-0 base-table editable theme--light">
-                <div class="v-data-table__wrapper">
+              <div class="v-data-table elevation-0 base-table editable theme--light v-data-table--fixed-header full-height">
+                <div class="v-data-table__wrapper overflow-y-auto" >
                   <table>
                     <colgroup>
                       <col class="">
@@ -88,6 +88,402 @@
                       </tr>
                     </thead>
                     <tbody>
+                      <tr class="">
+                        <td class="text-start d-flex align-center">
+                          <div class="mark-wrap">
+                            <span class="mark" @click="markStar">
+                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                            </span>
+                            <span class="mark" @click="markFlag">
+                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                            </span>
+                          </div>
+
+                          <div class="text-wrap">
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>2014</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                              
+                        </td>
+
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between">
+                            <span>LIVTYPE002</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between type-num"> 
+                            <!-- // 숫자로 설정된 글자의 경우 'type_num' 클래스 추가 -->
+                            <span>526</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>20,104</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+
+                        <td class="text-start ">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>성북구</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3900</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3915</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>9360</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                             
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td class="text-start d-flex align-center">
+                          <div class="mark-wrap">
+                            <span class="mark" @click="markStar">
+                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                            </span>
+                            <span class="mark" @click="markFlag">
+                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                            </span>
+                          </div>
+
+                          <div class="text-wrap">
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>2014</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                              
+                        </td>
+
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between">
+                            <span>LIVTYPE002</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between type-num"> 
+                            <!-- // 숫자로 설정된 글자의 경우 'type_num' 클래스 추가 -->
+                            <span>526</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>20,104</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+
+                        <td class="text-start ">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>성북구</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3900</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3915</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>9360</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                             
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td class="text-start d-flex align-center">
+                          <div class="mark-wrap">
+                            <span class="mark" @click="markStar">
+                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                            </span>
+                            <span class="mark" @click="markFlag">
+                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                            </span>
+                          </div>
+
+                          <div class="text-wrap">
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>2014</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                              
+                        </td>
+
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between">
+                            <span>LIVTYPE002</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between type-num"> 
+                            <!-- // 숫자로 설정된 글자의 경우 'type_num' 클래스 추가 -->
+                            <span>526</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>20,104</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+
+                        <td class="text-start ">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>성북구</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3900</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3915</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>9360</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                             
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td class="text-start d-flex align-center">
+                          <div class="mark-wrap">
+                            <span class="mark" @click="markStar">
+                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                            </span>
+                            <span class="mark" @click="markFlag">
+                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                            </span>
+                          </div>
+
+                          <div class="text-wrap">
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>2014</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                              
+                        </td>
+
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between">
+                            <span>LIVTYPE002</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between type-num"> 
+                            <!-- // 숫자로 설정된 글자의 경우 'type_num' 클래스 추가 -->
+                            <span>526</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>20,104</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+
+                        <td class="text-start ">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>성북구</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3900</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3915</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>9360</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                             
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td class="text-start d-flex align-center">
+                          <div class="mark-wrap">
+                            <span class="mark" @click="markStar">
+                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                            </span>
+                            <span class="mark" @click="markFlag">
+                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                            </span>
+                          </div>
+
+                          <div class="text-wrap">
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>2014</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                              
+                        </td>
+
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between">
+                            <span>LIVTYPE002</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between type-num"> 
+                            <!-- // 숫자로 설정된 글자의 경우 'type_num' 클래스 추가 -->
+                            <span>526</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>20,104</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+
+                        <td class="text-start ">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>성북구</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3900</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3915</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>9360</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                             
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td class="text-start d-flex align-center">
+                          <div class="mark-wrap">
+                            <span class="mark" @click="markStar">
+                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                            </span>
+                            <span class="mark" @click="markFlag">
+                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                            </span>
+                          </div>
+
+                          <div class="text-wrap">
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>2014</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                              
+                        </td>
+
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between">
+                            <span>LIVTYPE002</span>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between type-num"> 
+                            <!-- // 숫자로 설정된 글자의 경우 'type_num' 클래스 추가 -->
+                            <span>526</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>20,104</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+
+                        <td class="text-start ">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>성북구</span>
+                            <i class="ico ico__edit"></i>
+                          </div>
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3900</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                          
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>3915</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                            
+                        </td>
+                        <td class="text-start">
+                          <div class="text-wrap justify-space-between"> 
+                            <span>9360</span>
+                            <i class="ico ico__edit"></i>
+                          </div>                             
+                        </td>
+                      </tr>
                       <tr class="">
                         <td class="text-start d-flex align-center">
                           <div class="mark-wrap">
@@ -322,6 +718,7 @@
         isMarkStar : false,
         isMarkFlag : false,
         checked:false,
+      scrollInvoked: 0,
       }
     },  
     methods: {
@@ -330,7 +727,10 @@
       },
       markFlag: function() {
           this.isMarkFlag = !this.isMarkFlag;
-      }
+      },
+      onScroll () {
+        this.scrollInvoked++
+      },
     }      
   } 
 
