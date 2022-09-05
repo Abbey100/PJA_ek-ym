@@ -305,9 +305,6 @@ html {
   flex : 0 0 auto !important
 }     
 
-
-
-
 /* == text-field, textarea 공통 속성 ======================================================================================= */
 
 .v-input.v-textarea .v-input__slot {
@@ -315,3 +312,12 @@ html {
         background-color: #fafbfc !important;
     }
 } 
+
+.v-icon {
+  position:relative;
+  .v-icon__component {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

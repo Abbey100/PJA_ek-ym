@@ -4,19 +4,25 @@
 
             <!-- 메뉴 선택자 : selected-->
             <li class="gnb-item gnb__project-create mb-8 selected">
-                <router-link to="/CreateProject">
+                <v-icon>$GcpActive</v-icon>
+                <span> 프로젝트 생성 </span>
+                <!-- <router-link to="/CreateProject">
                     <span>프로젝트 생성</span>
-                </router-link>
+                </router-link> -->
             </li>
             <li class="gnb-item gnb__project-open mb-8">
-                <router-link to="/">
+                <v-icon>$GiRest</v-icon>
+                <span> 프로젝트 열기 </span>
+                <!-- <router-link to="/">
                     <span>프로젝트 열기</span>
-                </router-link>
+                </router-link> -->
             </li>
             <li class="gnb-item gnb__project-import">
-                <router-link to="/">
+                <v-icon>$GopRest</v-icon>
+                <span> 프로젝트 가져오기 </span>
+                <!-- <router-link to="/">
                     <span>프로젝트 가져오기</span>
-                </router-link>
+                </router-link> -->
             </li>
         </ul>
 
