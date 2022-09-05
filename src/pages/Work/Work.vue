@@ -9,6 +9,11 @@
     <li><router-link target="_blank" to="/FacetSide03" >FacetSide 03</router-link> : Facet Text </li>  
     <li><router-link target="_blank" to="/FacetSide03EditPop" >FacetSide 03 EditPop</router-link> : Facet Text Edit pop</li>  
     <li><router-link target="_blank" to="/FacetSide04" >FacetSide 04</router-link> : Facet Scatter </li>  
+    <li><router-link target="_blank" to="/CustomText" >Edit Cell To Text</router-link> : Custom text transform popup</li>  
+    <li><router-link target="_blank" to="/AddColBasedOn" >Edit Col Based On</router-link> : Add column based on Popup</li>  
+    <li><router-link target="_blank" to="/SplitMulti" >Edit cell Split-multi</router-link> : Split multi-valued cells </li>  
+    <li><router-link target="_blank" to="/CellReplace" >Replace</router-link> : Edit Cells Replace</li>  
+    <li><router-link target="_blank" to="/SingleInput" >SingleInput</router-link> : Text field Only</li>  
 
     <li class="sprint mb-4 mt-12"> SPRINT 2</li>
     <li class="mb-2"><b>Data Edit</b></li>

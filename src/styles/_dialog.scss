@@ -50,6 +50,7 @@
 .dialog-tab {
     padding: 0 24px 24px;
     position: relative;
+
     &::before {
         content: '';
         display: block;
@@ -70,6 +71,7 @@
 
     .v-tab {
         margin-right: 16px !important;
+        min-width: 40px!important;
         height: 40px;
         padding: 10px 0 0 0!important;
         justify-content: left !important;
@@ -99,5 +101,15 @@
 
     .button-group {
         width: 100%;
+    }
+    .v-btn:not(.v-btn--round).v-size--default {
+        min-width: 56px
+    }
+}
+
+.dialog.single-input {
+    width: 560px;
+    .v-input {
+        height: 44px;
     }
 }

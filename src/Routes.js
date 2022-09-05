@@ -44,6 +44,14 @@ import SplitColumns from '@/pages/EditPopup/SplitColumns';
 import JoinColumns from '@/pages/EditPopup/JoinColumns';
 import SortBy from '@/pages/EditPopup/SortBy';
 
+// EditPop Custom Text
+import CustomText from '@/pages/EditPopup/CustomText';
+import AddColBasedOn from '@/pages/EditPopup/AddColBasedOn';
+import SplitMulti from '@/pages/EditPopup/SplitMulti';
+import CellReplace from '@/pages/EditPopup/CellReplace';
+import SingleInput from '@/pages/EditPopup/SingleInput';
+
+
 // Facet Side
 import FacetSide01 from '@/pages/FacetSide/FacetSide01';
 import FacetSide02 from '@/pages/FacetSide/FacetSide02';
@@ -76,6 +84,10 @@ export default new Router({
           name: 'work',
           component: Work,
         },
+        // {
+        //   path: '/',
+        //   redirect: '/work',
+        // },     
         { // == 로그인 기본 ==========================================
           path: 'Login',
           name: 'Logn',
@@ -233,6 +245,31 @@ export default new Router({
           path: 'FacetSide04',
           name: 'Facet Side : FacetSide04',
           component: FacetSide04,
+        },
+        { // Common transform
+          path: 'CustomText',
+          name: 'Facet CustomText ',
+          component: CustomText,
+        },
+        { // Add Column Based on
+          path: 'AddColBasedOn',
+          name: 'AddColBasedOn ',
+          component: AddColBasedOn,
+        },
+        { // Split Multi
+          path: 'SplitMulti',
+          name: 'SplitMulti ',
+          component: SplitMulti,
+        },
+        { // Replace
+          path: 'CellReplace',
+          name: 'CellReplace ',
+          component: CellReplace,
+        },
+        { // Single Input popup
+          path: 'SingleInput',
+          name: 'SingleInput ',
+          component: SingleInput,
         },
       ],
     },
