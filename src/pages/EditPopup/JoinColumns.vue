@@ -7,7 +7,7 @@
     </v-overlay>    
 
     <!-- dialog 의 inline style은 dialog의 위치를 위한 임시 코드  -->
-      <v-card class="dialog join-column" elevation="3" style="position: absolute; left:50%; top: 20%; margin-left: -400px;  z-index:6">
+      <v-card class="dialog join-column" elevation="3" style="position: absolute; left:50%; top: 15%; margin-left: -400px;  z-index:6">
         
         <!-- Dialog Title -->
         <dlgTitle :titleText="titleText" />
@@ -178,6 +178,13 @@ export default {
       { text: '관리기관명 1 2' },
       { text: '관리기관명 1 3' },
       { text: '관리기관명 1 4' },
+      { text: '관리기관명 1 5' },
+      { text: '관리기관명 1 5' },
+      { text: '관리기관명 1 5' },
+      { text: '관리기관명 1 5' },
+      { text: '관리기관명 1 5' },
+      { text: '관리기관명 1 5' },
+      { text: '관리기관명 1 5' },
       { text: '관리기관명 1 5' },
     ],          
   }),     
