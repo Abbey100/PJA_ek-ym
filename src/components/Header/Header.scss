@@ -262,7 +262,11 @@
     .btn-open {
       min-width: 97px !important;
     }
-
+    .v-icon .v-icon__component {
+      position: relative;
+      width: 16px;
+      height: 16px;
+    }
     .select-control{
       .select {
         width: 120px;

@@ -42,6 +42,11 @@
             &.type-num {
                 color: $text-num;
             }
+            .v-icon .v-icon__component {
+                position: relative;
+                width: 16px;
+                height: 16px;
+            }
         }
 
         %td-edit {
@@ -226,6 +231,11 @@
         display: flex;
         align-items : center;
         margin-left: 4px;
+        .v-icon .v-icon__component {
+            position: relative;
+            width: 16px;
+            height: 16px;
+        }
       }
     }
   

@@ -8,6 +8,12 @@
             font-size: $font-size-base;
         }
     }
+
+    .v-icon .v-icon__component {
+        position: relative;
+        width: 16px;
+        height: 16px;
+    }
 }
 .extract-op {
     .col {

@@ -25,64 +25,64 @@
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>All</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown menu icon 이미지로 변경 -->
-                            <v-img src="@/assets/icon--16/ico__arr--down.svg" class="ml-2" />
+                            <!-- v-icon으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 구분</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown menu icon 이미지로 변경 -->
-                            <v-img src="@/assets/icon--16/ico__arr--down.svg" class="ml-2" />
+                            <!-- v-icon으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 구분</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown menu icon 이미지로 변경 -->
-                            <v-img src="@/assets/icon--16/ico__arr--down.svg" class="ml-2" />
+                            <!-- v-icon으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 코드</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown menu icon 이미지로 변경 -->
-                            <v-img src="@/assets/icon--16/ico__arr--down.svg" class="ml-2" />
+                            <!-- v-icon으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>면적</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown menu icon 이미지로 변경 -->
-                            <v-img src="@/assets/icon--16/ico__arr--down.svg" class="ml-2" />
+                            <!-- v-icon으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>시구군</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown menu icon 이미지로 변경 -->
-                            <v-img src="@/assets/icon--16/ico__arr--down.svg" class="ml-2" />
+                            <!-- v-icon으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>장서수</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown menu icon 이미지로 변경 -->
-                            <v-img src="@/assets/icon--16/ico__arr--down.svg" class="ml-2" />
+                            <!-- v-icon으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>방문자수</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown menu icon 이미지로 변경 -->
-                            <v-img src="@/assets/icon--16/ico__arr--down.svg" class="ml-2" />
+                            <!-- v-icon으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>대출지수</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown menu icon 이미지로 변경 -->
-                            <v-img src="@/assets/icon--16/ico__arr--down.svg" class="ml-2" />
+                            <!-- v-icon으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                       </tr>

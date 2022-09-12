@@ -16,21 +16,25 @@
 
         .gnb-item {
             position: relative;
-            span {
+            width: 40px;
+            height: 40px;
+
+            .v-btn {
+                width: 40px;
+                min-width: 40px;
+                height: 40px;
+                min-height: 40px;
+                padding: 0;
+                margin: 0;
+                background: transparent;
                 font-size: 0;
-                height: 0;
-                padding-top: 40px;
-                display: inline-block;
             }
-            a {
-                display: block;
-                width: 100%;
-                padding-top: 40px;
-                height: 40PX;
-                background-image: url('../../assets/img/GNB.png');
-                background-size: 40px auto;
-                background-repeat: no-repeat;
-                overflow: hidden;
+            span {
+                display: flex;
+
+                &.v-icon .v-icon__component {
+                    position: relative;
+                }
             }
 
             &.selected {

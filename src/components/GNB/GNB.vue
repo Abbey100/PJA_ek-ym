@@ -3,34 +3,36 @@
         <ul class="gnb-list">
 
             <!-- 메뉴 선택자 : selected-->
-            <li class="gnb-item gnb__project-create mb-8 selected">
-                <v-icon>$GcpActive</v-icon>
-                <span> 프로젝트 생성 </span>
-                <!-- <router-link to="/CreateProject">
-                    <span>프로젝트 생성</span>
-                </router-link> -->
+            <li class="gnb-item mb-8 selected">
+                <v-btn to="/CreateProject">
+                    프로젝트 생성 
+                    <v-icon>$GcpActive</v-icon>
+                     <!-- default는 GcpRest -->
+                </v-btn>
             </li>
-            <li class="gnb-item gnb__project-open mb-8">
-                <v-icon>$GiRest</v-icon>
-                <span> 프로젝트 열기 </span>
-                <!-- <router-link to="/">
-                    <span>프로젝트 열기</span>
-                </router-link> -->
+            <li class="gnb-item mb-8">
+                <v-btn to="/">
+                        프로젝트 열기
+                    <v-icon>$GopRest</v-icon>
+                     <!-- active는 GopActive -->
+                </v-btn>
             </li>
-            <li class="gnb-item gnb__project-import">
-                <v-icon>$GopRest</v-icon>
-                <span> 프로젝트 가져오기 </span>
-                <!-- <router-link to="/">
-                    <span>프로젝트 가져오기</span>
-                </router-link> -->
+            <li class="gnb-item">
+                <v-btn to="/">
+                    프로젝트 가져오기 
+                    <v-icon>$GiRest</v-icon>
+                     <!-- active는 GiActive -->
+                </v-btn>
             </li>
         </ul>
 
         <ul class="gnb-list">
-            <li class="gnb-item gnb__setting mb-4">
-                <router-link to="/User">
-                    <span>설정</span>
-                </router-link>
+            <li class="gnb-item mb-4">
+                    <v-btn to="/Usersetting">
+                        설정
+                     <v-icon>$GsRest</v-icon>
+                     <!-- active는 GsActive -->
+                    </v-btn>
             </li>
             <li class="gnb-item gnb__logout">
   

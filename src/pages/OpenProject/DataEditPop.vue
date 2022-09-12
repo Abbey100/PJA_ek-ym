@@ -25,8 +25,8 @@
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>All</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
-                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                            <!-- v-icon 으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
@@ -34,8 +34,8 @@
                           <!-- dropdown 상위에는 select-control 반드시 필요 -->
                           <div class="text-wrap select-control">
                             <span>도서관 구분</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
-                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                            <!-- v-icon 으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
 
 
                             <!-- Dropdown -->
@@ -49,9 +49,8 @@
                                               'sub-menu' : item.isSubMenu }"
                                   >
                                     <div class="item-wrap d-flex column-flex align-center">
-                                      <i class="ico ico__pop-menu" 
-                                      :class="['ico__pop--' + item.iconName]" ></i>
-                                      <span>{{item.text}}</span>
+                                        <v-icon>{{ '$' + 'PMenu' + item.iconName }}</v-icon>
+                                        <span>{{item.text}}</span>
                                     </div>
                                     <i class="ico ico__caret-arr__right" :class="{'d-block' : item.isSubMenu}"></i>
 
@@ -65,8 +64,7 @@
                                             class="dropdown-item d-flex column-flex align-center" 
                                             :class="{ 'd-section' : subView01.isSecStart, 'ico-hide' : subView01.isIcoHide}"
                                           >
-                                            <i class="ico ico__pop-menu" 
-                                            :class="['ico__pop--' + subView01.iconName]" ></i>
+                                             <!-- <v-icon>{{ '$' + 'PMenu' + item.iconName }}</v-icon> -->
                                             <span>{{subView01.text}}</span>
                                           </li>
                                       </ul>
@@ -80,24 +78,24 @@
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 구분</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
-                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                            <!-- v-icon 으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
 
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>도서관 코드</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
-                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                            <!-- v-icon 으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
 
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap select-control">
                             <span>면적</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
-                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                            <!-- v-icon 으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
 
                             <!-- Dropdown -->
                             <v-card class="dropdown d-block" style="min-width: 160px; top: 20px;  left:0px">
@@ -110,8 +108,7 @@
                                             'sub-menu' : item.isSubMenu }"
                                 >
                                   <div class="item-wrap d-flex column-flex align-center">
-                                    <i class="ico ico__pop-menu" 
-                                    :class="['ico__pop--' + item.iconName]" ></i>
+                                     <v-icon>{{ '$' + 'PMenu' + item.iconName }}</v-icon>
                                     <span>{{item.text}}</span>
                                   </div>
                                   <i class="ico ico__caret-arr__right" :class="{'d-block' : item.isSubMenu}"></i>
@@ -126,8 +123,7 @@
                                           class="dropdown-item d-flex column-flex align-center" 
                                           :class="{ 'd-section' : subView02.isSecStart, 'ico-hide' : subView02.isIcoHide}"
                                         >
-                                          <i class="ico ico__pop-menu" 
-                                          :class="['ico__pop--' + subView02.iconName]" ></i>
+                                           <!-- <v-icon>{{ '$' + 'PMenu' + item.iconName }}</v-icon> -->
                                           <span>{{subView02.text}}</span>
                                         </li>
                                     </ul>
@@ -140,32 +136,32 @@
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>시구군</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
-                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                            <!-- v-icon 으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
 
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>장서수</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
-                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                            <!-- v-icon 으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
 
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>방문자수</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
-                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                            <!-- v-icon 으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
 
                           </div>
                         </th>
                         <th role="columnheader" aria-sort="none" class="text-start sortable">
                           <div class="text-wrap">
                             <span>대출지수</span>
-                            <!-- Sprint 3 수정사항 : table head dropdown Open icon 이미지로 변경 -->
-                            <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                            <!-- v-icon 으로 변경 -->
+                            <v-icon>$i16_Dwn</v-icon>
 
                           </div>
                         </th>
@@ -359,35 +355,35 @@
             isSubMenu : false,
           },
           {
-            iconName : 'edit-cell', 
+            iconName : 'EditCell', 
             isIcoHide : false, 
             text: 'Edit cells',
             isSecStart: true,
             isSubMenu : true,
           },
           {
-            iconName : 'edit-col', 
+            iconName : 'EditCol', 
             isIcoHide : false, 
             text: 'Edit column',
             isSecStart: false,
             isSubMenu : true,
           },
           {
-            iconName : 'transpose', 
+            iconName : 'Transpose', 
             isIcoHide : false, 
             text: 'Transpose',
             isSecStart: false,
             isSubMenu : true,
           },
           {
-            iconName : 'sort', 
+            iconName : 'Sort', 
             isIcoHide : false, 
             text: 'Sort',
             isSecStart: true,
             isSubMenu : false,
           },
           {
-            iconName : 'view', 
+            iconName : 'View', 
             isIcoHide : false, 
             text: 'View',
             isSecStart: false,
@@ -410,21 +406,21 @@
             isSubMenu : false,
           },
           {
-            iconName : '', 
+            // iconName : '', 
             isIcoHide : true, 
             text: 'Collapse all other columns',
             isSecStart: false,
             isSubMenu : false,
           },
           {
-            iconName : '', 
+            // iconName : '', 
             isIcoHide : true, 
             text: 'Collapse all columns to left',
             isSecStart: false,
             isSubMenu : false,
           },
           {
-            iconName : '', 
+            // iconName : '', 
             isIcoHide : true, 
             text: 'Collapse all columns to right',
             isSecStart: false,
@@ -468,7 +464,7 @@
             isSubMenu : false,
           },
           {
-            iconName : 'rename', 
+            iconName : 'Rename', 
             isIcoHide : false, 
             text: 'Rename this column',
             isSecStart: true,

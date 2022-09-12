@@ -75,14 +75,14 @@
             <radio>
               <template slot="checkedContent">
                 <span class="pl-2 pr-2">false </span>
-                <i class="ico ico__arrow-right"></i>
+                <v-icon>$i16_Nxt</v-icon>
                 <span class="pl-2">True </span>
               </template>
             </radio>
             <radio>
               <template slot="checkedContent">
                 <span class="pl-2 pr-2">True </span>
-                <i class="ico ico__arrow-right"></i>
+                <v-icon>$i16_Nxt</v-icon>
                 <span class="pl-2">False</span>
               </template>
             </radio>
