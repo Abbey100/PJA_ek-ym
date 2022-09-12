@@ -93,7 +93,14 @@
 
     .drag-n-drop {
         max-width: 279px;
-
+        .dialog-section {
+            height: 339px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .v-list {
+            padding: 0;
+        }
         .section-action {
             .button-group {
                 width: 100%;
