@@ -50,7 +50,7 @@ import AddColBasedOn from '@/pages/EditPopup/AddColBasedOn';
 import SplitMulti from '@/pages/EditPopup/SplitMulti';
 import CellReplace from '@/pages/EditPopup/CellReplace';
 import SingleInput from '@/pages/EditPopup/SingleInput';
-
+import ClusterEditCol from '@/pages/EditPopup/ClusterEditCol';
 
 // Facet Side
 import FacetSide01 from '@/pages/FacetSide/FacetSide01';
@@ -270,6 +270,11 @@ export default new Router({
           path: 'SingleInput',
           name: 'SingleInput ',
           component: SingleInput,
+        },
+        { // Cluster & Edit column
+          path: 'ClusterEditCol',
+          name: 'ClusterEditCol ',
+          component: ClusterEditCol,
         },
       ],
     },
