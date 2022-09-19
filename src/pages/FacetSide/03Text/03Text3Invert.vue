@@ -17,9 +17,12 @@
                     text
                     :ripple="false" 
                 >
-                    <!-- <v-img src="@/assets/icon 16/ico__invert.svg"  /> -->
+                    <!-- Sprint 3 수정사항 : icon 이미지로 변경 -->
+                    <!-- <v-icon>$i16_Invt</v-icon> -->     
+                      
                     <!-- 활성화 시 이미지 변경 됨 -->
-                    <v-img src="@/assets/icon--16/ico__Invert--wh.svg"  />
+                    <!-- Sprint 3 수정사항 : icon 이미지로 변경 -->
+                    <v-icon>$i16_InvtWh</v-icon>    
                     Invert
                 </v-btn> 
             <GdgBtnReset /> 
