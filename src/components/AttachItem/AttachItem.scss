@@ -32,6 +32,8 @@
     }
     .file-icon {
         margin-right: 6px;
+        display: flex;
+        @extend %ico-16;
     }
     .file-name {
         font-size: $font-size-16;
@@ -42,13 +44,20 @@
         max-width: 50px;
         // padding-right: 18px;
 
-        button::before {
-            display: none;
-        }
+        // button::before {
+        //     display: none;
+        // }
         
-        span {
-            max-width: 16px;
-            margin-right: 2px;
+        // span {
+        //     max-width: 16px;
+        //     margin-right: 2px;
+        // }
+
+        svg {
+            @extend %ico-svg-16;
+        }
+        .v-btn {
+            margin-right: 8px;
         }
     }
 }

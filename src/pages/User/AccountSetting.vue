@@ -41,7 +41,7 @@
                               elevation="0"
                               outlined
                             >
-                            <v-img src="@/assets/img/icon/icon-16__attach.png" />
+                              <v-icon>$i16_attach</v-icon>
                                <span class="btn-text">이미지 선택</span>
                             </v-btn>
                         </v-list-item>
@@ -77,12 +77,8 @@
                       outlined
                     >
                       <template v-slot:append>
-                        <img
-                          width="16"
-                          height="16"
-                          src="@/assets/img/icon/icon-16__eye-hide.png"
-                          alt=""
-                        >
+                        <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                        <v-icon>$i16_PwHide</v-icon>
                       </template>
                     </v-text-field>
               </v-col>

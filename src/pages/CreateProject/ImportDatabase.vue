@@ -97,7 +97,8 @@
                                         label="Type"
                                     >
                                         <template v-slot:append>
-                                            <i class="ico ico__select-caret"></i>
+                                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                                            <v-icon>$i16_Dwn</v-icon>
                                         </template>
 
                                         <template v-slot:item="{ item, attrs, on }">

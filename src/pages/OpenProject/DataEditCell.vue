@@ -91,11 +91,15 @@
                       <tr class="">
                         <td class="text-start d-flex align-center">
                           <div class="mark-wrap">
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <!-- 보여주는 방식 변경 : if -> v-show -->
                             <span class="mark" @click="markStar">
-                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                              <v-icon v-show="!isMarkStar">$i16_star</v-icon>
+                              <v-icon v-show="isMarkStar">$i16_starFilled</v-icon>
                             </span>
                             <span class="mark" @click="markFlag">
-                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                              <v-icon v-show="!isMarkFlag">$i16_flg</v-icon>
+                              <v-icon v-show="isMarkFlag">$i16_flgFilled</v-icon>                              
                             </span>
                           </div>
 
@@ -106,7 +110,7 @@
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>2014</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                              
                         </td>
 
@@ -118,38 +122,38 @@
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>526</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                          
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>20,104</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                            
                         </td>
 
                         <td class="text-start ">
                           <div class="text-wrap justify-space-between"> 
                             <span>성북구</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>3900</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                          
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>3915</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                            
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>9360</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                             
                         </td>
                       </tr>
@@ -157,11 +161,15 @@
                       <tr class="">
                         <td class="text-start d-flex align-center">
                           <div class="mark-wrap">
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <!-- 보여주는 방식 변경 : if -> v-show -->
                             <span class="mark" @click="markStar">
-                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                              <v-icon v-show="!isMarkStar">$i16_star</v-icon>
+                              <v-icon v-show="isMarkStar">$i16_starFilled</v-icon>
                             </span>
                             <span class="mark" @click="markFlag">
-                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                              <v-icon v-show="!isMarkFlag">$i16_flg</v-icon>
+                              <v-icon v-show="isMarkFlag">$i16_flgFilled</v-icon>                              
                             </span>
                           </div>
 
@@ -172,20 +180,20 @@
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>2014</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                              
                         </td>
 
                         <td class="text-start active-edit">
                           <div class="text-wrap justify-space-between">
                             <span>LIVTYPE002</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
 
                             <!-- 에디트 버튼과 함께 위치 하기 위해 
                                 아래 layer-pop 보여 질때 이 위치에 그려짐  -->
                             <span class="dir-arrow"></span>
                           </div>
-                          <div class="layer-pop cell-edit">
+                          <div class="layer-pop edit-cell">
 
                             <div class="data-type mb-4 d-flex align-center ">
                               <span>Data type</span>
@@ -266,49 +274,53 @@
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>526</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                          
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>20,104</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                            
                         </td>
 
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>성북구</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>3900</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                          
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>3915</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                            
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>9360</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                             
                         </td>
                       </tr>
                       <tr class="">
                         <td class="text-start d-flex align-center">
                           <div class="mark-wrap">
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <!-- 보여주는 방식 변경 : if -> v-show -->
                             <span class="mark" @click="markStar">
-                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                              <v-icon v-show="!isMarkStar">$i16_star</v-icon>
+                              <v-icon v-show="isMarkStar">$i16_starFilled</v-icon>
                             </span>
                             <span class="mark" @click="markFlag">
-                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                              <v-icon v-show="!isMarkFlag">$i16_flg</v-icon>
+                              <v-icon v-show="isMarkFlag">$i16_flgFilled</v-icon>                              
                             </span>
                           </div>
 
@@ -319,7 +331,7 @@
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>2014</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                              
                         </td>
 
@@ -331,38 +343,38 @@
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>526</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                          
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>20,104</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                            
                         </td>
 
                         <td class="text-start ">
                           <div class="text-wrap justify-space-between"> 
                             <span>성북구</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>3900</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                          
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>3915</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                            
                         </td>
                         <td class="text-start">
                           <div class="text-wrap justify-space-between"> 
                             <span>9360</span>
-                            <i class="ico ico__edit"></i>
+                            <v-icon class="cell-edit">$i16_editSm</v-icon>
                           </div>                             
                         </td>
                       </tr>

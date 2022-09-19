@@ -5,18 +5,44 @@ import config from '@/config'
 //
 
 // icon 16
-import i16_Exprt from '@/assets/svg/icon16/ico__export--grey.vue'
-import i16_ExprtWh from '@/assets/svg/icon16/ico__export--wh.vue'
-import i16_Open from '@/assets/svg/icon16/ico__open.vue'
-import i16_DscntGr from '@/assets/svg/icon16/ico__arr--descent--grey.vue'
-import i16_DscntWh from '@/assets/svg/icon16/ico__arr--descent--wh.vue'
-import i16_Dscnt from '@/assets/svg/icon16/ico__arr--descent.vue'
-import i16_DwnWh from '@/assets/svg/icon16/ico__arr--down--wh.vue'
-import i16_Dwn from '@/assets/svg/icon16/ico__arr--down.vue'
-import i16_Up from '@/assets/svg/icon16/ico__arr--up.vue'
-import i16_Nxt from '@/assets/svg/icon16/ico__arr-next.vue'
-
-
+import i16_Exprt      from '@/assets/svg/icon16/ico__export--grey.vue'
+import i16_ExprtWh    from '@/assets/svg/icon16/ico__export--wh.vue'
+import i16_Open       from '@/assets/svg/icon16/ico__open.vue'
+import i16_DscntGr    from '@/assets/svg/icon16/ico__arr--descent--grey.vue'
+import i16_DscntWh    from '@/assets/svg/icon16/ico__arr--descent--wh.vue'
+import i16_Dscnt      from '@/assets/svg/icon16/ico__arr--descent.vue'
+import i16_DwnWh      from '@/assets/svg/icon16/ico__arr--down--wh.vue'
+import i16_Dwn        from '@/assets/svg/icon16/ico__arr--down.vue'
+import i16_ArrRgh     from '@/assets/svg/icon16/ico__arr--right.vue'
+import i16_Up         from '@/assets/svg/icon16/ico__arr--up.vue'
+import i16_Nxt        from '@/assets/svg/icon16/ico__arr-next.vue'
+import i16_close      from '@/assets/svg/icon16/ico__close'
+import i16_mail       from '@/assets/svg/icon16/ico__mail'
+import i16_refresh    from '@/assets/svg/icon16/ico__refresh'
+import i16_reset      from '@/assets/svg/icon16/ico__reset'
+import i16_lineCncl   from '@/assets/svg/icon16/ico__line-cancle'
+import i16_NotSaveSm  from '@/assets/svg/icon16/ico__not-save--small'
+import i16_SaveSm     from '@/assets/svg/icon16/ico__save--small'
+import i16_row        from '@/assets/svg/icon16/ico__row'
+import i16_rowWh      from '@/assets/svg/icon16/ico__row--wh'
+import i16_record     from '@/assets/svg/icon16/ico__record'
+import i16_recordWh   from '@/assets/svg/icon16/ico__record--wh'
+import i16_pgEnd      from '@/assets/svg/icon16/ico__page--end'
+import i16_pgNext     from '@/assets/svg/icon16/ico__page--next'
+import i16_pgPre      from '@/assets/svg/icon16/ico__page--pre'
+import i16_pgStart    from '@/assets/svg/icon16/ico__page--start'
+import i16_edit       from '@/assets/svg/icon16/ico__edit'
+import i16_star       from '@/assets/svg/icon16/ico__star'
+import i16_starFilled from '@/assets/svg/icon16/ico__star--filled'
+import i16_flg        from '@/assets/svg/icon16/ico__flg'
+import i16_flgFilled  from '@/assets/svg/icon16/ico__flg--filled'
+import i16_editSm     from '@/assets/svg/icon16/ico__edit--small'
+import i16_info       from '@/assets/svg/icon16/ico__info'
+import i16_search     from '@/assets/svg/icon16/ico__search'
+import i16_cancel     from '@/assets/svg/icon16/ico__cancel'
+import i16_PwShow     from '@/assets/svg/icon16/ico__pw--show'
+import i16_PwHide     from '@/assets/svg/icon16/ico__pw--hide'
+import i16_attach     from '@/assets/svg/icon16/ico__attach'
 
 
 
@@ -77,52 +103,81 @@ export default new Vuetify({
     icons: {
         values: {
             // i16
-            i16_Open: {component: i16_Open},
-            i16_Exprt: {component:i16_Exprt},
-            i16_ExprtWh: {component: i16_ExprtWh},
-            i16_DscntGr: {component: i16_DscntGr},
-            i16_DscntWh: {component: i16_DscntWh},
-            i16_Dscnt: {component: i16_Dscnt},
-            i16_DwnWh: {component: i16_DwnWh},
-            i16_Dwn: {component: i16_Dwn},
-            i16_Up: {component: i16_Up},
-            i16_Nxt: {component: i16_Nxt},
+            i16_Open:       {component: i16_Open},
+            i16_Exprt:      {component:i16_Exprt},
+            i16_ExprtWh:    {component: i16_ExprtWh},
+            i16_DscntGr:    {component: i16_DscntGr},
+            i16_DscntWh:    {component: i16_DscntWh},
+            i16_Dscnt:      {component: i16_Dscnt},
+            i16_DwnWh:      {component: i16_DwnWh},
+            i16_Dwn:        {component: i16_Dwn},
+            i16_ArrRgh:     {component: i16_ArrRgh},
+            i16_Up:         {component: i16_Up},
+            i16_Nxt:        {component: i16_Nxt},
+            i16_close:      {component: i16_close},
+            i16_mail:       {component: i16_mail},
+            i16_refresh:    {component: i16_refresh},
+            i16_reset:      {component: i16_reset},
+            i16_lineCncl:   {component: i16_lineCncl},
+            i16_NotSaveSm:  {component: i16_NotSaveSm},
+            i16_SaveSm:     {component: i16_SaveSm},
+            i16_row:        {component: i16_row},
+            i16_rowWh:      {component: i16_rowWh},
+            i16_record:     {component: i16_record},
+            i16_recordWh:   {component: i16_recordWh},
+            i16_pgEnd:      {component: i16_pgEnd},
+            i16_pgNext:     {component: i16_pgNext},
+            i16_pgPre:      {component: i16_pgPre},
+            i16_pgStart:    {component: i16_pgStart},
+            i16_edit:       {component: i16_edit},
+            i16_star:       {component: i16_star},
+            i16_starFilled: {component: i16_starFilled},
+            i16_flg:        {component: i16_flg},
+            i16_flgFilled:  {component: i16_flgFilled},            
+            i16_editSm:     {component: i16_editSm},            
+            i16_info:       {component: i16_info},            
+            i16_search:     {component: i16_search},            
+            i16_cancel:     {component: i16_cancel},            
+            i16_PwShow:     {component: i16_PwShow},            
+            i16_PwHide:     {component: i16_PwHide},            
+            i16_attach:     {component: i16_attach},            
+
             // i32
             i32_Upload: {component: i32_Upload },
             // GNB 
-            GcpActive: {component: createprojectActive},
-            GcpRest: {component: createprojectRest},
-            GiActive: {component: importActive},
-            GiRest: {component: importRest},
-            Glogout: {component: logout},
-            GopActive: {component: openprojectActive},
-            GopRest: {component: openprojectRest},
-            GsActive: {component: setingActive},
-            GsRest: {component: settingRest},
+            GcpActive:  {component: createprojectActive},
+            GcpRest:    {component: createprojectRest},
+            GiActive:   {component: importActive},
+            GiRest:     {component: importRest},
+            Glogout:    {component: logout},
+            GopActive:  {component: openprojectActive},
+            GopRest:    {component: openprojectRest},
+            GsActive:   {component: setingActive},
+            GsRest:     {component: settingRest},
             // popup Menu
-            PMenuDelete: {component: PMenuDelete},
-            PMenuEditCell: {component: PMenuEditCell},
-            PMenuEditCol: {component: PMenuEditCol},
-            PMenuEditExcel: {component: PMenuEditExcel},
-            PMenuFacetNum: {component: PMenuFacetNum},
-            PMenuFacetScatter: {component: PMenuFacetScatter},
+            PMenuDelete:        {component: PMenuDelete},
+            PMenuEditCell:      {component: PMenuEditCell},
+            PMenuEditCol:       {component: PMenuEditCol},
+            PMenuEditExcel:     {component: PMenuEditExcel},
+            PMenuFacetNum:      {component: PMenuFacetNum},
+            PMenuFacetScatter:  {component: PMenuFacetScatter},
             PMenuFacetTimeline: {component: PMenuFacetTimeline},
-            PMenuFacetTxt: {component: PMenuFacetTxt},
-            PMenuGoogleSheet: {component: PMenuGoogleSheet},
-            PMenuGoogledrive: {component: PMenuGoogledrive},
-            PMenuHtml: {component: PMenuHtml},
-            PMenuLogo: {component: PMenuLogo},
-            PMenuOdf: {component: PMenuOdf},
-            PMenuRename: {component: PMenuRename},
-            PMenuSort: {component: PMenuSort},
-            PMenuSql: {component: PMenuSql},
-            PMenuTemplate: {component: PMenuTemplate},
-            PMenuToEnd: {component: PMenuToEnd},
-            PMenuToFront: {component: PMenuToFront},
-            PMenuToLeft: {component: PMenuToLeft},
-            PMenuToRight: {component: PMenuToRight},
-            PMenuTranspose: {component: PMenuTranspose},
-            PMenuView: {component: PMenuView},
+            PMenuFacetTxt:      {component: PMenuFacetTxt},
+            PMenuGoogleSheet:   {component: PMenuGoogleSheet},
+            PMenuGoogledrive:   {component: PMenuGoogledrive},
+            PMenuHtml:          {component: PMenuHtml},
+            PMenuLogo:          {component: PMenuLogo},
+            PMenuOdf:           {component: PMenuOdf},
+            PMenuRename:        {component: PMenuRename},
+            PMenuSort:          {component: PMenuSort},
+            PMenuSql:           {component: PMenuSql},
+            PMenuTemplate:      {component: PMenuTemplate},
+            PMenuToEnd:         {component: PMenuToEnd},
+            PMenuToFront:       {component: PMenuToFront},
+            PMenuToLeft:        {component: PMenuToLeft},
+            PMenuToRight:       {component: PMenuToRight},
+            PMenuTranspose:     {component: PMenuTranspose},
+            PMenuView:          {component: PMenuView},
      }
     }
 });

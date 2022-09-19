@@ -16,6 +16,11 @@
     }
 }
 
+.dialog-close {
+    display: flex !important;
+    @extend %ico-16;
+}
+
 .dialog-content {
     padding: 0 24px 24px;
     overflow-y: auto;

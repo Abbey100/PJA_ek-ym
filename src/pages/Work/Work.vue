@@ -28,7 +28,7 @@
     <li><router-link target="_blank" to="/JoinColumns" >JoinColumns</router-link> : JoinColumns</li>    
 
     <li class="sprint mb-4 mt-12"> SPRINT 1</li>
-    <li class="mb-2"><b>Create Project</b></li>
+    <li class="mb-2"><b>Common loader</b></li>
     <li><router-link target="_blank" to="/PageProgress" >Page</router-link> : 페이지 이동 Progress </li>
     <li><router-link target="_blank" to="/FileProgress" >File</router-link> : 파일 업로드 progress</li>
     <li><router-link target="_blank" to="/CircularProgress" >Loader</router-link> : 컨텐츠 로딩 Progress </li>
@@ -48,6 +48,15 @@
     <li><router-link target="_blank" to="/ParseXML" >ParseXML</router-link> : 프로젝트 생성 파싱 : XML</li>
     <li><router-link target="_blank" to="/ParseOpenDoc" >ParseOpenDoc</router-link> : 프로젝트 생성 파싱 : Open Document</li>
     <li><router-link target="_blank" to="/SelectEnc" >SelectEnc</router-link> : 프로젝트 생성 파싱 : Select Encoding</li>
+
+
+    <li><hr class="mt-5 mb-4" /></li>
+
+    <li class="mb-2"><b>Login</b></li>
+    <li><router-link target="_blank" to="/Login" >Login</router-link> : 로그인</li>
+    <li><router-link target="_blank" to="/ResetPassword" >ResetPassword</router-link> : 비밀번호 수정</li>
+    <li><router-link target="_blank" to="/CreateAccount" >CreateAccount</router-link> : 계정 생성</li>
+
 
     <li><hr class="mt-5 mb-4" /></li>
 

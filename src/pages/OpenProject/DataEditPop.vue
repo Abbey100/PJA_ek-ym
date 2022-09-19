@@ -49,10 +49,12 @@
                                               'sub-menu' : item.isSubMenu }"
                                   >
                                     <div class="item-wrap d-flex column-flex align-center">
-                                        <v-icon>{{ '$' + 'PMenu' + item.iconName }}</v-icon>
+                                        <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                                        <v-icon class="mr-2">{{ '$' + 'PMenu' + item.iconName }}</v-icon>
                                         <span>{{item.text}}</span>
                                     </div>
-                                    <i class="ico ico__caret-arr__right" :class="{'d-block' : item.isSubMenu}"></i>
+                                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                                    <v-icon :class="{'d-block' : item.isSubMenu}">$i16_ArrRgh</v-icon>
 
                                     <!-- Sub Menu 
                                           left 좌표는 부모 Pop의 width
@@ -108,10 +110,13 @@
                                             'sub-menu' : item.isSubMenu }"
                                 >
                                   <div class="item-wrap d-flex column-flex align-center">
-                                     <v-icon>{{ '$' + 'PMenu' + item.iconName }}</v-icon>
+                                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                                    <v-icon class="mr-2">{{ '$' + 'PMenu' + item.iconName }}</v-icon>
                                     <span>{{item.text}}</span>
                                   </div>
-                                  <i class="ico ico__caret-arr__right" :class="{'d-block' : item.isSubMenu}"></i>
+
+                                  <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                                  <v-icon :class="{'d-block' : item.isSubMenu}">$i16_ArrRgh</v-icon>
 
                                   <!-- Sub Menu 
                                         left 좌표는 부모 Pop의 width
@@ -171,11 +176,15 @@
                       <tr class="">
                         <td class="text-start d-flex align-center">
                           <div class="mark-wrap">
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <!-- 보여주는 방식 변경 : if -> v-show -->
                             <span class="mark" @click="markStar">
-                              <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
+                              <v-icon v-show="!isMarkStar">$i16_star</v-icon>
+                              <v-icon v-show="isMarkStar">$i16_starFilled</v-icon>
                             </span>
                             <span class="mark" @click="markFlag">
-                              <i class="ico" :class="[ isMarkFlag ?  'ico__flag-on' : 'ico__flag-off']"></i>
+                              <v-icon v-show="!isMarkFlag">$i16_flg</v-icon>
+                              <v-icon v-show="isMarkFlag">$i16_flgFilled</v-icon>                              
                             </span>
                           </div>
 
@@ -262,7 +271,8 @@
                         >적용</v-btn>  
 
                         <div class="tooltip-view">
-                          <i class="ico ico__exclaimation"> </i>
+                          <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                          <v-icon>$i16_info</v-icon>
                           <!-- icon hover 시 tooltip 보여줌  -->
                           <tooltip 
                             class="dir-right"
@@ -281,7 +291,8 @@
                           outlined
                         >
                           <template v-slot:append>
-                            <i class="ico ico__search"></i>
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <v-icon>$i16_search</v-icon>
                           </template>                      
                         </v-text-field>
                       </div>

@@ -30,9 +30,10 @@
                     .v-btn__content {
                         color: $point-bulely;
                     }
-                    i {
+                    @extend %ico-16;     
+                    .v-icon {
                         margin-left: 2px;
-                    }
+                    }               
                 }
             }
 

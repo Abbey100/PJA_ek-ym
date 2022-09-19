@@ -200,7 +200,7 @@
       //   width: 16px;
       // }
     }
-    
+
     .page-input{
       .v-input {
         .v-input__slot{
@@ -215,6 +215,8 @@
       }
       padding-top: 0!important;
     }
+
+    @extend %ico-16;
   }
 
   .show-as {
@@ -248,6 +250,8 @@
         }
       }
     }
+
+    @extend %ico-16;
   }
 
 

@@ -15,7 +15,8 @@
             <div class="dialog-title ">
               <div class="d-flex column-flex align-center justify-space-between">
                 <b>Select Encoding</b>
-                <div class="dialog=close">
+                    <!-- Sprint_3 Hotfix : dialog=close -> dialog-close 로 수정 -->
+                    <div class="dialog-close">
                     <v-btn
                       class ="btn-ico" 
                       height="16"
@@ -25,7 +26,8 @@
                       icon
                       plain
                     >
-                      <i class="ico ico__close"></i>
+                      <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                      <v-icon>$i16_close</v-icon>
                     </v-btn>      
                   </div>
                 </div>
