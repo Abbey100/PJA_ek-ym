@@ -41,7 +41,7 @@
                             elevation="0"
                             :ripple="false" 
                         >
-                            <!-- normal : ico__scatter-01 -->
+                            <!-- normal : scatter-01 -->
                             <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
                             <v-icon>$i16_Sctr01Wh</v-icon>                            
                         </v-btn> 
@@ -71,7 +71,7 @@
                             elevation="0"
                             :ripple="false" 
                         >
-                            <!-- normal : ico__scatter-01 -->
+                            <!-- normal : scatter-01 -->
                             <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
                             <v-icon>$i16_SctrDot01Wh</v-icon>                                
                         </v-btn> 

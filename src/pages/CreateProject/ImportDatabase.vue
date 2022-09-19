@@ -181,12 +181,10 @@
                                         outlined
                                     >
                                     <template v-slot:append>
-                                        <img
-                                            width="16"
-                                            height="16"
-                                            src="@/assets/img/icon/icon-16__eye-hide.png"
-                                            alt=""
-                                        >
+                                        <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                                        <!-- 보여주는 방식 변경 : if -> v-show -->                    
+                                        <v-icon v-show="isPwHide">$i16_PwHide</v-icon>
+                                        <v-icon v-show="isPwShow">$i16_PwShow</v-icon>
                                     </template>
                                     </v-text-field>                        
                                 </v-col>
@@ -250,9 +248,16 @@
 <script>
 
 
-    export default {
-        name: 'ImportFile',
-    }
+export default {
+    name: 'ImportFile',
+
+    data() {
+      return {
+        isPwHide : true,
+        isPwShow : false,
+      }
+    }        
+}
 
 </script>
 

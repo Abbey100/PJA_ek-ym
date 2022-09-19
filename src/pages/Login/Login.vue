@@ -26,7 +26,7 @@
                 >
                   <template v-slot:append>
                     <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
-                    <v-icon v-show="isPwHide">$i16_mail</v-icon>
+                    <v-icon>$i16_mail</v-icon>
                   </template>
                 </v-text-field>
 

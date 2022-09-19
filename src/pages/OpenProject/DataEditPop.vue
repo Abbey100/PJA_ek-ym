@@ -54,7 +54,7 @@
                                         <span>{{item.text}}</span>
                                     </div>
                                     <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
-                                    <v-icon :class="{'d-block' : item.isSubMenu}">$i16_ArrRgh</v-icon>
+                                    <v-icon class="arr-right" :class="{'d-block' : item.isSubMenu}">$i16_ArrRgh</v-icon>
 
                                     <!-- Sub Menu 
                                           left 좌표는 부모 Pop의 width
@@ -116,7 +116,7 @@
                                   </div>
 
                                   <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
-                                  <v-icon :class="{'d-block' : item.isSubMenu}">$i16_ArrRgh</v-icon>
+                                  <v-icon class="arr-right" :class="{'d-block' : item.isSubMenu}">$i16_ArrRgh</v-icon>
 
                                   <!-- Sub Menu 
                                         left 좌표는 부모 Pop의 width

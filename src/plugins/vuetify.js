@@ -14,6 +14,7 @@ import i16_Dscnt       from '@/assets/svg/icon16/ico__arr--descent.vue'
 import i16_DwnWh       from '@/assets/svg/icon16/ico__arr--down--wh.vue'
 import i16_Dwn         from '@/assets/svg/icon16/ico__arr--down.vue'
 import i16_ArrRgh      from '@/assets/svg/icon16/ico__arr--right.vue'
+import i16_ArrLft     from '@/assets/svg/icon16/ico__arr--left.vue'
 import i16_Up          from '@/assets/svg/icon16/ico__arr--up.vue'
 import i16_Nxt         from '@/assets/svg/icon16/ico__arr-next.vue'
 import i16_close       from '@/assets/svg/icon16/ico__close'
@@ -131,6 +132,7 @@ export default new Vuetify({
             i16_DwnWh:      {component: i16_DwnWh},
             i16_Dwn:        {component: i16_Dwn},
             i16_ArrRgh:     {component: i16_ArrRgh},
+            i16_ArrLft:     {component: i16_ArrLft},
             i16_Up:         {component: i16_Up},
             i16_Nxt:        {component: i16_Nxt},
             i16_close:      {component: i16_close},

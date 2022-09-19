@@ -51,9 +51,7 @@ body {
           font-size: $font-size-base;
           color: $grey-default;
         }
-        img{
-          width: 16px;
-        }
+        @extend %ico-16;
       }
 
 
