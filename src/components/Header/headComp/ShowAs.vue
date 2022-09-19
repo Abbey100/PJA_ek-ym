@@ -8,12 +8,13 @@
         <!-- select -->
         <div class="select">
           <div class="select-item">         
-                
-            <i class="ico ico__show ico__rows-bl mr-1"></i>
+            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->           
+            <v-icon class="mr-1">$i16_row</v-icon>
             Rows
           </div>
           <span class="select-caret">
-            <i class="ico ico__select-caret"></i>
+            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+            <v-icon>$i16_Dwn</v-icon>
           </span>
         </div>
 
@@ -23,11 +24,13 @@
             <!-- dropdown hover & select : select -->
             <li class="dropdown-item d-flex column-flex align-center active">
               <!-- 아이템 select & hover 시 아이콘 변경 됨-->
-              <i class="ico ico__show ico__rows-wh mr-1"></i>
+              <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+              <v-icon class="mr-1">$i16_rowWh</v-icon>
               <span>Rows</span>
             </li>
             <li class="dropdown-item d-flex column-flex align-center">
-              <i class="ico ico__show ico__rows-bl mr-1"></i>
+              <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+              <v-icon class="mr-1">$i16_record</v-icon>
               <span>Records</span>
             </li>
           </ul>
@@ -42,7 +45,8 @@
             1000
           </div>
           <span class="select-caret">
-            <i class="ico ico__select-caret"></i>
+            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+            <v-icon>$i16_Dwn</v-icon>
           </span>
         </div>
 
@@ -80,7 +84,8 @@
             100%
           </div>
           <span class="select-caret">
-            <i class="ico ico__select-caret"></i>
+            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+            <v-icon>$i16_Dwn</v-icon>
           </span>
         </div>
 

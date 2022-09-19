@@ -21,9 +21,12 @@
         <tr v-for="td in table" :key ="td">
           <td class="text-start">
             <div class="mark-wrap">
+              <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+              <!-- 보여주는 방식 변경 : if -> v-show -->
               <span class="mark" @click="markStar">
-                <i class="ico" :class="[ isMarkStar ?  'ico__star-on' : 'ico__star-off']"></i>
-              </span>
+                <v-icon v-show="!isMarkStar">$i16_star</v-icon>
+                <v-icon v-show="isMarkStar">$i16_starFilled</v-icon>
+              </span>              
             </div>
           </td>
           <td class="text-start"> {{td.td00}}</td>
