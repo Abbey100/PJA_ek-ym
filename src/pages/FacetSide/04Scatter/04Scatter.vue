@@ -41,8 +41,9 @@
                             elevation="0"
                             :ripple="false" 
                         >
-                            <!-- normal : ico__scatter-01 -->
-                            <v-img src="@/assets/icon--16/ico__scatter-01--wh.svg" />
+                            <!-- normal : scatter-01 -->
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <v-icon>$i16_Sctr01Wh</v-icon>                            
                         </v-btn> 
                         <v-btn
                             class="btn-ico facet-text-toggle mr-0 px-2"
@@ -50,7 +51,8 @@
                             elevation="0"
                             :ripple="false" 
                         >
-                            <v-img src="@/assets/icon--16/ico__scatter-02.svg" />
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <v-icon>$i16_Sctr02</v-icon>                           
                         </v-btn> 
                         <v-btn
                             class="btn-ico facet-text-toggle mr-0 px-2"
@@ -58,7 +60,8 @@
                             elevation="0"
                             :ripple="false" 
                         >
-                            <v-img src="@/assets/icon--16/ico__scatter-03.svg" />
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <v-icon>$i16_Sctr03</v-icon>                           
                         </v-btn> 
                     </div>
                     <div class="button-group">
@@ -68,8 +71,9 @@
                             elevation="0"
                             :ripple="false" 
                         >
-                            <!-- normal : ico__scatter-01 -->
-                            <v-img src="@/assets/icon--16/ico__scatter-dot-01--wh.svg" />
+                            <!-- normal : scatter-01 -->
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <v-icon>$i16_SctrDot01Wh</v-icon>                                
                         </v-btn> 
                         <v-btn
                             class="btn-ico facet-text-toggle mr-0 px-2"
@@ -77,7 +81,8 @@
                             elevation="0"
                             :ripple="false" 
                         >
-                            <v-img src="@/assets/icon--16/ico__scatter-dot-02.svg" />
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <v-icon>$i16_SctrDot02</v-icon>    
                         </v-btn> 
                         <v-btn
                             class="btn-ico facet-text-toggle mr-0 px-2"
@@ -85,7 +90,8 @@
                             elevation="0"
                             :ripple="false" 
                         >
-                            <v-img src="@/assets/icon--16/ico__scatter-dot-03.svg" />
+                            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                            <v-icon>$i16_SctrDot03</v-icon> 
                         </v-btn> 
                     </div>
                 </div>
@@ -98,7 +104,8 @@
                         text
                         :ripple="false" 
                     >
-                        <v-img src="@/assets/icon--16/ico__export--grey.svg"  />
+                        <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                        <v-icon>$i16_Exprt</v-icon>                     
                         Export
                     </v-btn> 
 
@@ -109,7 +116,8 @@
                         text
                         :ripple="false" 
                     >
-                        <v-img src="@/assets/icon--16/ico__plot.svg"  />
+                        <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                        <v-icon>$i16_plot</v-icon>                      
                         Plot
                     </v-btn> 
                 </div>

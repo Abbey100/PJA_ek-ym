@@ -3,12 +3,17 @@
         <v-row class="d-flex align-center column-flex justify-start">
             <v-col class="d-flex align-center column-flex justify-start">
                 <span v-if="fileType" class="badge badge-grey font-weight-medium mr-4">{{fileType}}</span>
-                <span v-else class="file-icon"><v-img src="@/assets/img/icon/icon-16__attach.png" /></span>
+                <span v-else class="file-icon">
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <v-icon>$i16_attach</v-icon>
+                </span>
                 <span class="file-name">{{fileName}}</span>
             </v-col>
 
             <!-- 닫기 class : close  -->
-            <v-col class="close d-flex align-cetner column-flex justify-center" >
+            <!-- Sprint_3 Hotfix : 
+                클래스 수정 : justify-center -> justify-end -->
+            <v-col class="close d-flex align-cetner column-flex justify-end" >
                 <v-btn v-if="fileType"
                     elevation="0"
                     :ripple="false"
@@ -16,7 +21,8 @@
                     width="36"
                     icon
                     >
-                    <i class="ico ico__close"></i>
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <v-icon>$i16_close</v-icon>
                 </v-btn>
                 <v-btn v-else
                     elevation="0"
@@ -25,7 +31,8 @@
                     width="16"
                     icon
                     >
-                    <i class="ico ico__close sm"></i>
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <v-icon>$i16_NotSaveSm</v-icon>
                 </v-btn>
             </v-col>  
         </v-row>

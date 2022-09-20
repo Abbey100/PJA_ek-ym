@@ -285,6 +285,10 @@ html {
   &::before {
     display: none !important;
   }
+
+  &.btn--icon {
+    
+  }
 }
 
 /* == checkbox ======================================================================================= */
@@ -293,7 +297,7 @@ html {
   width: 16px;
   height: 16px;
   border-width: 0;
-  background-image: url('../../assets/img/icon/icon__checkbox-checked.png');
+  background-image: url('../../assets/img/icon__checkbox-checked.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 16px;
@@ -320,4 +324,35 @@ html {
     top: 0;
     left: 0;
   }
+}
+
+/* == v-icon 사용을 위한 공통 속성 ======================================================= */
+%ico-svg-16 {
+  width: 16px;
+  height: 16px;
+}
+
+%ico-16 {
+  .v-icon {
+    @extend %ico-svg-16;
+  }
+  svg {
+    @extend %ico-svg-16;
+  }  
+}
+
+.v-btn--icon.v-size--default .v-icon {
+  @extend %ico-svg-16;
+}
+.v-btn .v-icon {
+  @extend %ico-svg-16;
+  svg {
+    @extend %ico-svg-16;
+  }
+}
+
+
+
+.v-btn.ico-16 {
+  @extend %ico-16;
 }

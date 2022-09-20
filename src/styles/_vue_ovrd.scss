@@ -74,10 +74,13 @@
      
       }
     }
-    .v-input__append-inner {
-      align-self: center;
-      margin-right: 16px;
-    }
+  }
+  .v-input__append-inner {
+    width: auto !important;
+    align-self: center;
+    margin-right: 16px;
+    margin-top: 0;
+    @extend %ico-16;
   }
 
   // override : animation 영역 삭제  

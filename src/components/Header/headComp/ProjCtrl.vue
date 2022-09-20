@@ -8,7 +8,8 @@
       outlined
       primary
     >
-          <v-icon>$i16_Open</v-icon>
+      <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+      <v-icon class="mr-2">$i16_Open</v-icon>
       Open
     </v-btn>  
 
@@ -16,8 +17,8 @@
       <!-- select -->
       <div class="select pl-4 pr-2">
         <div class="select-item"> 
-          <!-- v-icon으로 변경 -->  
-          <v-icon>$i16_ExprtWh</v-icon>
+          <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+          <v-icon class="mr-2">$i16_ExprtWh</v-icon>
            Export
         </div>
         <span class="select-caret">
@@ -35,7 +36,8 @@
                         'ico-hide' : item.isIcoHide, 
                         'sub-menu' : item.isSubMenu }"
             >
-              <v-icon>{{ '$' + 'PMenu' + item.iconName }}</v-icon>
+              <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+              <v-icon class="mr-2">{{ '$' + 'PMenu' + item.iconName }}</v-icon>
               <span>{{item.text}}</span>
             </li>
         </ul>

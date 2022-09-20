@@ -51,9 +51,7 @@ body {
           font-size: $font-size-base;
           color: $grey-default;
         }
-        img{
-          width: 16px;
-        }
+        @extend %ico-16;
       }
 
 
@@ -77,7 +75,9 @@ body {
 
 // 로그인 전용 textfiled 스타일, override 포함
 .login-input {
-
+  .v-input__append-inner {
+    margin-right: 0!important;
+  }
 }
 
 .sign-in-option {

@@ -11,7 +11,8 @@
                     icon
                     outlined
                 >
-                    <v-img src="@/assets/icon--16/ico__not-save--small.svg" />
+                    <!-- Sprint 3 수정사항 : icon 이미지로 변경 -->
+                    <v-icon>$i16_NotSaveSm</v-icon>
                 </v-btn>  
                 <v-btn
                     class ="btn-ico gadget-flip" 
@@ -22,7 +23,8 @@
                     icon
                     outlined
                 >
-                    <v-img src="@/assets/icon--16/ico__flip.svg" />
+                    <!-- Sprint 3 수정사항 : icon 이미지로 변경 -->
+                    <v-icon>$i16_flip</v-icon>
                 </v-btn>  
             </div>
 

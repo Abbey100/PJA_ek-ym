@@ -1,17 +1,17 @@
 <template>
   <div class="pagination d-flex justify-start">
     <div class="button-group d-flex align-center mr-4">
-      <button  type="button" class="top-pagination  mr-1" elevation="0"  >
-        <v-img src="@/assets/icon--16/ico__page--start.svg" max-width="16" />
+      <button  type="button" class="top-paginaation mr-1" elevation="0"  >
+        <v-icon>$i16_pgStart</v-icon>
       </button>
-      <button  type="button" class="top-pagination  mr-1" elevation="0"  >
-      <v-img src="@/assets/icon--16/ico__page--start.svg" max-width="16" />
+      <button  type="button" class="top-paginaation mr-1" elevation="0"  >
+        <v-icon>$i16_pgPre</v-icon>
       </button>
-      <button  type="button" class="top-pagination mr-1" elevation="0"  >
-        <v-img src="@/assets/icon--16/ico__page--next.svg" max-width="16" />
+      <button  type="button" class="top-paginaation mr-1" elevation="0"  >
+        <v-icon>$i16_pgNext</v-icon>
       </button>
-      <button  type="button" class="top-pagination" elevation="0"  >
-        <v-img src="@/assets/icon--16/ico__page--end.svg" max-width="16" />
+      <button  type="button" class="top-paginaation" elevation="0"  >
+        <v-icon>$i16_pgEnd</v-icon>
       </button>
     </div>
       <div class="page-input d-flex justify-start align-center">
