@@ -59,7 +59,8 @@
                     <div class="select">
                       <div class="select-item">General Refine Expression Language (GREL)</div>
                       <span class="select-caret">
-                        <v-img class="ml-2" src="@/assets/icon--16/ico__table__layer-menu.svg" max-width="16" />
+                        <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                        <v-icon>$i16_Dwn</v-icon>
                       </span>
                     </div>
 

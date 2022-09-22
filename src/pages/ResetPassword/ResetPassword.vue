@@ -26,12 +26,8 @@
                   outlined
                 >
                   <template v-slot:append>
-                    <img
-                      width="16"
-                      height="16"
-                      src="@/assets/img/icon/icon-16__mail.png"
-                      alt=""
-                    >
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <v-icon>$i16_mail</v-icon>
                   </template>
                 </v-text-field>
               </v-col>
@@ -55,7 +51,8 @@
               <!-- login 으로 이동 -->
               <v-col class="go-login d-flex justify-start align-center column-flex mt-2">
         
-                  <v-img src="@/assets/img/icon/icon-16__arrow-left.png" max-width="16"  contain></v-img>
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <v-icon>$i16_ArrLft</v-icon>
                   <router-link 
                     to="/Login"
                     class="text-capitalize text-decoration-underline font-weight-regular px-1"

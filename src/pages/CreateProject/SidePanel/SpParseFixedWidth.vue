@@ -11,7 +11,8 @@
                     text
                 >
                     Update Preview
-                    <i class="ico ico__refresh"></i>
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <v-icon>$i16_reset</v-icon>
                 </v-btn>
                 </v-row>
 

@@ -38,7 +38,8 @@
             >적용</v-btn>  
 
             <div class="tooltip-view">
-                <i class="ico ico__exclaimation"> </i>
+                <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                <v-icon>$i16_info</v-icon>
                 <!-- icon hover 시 tooltip 보여줌  -->
                 <tooltip 
                     style=" top:-21px; right: 20px; width:180px"
@@ -58,7 +59,8 @@
                 outlined
             >
                 <template v-slot:append>
-                <i class="ico ico__search"></i>
+                <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                <v-icon>$i16_search</v-icon>
                 </template>                      
             </v-text-field>
             </div>

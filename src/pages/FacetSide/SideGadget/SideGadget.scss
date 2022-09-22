@@ -36,6 +36,11 @@
             .v-btn__content {
                 line-height: 14px;
                 margin-top: -2px;
+                .v-icon .v-icon__component {
+                    position: relative;
+                    width: 16px;
+                    height: 16px;
+                }
             }
         }
         .cluster {

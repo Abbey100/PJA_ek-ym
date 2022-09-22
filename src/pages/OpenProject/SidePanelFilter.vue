@@ -27,7 +27,8 @@
             
             <!-- hover 시 : hover 는 보여주기 위한 임시 클래스 -->
             <div class="tooltip-view hover">
-                <i class="ico ico__exclaimation"> </i>
+                <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                <v-icon>$i16_info</v-icon>
                 <!-- icon hover 시 tooltip 보여줌  -->
                 <tooltip 
                     style=" top:-21px; right: 20px; width:180px"
@@ -57,9 +58,11 @@
                         icon
                         plain
                     >
-                        <i class="ico ico__input-clear"></i>
+                        <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                        <v-icon>$i16_cancel</v-icon>
                     </v-btn>  
-                    <i class="ml-2 ico ico__search"></i>
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <v-icon class="ml-2">$i16_search</v-icon>
                 </template>                      
             </v-text-field>
             </div>

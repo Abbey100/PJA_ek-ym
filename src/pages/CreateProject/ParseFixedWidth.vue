@@ -26,7 +26,8 @@
                     icon
                     plain
                   >
-                    <i class="ico ico__delete"></i>
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <v-icon>$i16_lineCncl</v-icon>
                   </v-btn>      
                 </div>
               </div>            

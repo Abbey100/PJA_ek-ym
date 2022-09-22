@@ -30,11 +30,12 @@
                 <v-btn
                     elevation="0"
                     :ripple="false"
-                    height="36"
-                    width="36"
+                    height="16"
+                    width="16"
                     icon
                     >
-                    <i class="ico ico__close"></i>
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <v-icon>$i16_close</v-icon>
                 </v-btn>
             </v-col>          
         </v-row>

@@ -6,7 +6,8 @@
         text
         :ripple="false" 
     >
-        <v-img src="@/assets/icon--16/ico__reset--grey.svg"  />
+        <!-- Sprint 3 수정사항 : icon 이미지로 변경 -->
+        <v-icon>$i16_resetGr</v-icon>    
         Reset
     </v-btn>  
 </template>

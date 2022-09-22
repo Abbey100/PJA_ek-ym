@@ -9,7 +9,7 @@
                 :ripple="false" 
             >
                 name
-                <v-img src="@/assets/icon--16/ico__arr--descent--wh.svg" />
+                <v-icon>$i16_DscntWh</v-icon>
             </v-btn> 
             <v-btn
                 class="count facet-text-toggle"
@@ -17,8 +17,8 @@
                 elevation="0"
                 :ripple="false" 
             >
-                count
-                <v-img src="@/assets/icon--16/ico__arr--descent--grey.svg" />
+                count                 
+                <v-icon>$i16_DscntGr</v-icon>
             </v-btn> 
         </div>
 

@@ -28,7 +28,6 @@ export default {
 </script>
 <style lang="scss">
 @import '../../styles/app';
-@import '../../components/icon/icon.scss';
 
    .page-title { 
         h1 {

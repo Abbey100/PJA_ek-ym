@@ -42,6 +42,12 @@
             &.type-num {
                 color: $text-num;
             }
+            .v-icon .v-icon__component {
+                position: relative;
+                width: 16px;
+                height: 16px;
+            }
+            
         }
 
         %td-edit {
@@ -61,7 +67,9 @@
                 display: block;
                 width: calc(100% - 24px);
             }
-            .ico__edit {
+            .cell-edit {
+                @extend %ico-svg-16;
+                display: flex!important;
                 background-color: #fff;
                 border-radius: 2px;
                 border: 1px solid $border-default;
@@ -71,7 +79,7 @@
         }
         td {
             cursor: pointer;
-            .ico__edit {
+            .cell-edit {
                 display: none;
             }
             &.hover,
@@ -82,7 +90,7 @@
                     background-color: #fff;
 
 
-                    .ico__edit {
+                    .cell-edit {
                         display: block;
                     }
                 }
@@ -94,7 +102,7 @@
                     border-color: $point-deep;
                     background-color: rgba(145,124,255,.2);
                 } 
-                .ico__edit {
+                .cell-edit {
                     display: block;
                 }
             }
@@ -112,6 +120,8 @@
         padding: 4px;
         width: 24px;
         height: 24px;
+
+        @extend %ico-16;
     }
 }
 
@@ -121,7 +131,7 @@
     border: 1px solid $grey-default;
     background-color: #fff;
 
-    &.cell-edit {
+    &.edit-cell {
         width: 405px;
         height: 240px;
         top: 39px;
@@ -172,7 +182,7 @@
     border: 1px solid $grey-default;
     background-color: #fff;
 
-    &.cell-edit {
+    &.edit-cell {
         top: 39px;
         left: 0;        
         width: 405px;
@@ -226,6 +236,11 @@
         display: flex;
         align-items : center;
         margin-left: 4px;
+        .v-icon .v-icon__component {
+            position: relative;
+            width: 16px;
+            height: 16px;
+        }
       }
     }
   
@@ -279,7 +294,7 @@
           color: #fff;
         }
   
-        .ico__caret-arr__right {
+        .arr-right {
           display: none;
         }     
         
@@ -292,7 +307,7 @@
       }
   
       .sub-menu {
-        .ico__caret-arr__right {
+        .arr-right {
           display: block !important;
           visibility: visible !important;
         }   

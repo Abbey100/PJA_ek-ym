@@ -80,7 +80,8 @@
                 icon
                 plain
               >
-                <i class="ico ico__clear"></i>
+                <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                <v-icon>$i16_NotSaveSm</v-icon>
               </v-btn>      
             </div>
 
@@ -101,7 +102,8 @@
                 icon
                 plain
               >
-                <i class="ico ico__clear"></i>
+                <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                <v-icon>$i16_NotSaveSm</v-icon>
               </v-btn>  
 
               <!-- complete -->
@@ -113,7 +115,8 @@
                 icon
                 plain
               >
-                <i class="ico ico__complete"></i>
+                <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                <v-icon>$i16_SaveSm</v-icon>
               </v-btn>    
             </div>
           </div>

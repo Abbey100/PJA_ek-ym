@@ -46,6 +46,12 @@
   }
   .form {
     padding-left: 24px;
+    .v-text-field:not(.v-select) {
+      @extend %ico-16;
+      .v-input__append-inner {
+        margin-right: 0;
+      }
+    }
   }
   .v-text-field .v-label {
     display: none !important;

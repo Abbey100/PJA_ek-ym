@@ -31,16 +31,16 @@
         <v-col class="pagination dl-l  d-flex justify-start">
           <div class="button-group d-flex column-flex align-center mr-4">
             <button  type="button" class="top-paginaation mr-1" elevation="0"  >
-              <i class="ico ico__first"></i>
+              <v-icon>$i16_pgStart</v-icon>
             </button>
             <button  type="button" class="top-paginaation mr-1" elevation="0"  >
-              <i class="ico ico__pre"></i>
+              <v-icon>$i16_pgPre</v-icon>
             </button>
             <button  type="button" class="top-paginaation mr-1" elevation="0"  >
-              <i class="ico ico__next"></i>
+              <v-icon>$i16_pgNext</v-icon>
             </button>
             <button  type="button" class="top-paginaation" elevation="0"  >
-              <i class="ico ico__last"></i>
+              <v-icon>$i16_pgEnd</v-icon>
             </button>
           </div>
            <div class="page-input d-flex justify-start column-flex align-center">
@@ -65,26 +65,38 @@
             <div class="select-control plain" style="width: 106px">
               <!-- select -->
               <div class="select">
-                <div class="select-item">                
-                  <i class="ico ico__show ico__rows-bl mr-1"></i>
+                <div class="select-item">     
+                  <!-- Sprint_3 Hotfix : v-icon으로 변경 -->           
+                  <v-icon class="mr-1">$i16_row</v-icon>
                   Rows
                 </div>
                 <span class="select-caret">
-                  <i class="ico ico__select-caret"></i>
+                  <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                  <v-icon>$i16_Dwn</v-icon>
                 </span>
               </div>
 
               <!-- Dropdown :: visible - d-bloc-->
               <v-card class="dropdown" style="width: 106px;">
                 <ul class="dropdown-menu">
-                  <!-- dropdown hover & select : select -->
+                  <!-- dropdown hover & select : active -->
                   <li class="dropdown-item d-flex column-flex align-center active">
-                    <!-- 아이템 select & hover 시 아이콘 변경 됨-->
-                    <i class="ico ico__show ico__rows-wh mr-1"></i>
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경-->
+
+                    <!-- Default 상태
+                    <v-icon class="mr-1">$i16_rowWh</v-icon> -->
+
+                    <!--select & hover 시 아이콘 변경 됨 -->
+                    <v-icon class="mr-1">$i16_rowWh</v-icon>
                     <span>Rows</span>
                   </li>
                   <li class="dropdown-item d-flex column-flex align-center">
-                    <i class="ico ico__show ico__rows-bl mr-1"></i>
+                    <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                    <!-- Default 상태 -->
+                    <v-icon class="mr-1">$i16_record</v-icon>
+                    
+                    <!-- select & hover 시 아이콘 변경 됨 
+                    <v-icon class="mr-1">$i16_recordWh</v-icon>-->
                     <span>Records</span>
                   </li>
                 </ul>
@@ -99,7 +111,8 @@
                   1000
                 </div>
                 <span class="select-caret">
-                  <i class="ico ico__select-caret"></i>
+                  <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                  <v-icon>$i16_Dwn</v-icon>
                 </span>
               </div>
 
@@ -137,7 +150,8 @@
                   100%
                 </div>
                 <span class="select-caret">
-                  <i class="ico ico__select-caret"></i>
+                  <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                  <v-icon>$i16_Dwn</v-icon>
                 </span>
               </div>
 
@@ -174,19 +188,21 @@
             outlined
             primary
           >
-            <i class="ico ico__open mr-2"></i>
+            <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+            <v-icon class="mr-2">$i16_Open</v-icon>            
             Open
           </v-btn>  
 
           <div class="select-control">
             <!-- select -->
             <div class="select pl-4 pr-2">
-              <div class="select-item">                
-                <i class="ico ico__export mr-2"></i>
+              <div class="select-item">        
+                <v-icon class="mr-2">$i16_ExprtWh</v-icon>        
                 Export
               </div>
               <span class="select-caret">
-                <i class="ico ico__select-caret__wh"></i>
+                  <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+                  <v-icon>$i16_DwnWh</v-icon>
               </span>
             </div>
 

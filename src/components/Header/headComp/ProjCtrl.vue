@@ -8,7 +8,8 @@
       outlined
       primary
     >
-      <i class="ico ico__open mr-2"></i>
+      <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+      <v-icon class="mr-2">$i16_Open</v-icon>
       Open
     </v-btn>  
 
@@ -16,12 +17,12 @@
       <!-- select -->
       <div class="select pl-4 pr-2">
         <div class="select-item"> 
-          <!-- Sprint 3 수정사항 : icon 이미지로 변경 -->     
-          <v-img class="mr-2" src="@/assets/icon--16/ico__export--wh.svg"></v-img>
-          Export
+          <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+          <v-icon class="mr-2">$i16_ExprtWh</v-icon>
+           Export
         </div>
         <span class="select-caret">
-        <v-img src="@/assets/icon--16/ico__arr--down--wh.svg"></v-img>
+          <v-icon>$i16_DwnWh</v-icon>
         </span>
       </div>
 
@@ -35,8 +36,8 @@
                         'ico-hide' : item.isIcoHide, 
                         'sub-menu' : item.isSubMenu }"
             >
-              <i class="ico ico__pop-menu" 
-              :class="['ico__pop--' + item.iconName]" ></i>
+              <!-- Sprint_3 Hotfix : v-icon으로 변경 -->
+              <v-icon class="mr-2">{{ '$' + 'PMenu' + item.iconName }}</v-icon>
               <span>{{item.text}}</span>
             </li>
         </ul>
@@ -58,7 +59,7 @@
        ],      
        items: [
         {
-          iconName : 'logo', 
+          iconName : 'Logo', 
           isIcoHide : false, 
           text: 'Arrager project archive to file',
           isSecStart: false,
@@ -80,28 +81,28 @@
           isSubMenu : false,
         },
         {
-          iconName : 'code', 
+          iconName : 'Html', 
           isIcoHide : false, 
           text: 'Html',
           isSecStart: false,
           isSubMenu : false,
         },
         {
-          iconName : 'xls', 
+          iconName : 'EditExcel', 
           isIcoHide : false, 
           text: 'Excel (.xls)',
           isSecStart: false,
           isSubMenu : false,
         },
         {
-          iconName : 'xls', 
+          iconName : 'EditExcel', 
           isIcoHide : false, 
           text: 'Excel 2007+ (.xls)',
           isSecStart: false,
           isSubMenu : false,
         },
         {
-          iconName : 'odf', 
+          iconName : 'Odf', 
           isIcoHide : false, 
           text: 'ODF Spreadsheet',
           isSecStart: false,
@@ -116,28 +117,28 @@
           isSubMenu : false,
         },
         {
-          iconName : 'sql', 
+          iconName : 'Sql', 
           isIcoHide : false, 
           text: 'SQL Exporter',
           isSecStart: false,
           isSubMenu : false,
         },
         {
-          iconName : 'template', 
+          iconName : 'Template', 
           isIcoHide : false, 
           text: 'Templating',
           isSecStart: false,
           isSubMenu : false,
         },
         {
-          iconName : 'drive', 
+          iconName : 'Googledrive', 
           isIcoHide : false, 
           text: 'Archive to Google Drive',
           isSecStart: true,
           isSubMenu : false,
         },
         {
-          iconName : 'sheet', 
+          iconName : 'GoogleSheet', 
           isIcoHide : false, 
           text: 'Google Sheets',
           isSecStart: false,
