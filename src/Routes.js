@@ -108,12 +108,7 @@ export default new Router({
           path: 'PageProgress',
           name: 'Page Progress',
           component: PageProgress,
-        },
-        { // OpenProject
-          path: 'OpenProject',
-          name: 'OpenProject ',
-          component: OpenProject,
-        },        
+        },       
       ],
     },
     
@@ -174,6 +169,7 @@ export default new Router({
           name: '프로젝트 생성 중 : Select Encoding',
           component: SelectEnc,
         },
+ 
       ],
     },
 
@@ -338,6 +334,11 @@ export default new Router({
         name: 'UserSetting',
         component: Usersetting
       },
+      { // OpenProject
+        path: 'OpenProject',
+        name: 'OpenProject ',
+        component: OpenProject,
+      }, 
     ],
   },
     {
