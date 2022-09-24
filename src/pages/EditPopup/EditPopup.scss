@@ -450,133 +450,14 @@
 }
 
 .cluster-edit {
-    .opt-title {
-        font-size: $font-size-base
-    }
-    .dialog-content {
-        height: 739px;
-        overflow-y: auto;
-    }
-    .section-col .col{
-        &:first-child {
-            max-width: 768px
-        }
-        &:last-child {
-            max-width: 360px;
-        }
-    }
-
-    .cluster-graph {
-
-        .range {
-            margin-top: 10px !important;
-            width: 100%;
-            line-height: 18px;
-            color: $gnr-default;
-        }
-    }  
-
-  .sec-top{
-    height: 48px;
-    border-bottom: 1px solid $gnr-default;
-    &.option {
-        .v-text-field--outlined  {
-            width: 40px;
-            &,
-            .fieldset,
-            .v-input__slot {
-                min-height: 32px !important;
-            }
-        }
-        .v-text-field--outlined .v-input__slot {
-            padding: 0 8px !important;
-        }        
+  .selection-col {
+    &:first-child {
+        width: 768px
     }
   }
-
   .cluster-table {
     border-radius: 8px;
     border: 1px solid $gnr-border-default;
     overflow: hidden;
-
-    .base-table.v-data-table > .v-data-table__wrapper > table > tbody > tr:last-child > td {
-        border-bottom: none !important;
-    }
-    .v-text-field--outlined  {
-        &,
-        .fieldset,
-        .v-input__slot {
-            min-height: 32px !important;
-        }
-    }
-    .v-text-field {
-        padding-top : 0px!important;
-        font-size: $font-size-base;
-        // .fieldset, 
-        // .v-text-field__slot{
-        //     height: 32px !important;
-        // }
-    }
-
-    thead th{
-        font-size: $font-size-base;
-        padding-top:6px;
-        padding-bottom: 6px;
-
-        &:not(:last-child) {
-            padding-right: 0;
-        }
-        &:nth-child(1) {
-            width: 64px;
-        }
-        &:nth-child(2) {
-            width: 60px;
-        }
-        &:nth-child(3) {
-            width: 300px;
-        }
-        &:nth-child(4) {
-            width: 53px;
-        }
-        &:nth-child(5) {
-            width: 278px;
-        }
-    }
-
-    tbody td {
-        padding-top: 12px !important;
-        padding-bottom: 12px !important;
-        vertical-align: top;
-
-        &:nth-child(4) {
-            padding-top: 14px !important;
-            padding-bottom: 14px !important;
-        }
-        &:nth-child(5) {
-            padding-top: 6px !important;
-            padding-bottom: 6px !important;
-        }
-    }
-
-    .value-row {
-        margin-left: 6px;
-        color: $gnr-default;
-    }
-  }
-
-  .empty-descript {
-    margin-top: 104px;
-    text-align: center;
-    .v-image {
-        margin: 0 auto
-    }
-    .lg-text {
-        padding: 16px 0 8px;
-        font-size: 20px;
-    }
-    span {
-        font-size: $font-size-base;
-        color: $gnr-default;
-    }
   }
 }
