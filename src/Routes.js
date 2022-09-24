@@ -3,6 +3,7 @@ import Router from 'vue-router';
 
 // component :: Component
 import Layout from '@/components/Layout/Layout';                     // Layout : 기본 레이아웃
+import Layout2 from '@/components/Layout/Layout2';                     // Layout : 기본 레이아웃 - 헤더에서 계정 생성 제외
 import layoutPrjParse01 from '@/components/Layout/layoutPrjParse01'; // 프로젝트 생성 Parse data Header 01 레이아웃
 import layoutPrjParse02 from '@/components/Layout/layoutPrjParse02'; // 프로젝트 생성 Parse data Header 02 레이아웃
 import layoutDataPop from '@/components/Layout/layoutDataPop';     // 프로젝트 편집 기본 header
@@ -109,6 +110,18 @@ export default new Router({
           name: 'Page Progress',
           component: PageProgress,
         },       
+      ],
+    },
+    { 
+      path: '/',
+      name: 'Layout2',
+      component: Layout2,
+      children: [
+        { // OpenProject
+          path: 'OpenProject',
+          name: 'OpenProject ',
+          component: OpenProject,
+        }, 
       ],
     },
     
@@ -334,11 +347,6 @@ export default new Router({
         name: 'UserSetting',
         component: Usersetting
       },
-      { // OpenProject
-        path: 'OpenProject',
-        name: 'OpenProject ',
-        component: OpenProject,
-      }, 
     ],
   },
     {
