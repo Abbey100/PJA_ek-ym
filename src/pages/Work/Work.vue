@@ -3,7 +3,8 @@
 <ul class="work--list"> 
     <li class="sprint mb-4 "> SPRINT 4</li>
     <li class="mb-2"><b>Cluster</b></li>
-    <li><router-link target="_blank" to="/ClusterEditCol" >Cluster & Edit column</router-link> : Cluster pop</li>  
+    <li><router-link target="_blank" to="/ClusterEditCol" >Cluster & Edit column 01</router-link> : Cluster pop</li>  
+    <li><router-link target="_blank" to="/ClusterEditColEmpty" >Cluster & Edit column 02</router-link> : Cluster pop Empty</li>  
     <li><router-link target="_blank" to="/OpenProject" >Open Project</router-link> : Open Project</li>  
 
     <li class="sprint mb-4  mt-12"> SPRINT 3</li>
@@ -100,7 +101,7 @@
 
     .v-application .work--list a {
         color: blue !important;
-        width : 170px;
+        width : 190px;
         display: inline-block
     }
 </style>
