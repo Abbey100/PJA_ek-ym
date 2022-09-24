@@ -109,6 +109,11 @@ export default new Router({
           name: 'Page Progress',
           component: PageProgress,
         },
+        { // OpenProject
+          path: 'OpenProject',
+          name: 'OpenProject ',
+          component: OpenProject,
+        },        
       ],
     },
     
@@ -276,11 +281,6 @@ export default new Router({
           path: 'ClusterEditCol',
           name: 'ClusterEditCol ',
           component: ClusterEditCol,
-        },
-        { // Cluster & Edit column
-          path: 'OpenProject',
-          name: 'OpenProject ',
-          component: OpenProject,
         },
       ],
     },
