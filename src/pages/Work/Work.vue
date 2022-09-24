@@ -1,14 +1,21 @@
 <template>
 <div class=" d-flex column-flex align-start justify-center work-wrap">
 <ul class="work--list"> 
-    <li class="sprint mb-4 "> SPRINT 3</li>
+    <li class="sprint mb-4 "> SPRINT 4</li>
+    <li class="mb-2"><b>Cluster</b></li>
+    <li><router-link target="_blank" to="/ClusterEditCol" >Cluster & Edit column</router-link> : Cluster pop</li>  
+    <li><router-link target="_blank" to="/OpenProject" >Open Project</router-link> : Open Project</li>  
+
+    <li class="sprint mb-4  mt-12"> SPRINT 3</li>
     <li class="mb-2"><b>Sort by</b></li>
     <li><router-link target="_blank" to="/SortBy" >Sort By</router-link> : 정렬</li>  
+    <li class="mb-2 mt-6"><b>FacetSide</b></li>
     <li><router-link target="_blank" to="/FacetSide01" >FacetSide 01</router-link> : Facet Filter </li>  
     <li><router-link target="_blank" to="/FacetSide02" >FacetSide 02</router-link> : Facet Numeric </li>  
     <li><router-link target="_blank" to="/FacetSide03" >FacetSide 03</router-link> : Facet Text </li>  
     <li><router-link target="_blank" to="/FacetSide03EditPop" >FacetSide 03 EditPop</router-link> : Facet Text Edit pop</li>  
     <li><router-link target="_blank" to="/FacetSide04" >FacetSide 04</router-link> : Facet Scatter </li>  
+    <li class="mb-2 mt-6"><b>EditCells</b></li>
     <li><router-link target="_blank" to="/CustomText" >Edit Cell To Text</router-link> : Custom text transform popup</li>  
     <li><router-link target="_blank" to="/AddColBasedOn" >Edit Col Based On</router-link> : Add column based on Popup</li>  
     <li><router-link target="_blank" to="/SplitMulti" >Edit cell Split-multi</router-link> : Split multi-valued cells </li>  
@@ -93,7 +100,7 @@
 
     .v-application .work--list a {
         color: blue !important;
-        width : 160px;
+        width : 170px;
         display: inline-block
     }
 </style>

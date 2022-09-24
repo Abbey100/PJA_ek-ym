@@ -3,6 +3,7 @@ import Router from 'vue-router';
 
 // component :: Component
 import Layout from '@/components/Layout/Layout';                     // Layout : 기본 레이아웃
+import Layout2 from '@/components/Layout/Layout2';                     // Layout : 기본 레이아웃 - 헤더에서 계정 생성 제외
 import layoutPrjParse01 from '@/components/Layout/layoutPrjParse01'; // 프로젝트 생성 Parse data Header 01 레이아웃
 import layoutPrjParse02 from '@/components/Layout/layoutPrjParse02'; // 프로젝트 생성 Parse data Header 02 레이아웃
 import layoutDataPop from '@/components/Layout/layoutDataPop';     // 프로젝트 편집 기본 header
@@ -38,6 +39,7 @@ import DataEditCell from '@/pages/OpenProject/DataEditCell';
 import DataEditPop from '@/pages/OpenProject/DataEditPop';
 import DataEditNoti from '@/pages/OpenProject/DataEditNoti';
 import DataEditFilter from '@/pages/OpenProject/DataEditFilter';
+import OpenProject from '@/pages/OpenProject/OpenProject';
 import ApplyOpHistory from '@/pages/EditPopup/ApplyOpHistory';
 import ExtractOphistory from '@/pages/EditPopup/ExtractOphistory';
 import SplitColumns from '@/pages/EditPopup/SplitColumns';
@@ -50,7 +52,7 @@ import AddColBasedOn from '@/pages/EditPopup/AddColBasedOn';
 import SplitMulti from '@/pages/EditPopup/SplitMulti';
 import CellReplace from '@/pages/EditPopup/CellReplace';
 import SingleInput from '@/pages/EditPopup/SingleInput';
-
+import ClusterEditCol from '@/pages/EditPopup/ClusterEditCol';
 
 // Facet Side
 import FacetSide01 from '@/pages/FacetSide/FacetSide01';
@@ -107,7 +109,19 @@ export default new Router({
           path: 'PageProgress',
           name: 'Page Progress',
           component: PageProgress,
-        },
+        },       
+      ],
+    },
+    { 
+      path: '/',
+      name: 'Layout2',
+      component: Layout2,
+      children: [
+        { // OpenProject
+          path: 'OpenProject',
+          name: 'OpenProject ',
+          component: OpenProject,
+        }, 
       ],
     },
     
@@ -168,6 +182,7 @@ export default new Router({
           name: '프로젝트 생성 중 : Select Encoding',
           component: SelectEnc,
         },
+ 
       ],
     },
 
@@ -270,6 +285,11 @@ export default new Router({
           path: 'SingleInput',
           name: 'SingleInput ',
           component: SingleInput,
+        },
+        { // Cluster & Edit column
+          path: 'ClusterEditCol',
+          name: 'ClusterEditCol ',
+          component: ClusterEditCol,
         },
       ],
     },

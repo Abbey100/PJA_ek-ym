@@ -322,3 +322,103 @@
     }
     
   }
+
+  .openproject_list {
+    position: relative;
+    .wrap {
+        position: relative;
+        padding: 20px 40px;
+        /* tag type check */
+        .tagtype_check_area {
+            position: relative;
+            display: block;
+            padding: 0;
+            height: auto !important;
+            .v-input--selection-controls__input {
+                display: none !important;
+            }
+            .v-input--selection-controls {
+                margin-top: 0;
+                &.v-input {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 4px 0 0;
+                    padding: 0;
+                    &.v-input--is-label-active {
+                        .v-label { 
+                            background: $point-deep;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .v-input .v-label {
+                top:0 !important;
+                left:0 !important;
+                padding: 0 12px;
+                border-radius: 12px;
+                height: 24px !important;
+                line-height: 24px !important;
+                background: $white-pale;
+                display: block;
+                flex: none;
+            }
+        }
+    }
+  }
+  .tag_list_table {
+    margin-top: 16px;
+    &.v-data-table > .v-data-table__wrapper > table > thead > tr > th {
+        border-bottom-color: #666666 !important;
+        color: #878787;
+        font-size: 10px;
+        height: 28px;
+    }
+    &.v-data-table > .v-data-table__wrapper > table > tbody > tr > td {
+        min-height: 36px;
+        color: $primary;
+        font-size: 12px;
+        font-weight: normal;
+        vertical-align: top;
+        padding: 6px 16px;
+        .theme--light.v-btn.v-btn--has-bg {
+            background-color: transparent;
+            &:hover {
+                background-color: $point-deep;
+                svg {
+                    path {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+        .v-btn:not(.v-btn--round).v-size--default {
+            height: 32px;
+            min-width: 32px;
+            width: 32px;
+            padding: 0;
+            border-radius: 16px !important;
+        }
+        .theme--light.v-chip {
+            background-color: #ebeef1;
+        }
+        .theme--light.v-chip:not(.v-chip--active) {
+            background-color: #ebeef1;
+        }
+        .v-chip-group .v-chip {
+            margin: 0px 4px 4px 0;
+            &.v-size--default {
+                border-radius: 16px;
+                font-size: 12px;
+                height: 24px;
+            }
+        }
+        .v-chip .v-chip__content {
+            font-size: 12px !important;
+        }
+    }
+    &.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+        background: rgba(124,153,255, 0.1);
+    }
+  }

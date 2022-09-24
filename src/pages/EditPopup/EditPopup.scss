@@ -448,3 +448,16 @@
     }
 
 }
+
+.cluster-edit {
+  .selection-col {
+    &:first-child {
+        width: 768px
+    }
+  }
+  .cluster-table {
+    border-radius: 8px;
+    border: 1px solid $gnr-border-default;
+    overflow: hidden;
+  }
+}
