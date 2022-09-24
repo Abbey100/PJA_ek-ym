@@ -47,26 +47,47 @@
               </div>            
             </div>
             <div class="cluster-table">
-              <v-data-table
-                  :headers="headers"
-                  :items="desserts"
-                  :items-per-page="1"
-                  hide-default-footer
-                  disable-sort
-                  fixed-header
-                  class="elevation-0 base-table"
-              ></v-data-table> 
+              <div class="v-data-table elevation-0 base-table v-data-table--fixed-header theme--light"><div class="v-data-table__wrapper">
+                <table>
+                  <colgroup>
+                    <col class="">
+                    <col class="">
+                    <col class="">
+                    <col class="">
+                    <col class="">
+                  </colgroup>
+                  <thead class="v-data-table-header">
+                    <tr>
+                      <th role="columnheader" scope="col" aria-label="Cluster Size" class="text-start"><span>Cluster Size</span></th>
+                      <th role="columnheader" scope="col" aria-label="Row count" class="text-start"><span>Row count</span></th>
+                      <th role="columnheader" scope="col" aria-label="Values in Cluster" class="text-start"><span>Values in Cluster</span></th>
+                      <th role="columnheader" scope="col" aria-label="Merge" class="text-start"><span>Merge</span></th>
+                      <th role="columnheader" scope="col" aria-label="New Cell  Value" class="text-start"><span>New Cell  Value</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="">
+                      <td class="text-start">1</td>
+                      <td class="text-start">2014</td>
+                      <td class="text-start">LIVTYPE002</td>
+                      <td class="text-start">526</td>
+                      <td class="text-start">20,104</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-
-          <div class="col">
-            279 clusters found
-          </div>        
         </div>
-      </div>
 
-      <!-- Dialog Action -->
-      <dlgActDefault />  
+        <div class="col">
+          279 clusters found
+        </div>        
+      </div>
+    </div>
+
+    <!-- Dialog Action -->
+    <dlgActDefault />  
 
     </v-card>
   </v-container>
