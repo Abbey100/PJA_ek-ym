@@ -450,9 +450,9 @@
 }
 
 .cluster-edit {
-    .descript {
-        font-size: $font-size-base;
-        color: $table-td;
-        // padding: 24px 0 0 0;
+  .selection-col {
+    &:first-child {
+        width: 768px
     }
+  }
 }
