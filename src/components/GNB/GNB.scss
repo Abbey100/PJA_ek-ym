@@ -116,7 +116,25 @@
                     font-size: 12px !important;
                 }
             }
+
+            .v-icon {
+                display: none;                
+                position: absolute;
+                top:4px;
+                left: 4px;
+                z-index: 2;
+                
+                &,
+                svg {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
             &:hover {
+                .v-icon {
+                    display: block !important;
+                }
                 &::before,
                 &::after {
                     content: '';
@@ -133,15 +151,7 @@
                     background-color: rgba(92,114,231, .5);
                     border: 2px solid $point-bulely;
                 }
-                &::after {
-                    z-index: 1;
-                    background-image: url('../../assets/img/GNB.png');
-                    background-size: 40px auto;
-                    background-repeat: no-repeat;
-                    overflow: hidden;
-                    background-position: 0 -240px;
-                }
-
+          
                 .tooltip {
                     display: block!important;
                 }
