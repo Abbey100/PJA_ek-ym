@@ -38,6 +38,7 @@ import DataEditCell from '@/pages/OpenProject/DataEditCell';
 import DataEditPop from '@/pages/OpenProject/DataEditPop';
 import DataEditNoti from '@/pages/OpenProject/DataEditNoti';
 import DataEditFilter from '@/pages/OpenProject/DataEditFilter';
+import OpenProject from '@/pages/OpenProject/OpenProject';
 import ApplyOpHistory from '@/pages/EditPopup/ApplyOpHistory';
 import ExtractOphistory from '@/pages/EditPopup/ExtractOphistory';
 import SplitColumns from '@/pages/EditPopup/SplitColumns';
@@ -275,6 +276,11 @@ export default new Router({
           path: 'ClusterEditCol',
           name: 'ClusterEditCol ',
           component: ClusterEditCol,
+        },
+        { // Cluster & Edit column
+          path: 'OpenProject',
+          name: 'OpenProject ',
+          component: OpenProject,
         },
       ],
     },

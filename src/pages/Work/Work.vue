@@ -4,6 +4,7 @@
     <li class="sprint mb-4 "> SPRINT 4</li>
     <li class="mb-2"><b>Cluster</b></li>
     <li><router-link target="_blank" to="/ClusterEditCol" >Cluster & Edit column</router-link> : Cluster pop</li>  
+    <li><router-link target="_blank" to="/OpenProject" >Open Project</router-link> : Open Project</li>  
 
     <li class="sprint mb-4  mt-12"> SPRINT 3</li>
     <li class="mb-2"><b>Sort by</b></li>
