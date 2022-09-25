@@ -360,3 +360,74 @@ html {
 .v-btn.ico-16 {
   @extend %ico-16;
 }
+
+
+/** INPUT STYLE **/
+/* append icon */
+.v-input__append-inner {
+    margin: 0 !important;
+    padding: 0px !important;
+    .v-input__icon {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        padding: 0;
+        cursor: pointer;
+        /* clear icon */
+        &.v-input__icon--clear {
+            display: none;
+        }
+        &.v-input__icon--append {
+          margin: 0 0 0 8px !important;
+      }
+    }
+  }
+
+  /* input : focused */
+  .v-input--is-focused {
+    .v-input__append-inner {
+        .v-input__icon { 
+            &.v-input__icon--clear {
+                display: block;
+            }
+            &.v-input__icon--append {
+                display: none;
+            }
+        }
+    }
+  }
+
+/* 내용이 수정되었을 때 */
+  .edited {
+    .v-input__append-inner {
+      .v-input__icon { 
+        &.v-input__icon--clear {
+            border-radius: 50%;
+            margin-right: 0 !important;
+        }
+      }
+    }
+    &.v-text-field--outlined fieldset {
+      border-color: $primary !important;
+    }
+  }
+
+/* autocoplete */
+  .v-autocomplete {
+    &.v-input.v-select .v-input__slot .v-select__slot {
+        border: 0 none !important;
+        background: transparent !important;
+    }
+    &.v-input > .v-input__control > .v-input__slot {
+        padding: 0 16px 0 8px !important;
+    }
+    .theme--light.v-chip:not(.v-chip--active) {
+        background: #EBEEF1;
+    }
+    .theme--light.v-chip {
+        color: $primary;
+    }
+    &.v-select--is-menu-active .v-input__icon--append .v-icon {
+        transform: none !important;
+      }
+}

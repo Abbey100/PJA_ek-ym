@@ -421,4 +421,15 @@
     &.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
         background: rgba(124,153,255, 0.1);
     }
-  }
+}
+
+.openproject_popup {
+    &.dialog {
+        .item-title {
+        max-width: 104px;
+        }  
+        .dialog-content {
+            max-height: 600px;
+        }
+    }
+}

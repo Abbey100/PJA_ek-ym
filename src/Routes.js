@@ -40,6 +40,7 @@ import DataEditPop from '@/pages/OpenProject/DataEditPop';
 import DataEditNoti from '@/pages/OpenProject/DataEditNoti';
 import DataEditFilter from '@/pages/OpenProject/DataEditFilter';
 import OpenProject from '@/pages/OpenProject/OpenProject';
+import OpenProjectDetails from '@/pages/OpenProject/OpenProjectDetails';
 import ApplyOpHistory from '@/pages/EditPopup/ApplyOpHistory';
 import ExtractOphistory from '@/pages/EditPopup/ExtractOphistory';
 import SplitColumns from '@/pages/EditPopup/SplitColumns';
@@ -123,6 +124,11 @@ export default new Router({
           path: 'OpenProject',
           name: 'OpenProject ',
           component: OpenProject,
+        }, 
+        { // OpenProjectDetails
+          path: 'OpenProjectDetails',
+          name: 'OpenProjectDetails ',
+          component: OpenProjectDetails,
         }, 
       ],
     },
