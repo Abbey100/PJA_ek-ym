@@ -55,19 +55,7 @@
             <v-row class="mb-2">
               <v-col class="item-title">Tags</v-col>
               <v-col>
-                <v-autocomplete
-                  v-model="values"
-                  :items="tags"
-                  chips
-                  small-chips
-                  multiple
-                  hide-details
-                  outlined
-                  class="pt-0"
-                  hide-spin-buttons
-                  clearable
-                  clear-icon="$i16_cancel"
-                ></v-autocomplete>          
+                <autoComplete />
               </v-col>
             </v-row>
 
@@ -77,20 +65,7 @@
             <v-row class="mb-2">
               <v-col class="item-title">Tags 수정됨</v-col>
               <v-col>
-                <v-autocomplete
-                  v-model="values"
-                  :items="tags"
-                  chips
-                  small-chips
-                  multiple
-                  hide-details
-                  outlined
-                  class="pt-0 edited"
-                  hide-spin-buttons
-                  clearable
-                  clear-icon="$i16_cancel"
-                  append-icon="$i16_resetGr"
-                ></v-autocomplete>          
+                <autoComplete class="edited" />
               </v-col>
             </v-row>
 
