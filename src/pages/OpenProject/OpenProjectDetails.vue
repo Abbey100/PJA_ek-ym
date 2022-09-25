@@ -15,15 +15,15 @@
       <div class="dialog-content bg-default pt-0 openproject_details">
         <div class="section-row mt-6">
           <div class="dialog-section pb-2">
-            <!-- row  : input -->
+            <!-- row  : input basic -->
             <v-row class="mb-2">
-              <v-col class="item-title">Create Time</v-col>
+              <v-col class="item-title">인풋 기본형</v-col>
               <v-col>
                 <v-text-field 
                   text-color="primary"
                   hide-details
                   outlined
-                  class="pt-0 edit-mode"
+                  class="pt-0"
                   clearable
                   clear-icon="$i16_cancel"
                   value="2022-06-09 T05:06:56Z"
@@ -31,8 +31,27 @@
               </v-text-field>             
               </v-col>
             </v-row>
+            <!-- row  : input edited 
+            ** v-text-dield 에 class "edited" 추가
+            ** append-icon "i16_resetGr" 추가  -->
+            <v-row class="mb-2">
+              <v-col class="item-title">인풋 수정됨</v-col>
+              <v-col>
+                <v-text-field 
+                  text-color="primary"
+                  hide-details
+                  outlined
+                  class="pt-0 edited"
+                  clearable
+                  clear-icon="$i16_cancel"
+                  append-icon="$i16_resetGr"
+                  value="2022-06-09 T05:06:56Z"
+                  >
+              </v-text-field>             
+              </v-col>
+            </v-row>
 
-            <!-- row : tag -->
+            <!-- row : tag basic -->
             <v-row class="mb-2">
               <v-col class="item-title">Tags</v-col>
               <v-col>
@@ -44,14 +63,37 @@
                   multiple
                   hide-details
                   outlined
-                  class="pt-0 edit-mode"
+                  class="pt-0"
                   hide-spin-buttons
                   clearable
                   clear-icon="$i16_cancel"
-                  append-icon="$i16_SaveSm"
                 ></v-autocomplete>          
               </v-col>
             </v-row>
+
+            <!-- row  : tag edited 
+            ** v-text-dield 에 class "edited" 추가
+            ** append-icon "i16_resetGr" 추가  -->
+            <v-row class="mb-2">
+              <v-col class="item-title">Tags 수정됨</v-col>
+              <v-col>
+                <v-autocomplete
+                  v-model="values"
+                  :items="tags"
+                  chips
+                  small-chips
+                  multiple
+                  hide-details
+                  outlined
+                  class="pt-0 edited"
+                  hide-spin-buttons
+                  clearable
+                  clear-icon="$i16_cancel"
+                  append-icon="$i16_resetGr"
+                ></v-autocomplete>          
+              </v-col>
+            </v-row>
+
             <!-- row : textarea -->
             <v-row class="mb-2">
               <v-col class="item-title">Description</v-col>
@@ -62,6 +104,29 @@
                   outlined
                   class="pt-0"
                   auto-grow
+                  clearable
+                  clear-icon="$i16_cancel"
+                  value="abcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuv"
+                  >
+              </v-textarea>             
+              </v-col>
+            </v-row>
+
+            <!-- row : textarea 
+            ** v-text-dield 에 class "edited" 추가
+            ** append-icon "i16_resetGr" 추가  -->
+            <v-row class="mb-2">
+              <v-col class="item-title">Description</v-col>
+              <v-col>
+                <v-textarea
+                  text-color="primary"
+                  hide-details
+                  outlined
+                  class="pt-0 edited"
+                  auto-grow
+                  clearable
+                  clear-icon="$i16_cancel"
+                  append-icon="$i16_resetGr"
                   value="abcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuvabcdefg hijk lmnop qrs tuv"
                   >
               </v-textarea>             
