@@ -35,7 +35,7 @@
                     </v-btn>
             </li>
             <li class="gnb-item gnb__logout">
-  
+                <v-icon>$Glogout</v-icon>
                 <v-avatar size="40">
                     <v-img src="https://cdn.vuetifyjs.com/images/lists/1.jpg" height="40" contain></v-img>
                 </v-avatar>

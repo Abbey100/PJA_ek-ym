@@ -54,6 +54,7 @@ import CellReplace from '@/pages/EditPopup/CellReplace';
 import SingleInput from '@/pages/EditPopup/SingleInput';
 import ClusterEditCol from '@/pages/EditPopup/ClusterEditCol';
 import ClusterEditColEmpty from '@/pages/EditPopup/ClusterEditColEmpty';
+import TrimAndTall from '@/pages/EditPopup/TrimAndTall';
 
 // Facet Side
 import FacetSide01 from '@/pages/FacetSide/FacetSide01';
@@ -296,6 +297,11 @@ export default new Router({
           path: 'ClusterEditColEmpty',
           name: 'ClusterEditColEmpty',
           component: ClusterEditColEmpty,
+        },
+        { // Cluster & Edit column
+          path: 'TrimAndTall',
+          name: 'TrimAndTall',
+          component: TrimAndTall,
         },
       ],
     },

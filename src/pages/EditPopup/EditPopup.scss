@@ -580,3 +580,48 @@
     }
   }
 }
+
+.trim-tall {
+    width: 440px !important;
+    height: 660px;
+
+    .dialog-content {
+        height: 552px;
+        .section-col,
+        .dialog-section {
+            height: 100%;
+        }
+
+    }
+    .scrollbody {
+        height: 100%;
+        overflow:hidden;
+        &.dialog-section {
+            padding: 0 !important;
+        }
+        .scrolled {
+            height: 100%;
+            padding: 16px 0;
+            overflow-y: auto;
+        }
+    }
+    .dialog-section {
+        max-height: 504px;
+        overflow: hidden;
+ 
+    }
+    .v-list {
+        padding: 0!important;
+    }
+    .v-list-item {
+        min-height: 24px;
+        &:not(:last-child){
+            margin-bottom: 8px;
+        }
+        .checked-group {
+            max-width: 22px;
+            margin-top: 2px;
+        }
+
+    }
+}
