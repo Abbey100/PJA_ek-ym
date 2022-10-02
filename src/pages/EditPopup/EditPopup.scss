@@ -450,6 +450,9 @@
 }
 
 .cluster-edit {
+    .top-text {
+        line-height: 20px;
+    }
     .opt-title {
         font-size: $font-size-base
     }
@@ -507,6 +510,8 @@
         .fieldset,
         .v-input__slot {
             min-height: 32px !important;
+            padding-left: 8px!important;
+            padding-right: 8px!important;
         }
     }
     .v-text-field {
@@ -519,27 +524,35 @@
     }
 
     thead th{
-        font-size: $font-size-base;
+        font-size: $font-size-base !important;
+        line-height: 16px;
         padding-top:6px;
         padding-bottom: 6px;
+
+        $td01:60px;
+        $td02:48px;
+        $td04:53px;
+        $td05:294px;
+        $td03-clc:$td01 + $td02 + $td04 + $td05 ;
 
         &:not(:last-child) {
             padding-right: 0;
         }
         &:nth-child(1) {
-            width: 64px;
+            width: $td01;
         }
         &:nth-child(2) {
-            width: 60px;
+            width: $td02;
         }
         &:nth-child(3) {
-            width: 300px;
+            width: 768px - $td03-clc;
         }
         &:nth-child(4) {
-            width: 53px;
+            width: $td04;
+            text-align: left;
         }
         &:nth-child(5) {
-            width: 278px;
+            width: $td05;
         }
     }
 
@@ -615,6 +628,11 @@
     }
     .v-list-item {
         min-height: 24px;
+        
+        .v-list-item__content {
+            padding: 2px 0 !important;
+        }
+
         &:not(:last-child){
             margin-bottom: 8px;
         }
