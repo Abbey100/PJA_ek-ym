@@ -31,7 +31,7 @@
             height="32"
             elevation="0"
             :ripple="false"
-            >Merge Selected & Close</v-btn>                                  
+            >Merge Selected & Re-Cluster</v-btn>                                  
             <v-btn
             class="text-capitalize btn-md point-deep mr-2"
             height="32"

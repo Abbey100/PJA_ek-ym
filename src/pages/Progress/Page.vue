@@ -123,7 +123,7 @@
                   elevation="0" 
                   class="google text-capitalize font-weight-regular"
                   >
-                  <v-img src="@/assets/google.svg" max-width="24" class="mr-4"></v-img>
+                  <v-img src="@/assets/google.png" max-width="24" class="mr-4"></v-img>
                   Sign in with Google</v-btn>
               </v-col>
             </v-form>

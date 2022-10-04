@@ -16,6 +16,7 @@ import Checkbox from '@/components/Checked/Checkbox';
 import Radio from '@/components/Checked/Radio';
 import SidePanel from '@/components/SidePanel/SidePanel';
 import Gadget from '@/components/Gadget/Gadget';
+import AutoComplete from '@/components/Autocomplete/Autocomplete';
 
 
 Vue.use(Toast);
@@ -35,6 +36,7 @@ Vue.component('checkbox', Checkbox);
 Vue.component('radio', Radio);
 Vue.component('side-panel', SidePanel);
 Vue.component('gadget', Gadget);
+Vue.component('AutoComplete', AutoComplete);
 
 new Vue({
   vuetify,

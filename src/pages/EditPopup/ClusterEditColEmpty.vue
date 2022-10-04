@@ -24,7 +24,7 @@
 
         <div class="section-col d-flex">
           <v-col class="mr-6">
-            <v-row class="option sec-top mb-4">
+            <v-row class="option sec-top pb-4 mb-4">
               <div class="opt-item d-flex align-center mr-8">
                   <span class="opt-title mr-2">Method</span>
                   <div class="select-control" style="width: 144px;">
